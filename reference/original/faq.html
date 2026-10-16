@@ -1,0 +1,675 @@
+<!DOCTYPE html><html lang="zh-CN" class="no-js"><head>
+  <meta charset="UTF-8"/>
+  <script>
+    /* 跨页锚点冷加载：浏览器解析到锚点前先把平滑滚动关掉，
+       让初始定位瞬时完成（scroll-padding-top 预留头部高度），
+       load 后由 main.js 二次校正并恢复平滑滚动。 */
+    if (window.location.hash) {
+      document.documentElement.classList.add('hash-cold');
+      window.addEventListener('load', function () {
+        setTimeout(function () { document.documentElement.classList.remove('hash-cold'); }, 500);
+      });
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+
+  <!-- ===== SEO 三要素（本页：常见问题） ===== -->
+  <title>常见问题 | 知瑜网络·毕业论文辅导 — 是全包吗？怎么收费？一次说清</title>
+  <meta name="description" content="知瑜网络毕业论文辅导常见问题解答：是全包吗、怎么收费、多久能写完、能保证通过吗、查重率和AI检测率怎么办、售后管多久、论文会不会泄露。24个高频问题一次说清，咨询不收费。"/>
+  <meta name="keywords" content="毕业论文辅导常见问题,论文辅导靠谱吗,论文辅导怎么收费,论文辅导多久能写完,查重降重,论文保密,知瑜网络"/>
+
+  <!-- canonical：【上线前替换为真实域名】 -->
+  <link rel="canonical" href="http://127.0.0.1:3000/faq.html"/>
+
+  <!-- Open Graph（微信/社交平台分享卡片） -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="知瑜网络·毕业论文辅导"/>
+  <meta property="og:title" content="常见问题 | 知瑜网络·毕业论文辅导 — 你关心的问题，我们都答了"/>
+  <meta property="og:description" content="是全包吗？怎么收费？多久能写完？能保证通过吗？会不会泄露？24个高频问题一次说清。"/>
+  <meta property="og:url" content="http://127.0.0.1:3000/faq.html"/>
+  <!-- 分享卡片图已就位：images/zhiyu-share.png（1200×630），替换时直接覆盖同名文件 -->
+  <meta property="og:image" content="http://127.0.0.1:3000/images/zhiyu-share.png"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="常见问题 | 知瑜网络·毕业论文辅导"/>
+  <meta name="twitter:description" content="是全包吗？怎么收费？多久能写完？24个高频问题一次说清。"/>
+  <meta name="twitter:image" content="http://127.0.0.1:3000/images/zhiyu-share.png"/>
+
+  <meta name="theme-color" content="#1a56db"/>
+
+  <!-- ===== 结构化数据 JSON-LD：FAQPage（选取 6 个最重要问答） ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "http://127.0.0.1:3000/faq.html#faq",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "论文是你们全包吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "不是全包。我们做的是毕业论文/设计辅导服务，包括选题建议、开题报告指导、大纲搭建、正文写作思路辅导、修改建议、格式规范优化、查重降重辅导、答辩准备指导。说白了就是帮你把论文从无到有弄出来、弄规范、弄到位，所有内容都是辅导性质，最终论文是你自己的。" }
+      },
+      {
+        "@type": "Question",
+        "name": "你们怎么收费？价格是多少？",
+        "acceptedAnswer": { "@type": "Answer", "text": "价格按专业、字数、难度和时间评估，扫宣传单上的联系码咨询后我们会根据你的具体情况出方案和报价。费用分定金和尾款：下单时付定金（一般总价50%），初稿确认后付尾款（剩50%）。我们不是层层转包的大机构，没有层层溢价，价格实在，没有隐形消费。" }
+      },
+      {
+        "@type": "Question",
+        "name": "多久能写完？赶时间怎么办？",
+        "acceptedAnswer": { "@type": "Answer", "text": "正常情况下：开题/任务书2-3天，大纲框架1-2天，初稿写作辅导5-10天（看字数和专业难度），修改稿每轮2天，终稿排版1-2天，查重降重1-2天，答辩辅导1天。每个客户有1次免费加急的机会。建议早点下单，别卡着截止日期才来，留足修改时间。" }
+      },
+      {
+        "@type": "Question",
+        "name": "能保证通过吗？不过退款吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "我们不画饼、不乱承诺，说「百分百保证通过」的都是骗你的，最终能不能通过受很多因素影响。我们能保证的是内容和格式做到符合学校要求，帮你准备答辩问题和回答思路，只要你自己上点心、答辩别太紧张，通过没问题。往年我们辅导的学员通过率在95%以上。退款按明确规则执行：服务没开始定金全退；进行中按已完成阶段扣除；因我们原因没法完成的全退。" }
+      },
+      {
+        "@type": "Question",
+        "name": "查重率能保证吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "降重包含在服务里，定稿后免费降重1次，降到学校要求以下。我们承诺定稿时重复率按学校要求的查重率达标——哪怕高0.1%，我们都尽快改。建议严格按学校指定的查重软件查，一定要定稿后再查。" }
+      },
+      {
+        "@type": "Question",
+        "name": "论文会泄露吗？",
+        "acceptedAnswer": { "@type": "Answer", "text": "不会。我们严格保护你的个人信息和论文内容，未经你同意不会向任何第三方泄露，不会公开发表，也不会作为案例展示（除非你书面同意）。服务结束后你的文件在我们系统保留一段时间用于售后，之后安全删除。" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== 关键 CSS 内联（首屏骨架：变量/基础/header/页头），保证首屏无白屏抖动 ===== -->
+  <style>
+    :root{--c-primary:#1a56db;--c-primary2:#3b82f6;--c-primary-bg:#eff6ff;--c-accent:#f59e0b;--c-text:#1f2937;--c-text-2:#4b5563;--c-text-3:#9ca3af;--c-white:#fff;--c-border:#e5e7eb;--c-border-light:#f1f5f9;--font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;--container:1200px;--header-h:64px;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-8:4.5rem;--radius-full:999px;--shadow-sm:0 1px 3px rgba(15,23,42,.06)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-family);font-size:.9375rem;line-height:1.75;color:var(--c-text);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    @media (min-width:768px){body{font-size:1rem}}
+    img{max-width:100%;height:auto;display:block}
+    ul{list-style:none}
+    a{text-decoration:none;color:var(--c-primary)}
+    button{font-family:inherit;border:none;background:none;cursor:pointer}
+    .container{width:100%;max-width:var(--container);margin:0 auto;padding-left:var(--sp-4);padding-right:var(--sp-4)}
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid var(--c-border-light)}
+    .site-header .container{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);gap:var(--sp-4)}
+    .brand{display:flex;align-items:center;gap:var(--sp-3)}
+    .brand .brand-logo{width:40px;height:40px;flex:none}
+    .brand .brand-text{display:flex;flex-direction:column;line-height:1.25}
+    .brand .brand-name{font-size:1.125rem;font-weight:700;color:var(--c-text)}
+    .brand .brand-sub{font-size:.6875rem;color:var(--c-text-3);letter-spacing:.08em}
+    .main-nav,.header-cta{display:none}
+    .nav-toggle{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:44px;height:44px}
+    .nav-toggle .bar{display:block;width:22px;height:2px;border-radius:2px;background:var(--c-text)}
+    .mobile-nav{display:block;max-height:0;overflow:hidden;background:#fff}
+    @media (min-width:992px){.main-nav{display:block}.header-cta{display:inline-flex}.nav-toggle,.mobile-nav{display:none}}
+    .page-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--c-primary-bg) 0%,#dbeafe 55%,#fff 100%);padding:var(--sp-7) 0 var(--sp-6);text-align:center}
+    .page-hero .container{position:relative;z-index:1}
+    .page-hero h1{font-size:1.75rem;line-height:1.35;margin-bottom:var(--sp-3)}
+    .page-hero__sub{color:var(--c-text-2);max-width:560px;margin:0 auto}
+    @media (min-width:768px){.page-hero{padding:var(--sp-8) 0 var(--sp-7)}.page-hero h1{font-size:2.25rem}}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--sp-2);min-height:44px;padding:var(--sp-3) var(--sp-5);border-radius:var(--radius-full);font-weight:600;color:#fff}
+    /* 防止异步 CSS 未加载完成时弹窗/回到顶部闪烁（FOUC 防护） */
+    .modal{visibility:hidden;opacity:0}
+    .back-to-top{visibility:hidden;opacity:0}
+    /* 首屏安全：JS/IO 不可用时内容直接可见 */
+    .no-js .reveal,.no-io .reveal{opacity:1!important;transform:none!important}
+    @media (prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}}
+  </style>
+
+  <!-- 完整样式表 + 本页专属样式：异步加载 + noscript 兜底 -->
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;"/>
+  <link rel="preload" href="css/page-faq.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;"/>
+  <noscript><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/page-faq.css"></noscript>
+  <link rel="icon" type="image/png" href="images/zhiyu-logo.png"/>
+<script src="https://www.kimi.com/sdk-seed.js" defer="" data-kimi-disable-watermark="false" data-kimi-analytics="true" data-kimi-website-id="1a06be9e-1b22-84fd-8000-0000a44ee933" data-kimi-website-env="published"></script></head>
+
+<body data-page="faq">
+
+  <!-- ===== 全站内联 SVG 图标库（sprite）：用 <svg class="icon"><use href="#icon-xxx"/></svg> 调用 ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+
+    <!-- 通用线条图标（stroke 风格） -->
+    <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"></circle></symbol>
+    <symbol id="icon-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v4h4"></path><path d="M9 12h6M9 16h6"></path></symbol>
+    <symbol id="icon-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="4" rx="1"></rect><rect x="2.5" y="17.5" width="6" height="4" rx="1"></rect><rect x="15.5" y="17.5" width="6" height="4" rx="1"></rect><path d="M12 6.5v5M5.5 17.5v-3h13v3"></path></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 014 4L7.5 20.5 2 22l1.5-5.5z"></path></symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 4 21 10 15 10"></polyline><path d="M20.5 10a9 9 0 10.4 4.5"></path></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9.2-8 11-4.5-1.8-8-6-8-11V5z"></path><polyline points="8.5 11.5 11 14 15.5 9.5"></polyline></symbol>
+    <symbol id="icon-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></symbol>
+    <symbol id="icon-present" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 16v5"></path><path d="M7 12l3-3 3 2 4-4"></path></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"></circle><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"></path><path d="M17 3.5a4 4 0 010 7M22 21v-2a5 5 0 00-3-4.6"></path></symbol>
+    <symbol id="icon-audit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"></rect><path d="M9 4.5a3 3 0 016 0"></path><polyline points="9 14 11.5 16.5 16 11.5"></polyline></symbol>
+    <symbol id="icon-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0116 0"></path><rect x="2" y="13" width="4" height="6" rx="2"></rect><rect x="18" y="13" width="4" height="6" rx="2"></rect><path d="M20 19a3 3 0 01-3 3h-3"></path></symbol>
+    <symbol id="icon-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></symbol>
+    <symbol id="icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L10.59 3.41A2 2 0 009.17 3H4a1 1 0 00-1 1v5.17a2 2 0 00.59 1.42l10 10a2 2 0 002.82 0l4.18-4.18a2 2 0 000-2.83z"></path><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor" stroke="none"></circle></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></symbol>
+    <symbol id="icon-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polyline points="8.5 12.5 11 15 15.5 9.5"></polyline></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="4"></line><polyline points="5 11 12 4 19 11"></polyline></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M9.6 5C6 7 4 10 4 14v5h6v-6H7c0-2.5 1.2-4.5 3.6-6zm10 0C16 7 14 10 14 14v5h6v-6h-3c0-2.5 1.2-4.5 3.6-6z"></path></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8z"></path></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15.5 14"></polyline></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></symbol>
+  </svg>
+
+  <!-- ===== 公共组件：顶部导航 header（全站一致，从 _partials.html 原样复制） ===== -->
+  <header class="site-header">
+    <div class="container">
+      <!-- logo 区 -->
+      <a aria-label="知瑜网络 首页" class="brand" href="index.html">
+        <span class="brand-logo"><img src="images/zhiyu-logo.png" alt="知瑜 ZHIYU NETWORK" width="415" height="296"/></span>
+        <span class="brand-text">
+          <span class="brand-name">知瑜网络</span>
+          <span class="brand-sub">毕业论文辅导</span>
+        </span>
+      </a>
+
+      <!-- 桌面端导航（data-page 用于当前页高亮，与 body[data-page] 对应） -->
+      <nav class="main-nav" aria-label="主导航">
+        <ul>
+          <li><a data-page="index" href="index.html">首页</a></li>
+          <li><a data-page="services" href="services.html">服务介绍</a></li>
+          <li><a data-page="process" href="process.html">服务流程</a></li>
+          <li><a data-page="about" href="about.html">关于我们</a></li>
+          <li><a data-page="cases" href="cases.html">成功案例</a></li>
+          <li><a data-page="reviews" href="reviews.html">客户好评</a></li>
+          <li><a data-page="faq" href="faq.html">常见问题</a></li>
+          <li><a data-page="contact" href="contact.html">联系我们</a></li>
+        </ul>
+      </nav>
+
+      <!-- 桌面端右侧 CTA：打开扫码弹窗 -->
+      <button type="button" class="btn btn--accent btn--sm header-cta" data-open-modal="qrcode-modal">
+        <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+        关注我们
+      </button>
+
+      <!-- 移动端汉堡按钮 -->
+      <button type="button" class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- 移动端抽屉菜单 -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航">
+      <ul>
+        <li><a data-page="index" href="index.html">首页</a></li>
+        <li><a data-page="services" href="services.html">服务介绍</a></li>
+        <li><a data-page="process" href="process.html">服务流程</a></li>
+        <li><a data-page="about" href="about.html">关于我们</a></li>
+        <li><a data-page="cases" href="cases.html">成功案例</a></li>
+          <li><a data-page="reviews" href="reviews.html">客户好评</a></li>
+        <li><a data-page="faq" href="faq.html">常见问题</a></li>
+        <li><a data-page="contact" href="contact.html">联系我们</a></li>
+      </ul>
+      <div style="padding:0 16px 16px;">
+        <button type="button" class="btn btn--accent" data-open-modal="qrcode-modal">
+          <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+          关注我们
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== 1. 页头 ===== -->
+    <section class="page-hero">
+      <div class="hero__deco hero__deco--circle1" aria-hidden="true"></div>
+      <div class="hero__deco hero__deco--ring" aria-hidden="true"></div>
+      <div class="container">
+        <h1>24 个问题一次说清，<span style="color:var(--c-primary)">看完再决定找不找我们</span></h1>
+        <p class="page-hero__sub">是全包吗、怎么收费、多久能写完、能不能过、会不会泄露——提前说清楚，后面少误会。答案都出自我们的正式服务说明。</p>
+      </div>
+    </section>
+
+    <!-- ===== 2. 分类筛选 + FAQ 手风琴（结构复用首页 FAQ，YH.initFaq 自动初始化） ===== -->
+    <section class="section" id="faq-list">
+      <div class="container">
+        <!-- 分类 tab（纯 JS 过滤，见 js/page-faq.js） -->
+        <div class="faq-tabs reveal" role="group" aria-label="问题分类筛选">
+          <button type="button" class="faq-tab is-active" data-cat="all" aria-pressed="true">全部</button>
+          <button type="button" class="faq-tab" data-cat="service" aria-pressed="false">关于服务</button>
+          <button type="button" class="faq-tab" data-cat="price" aria-pressed="false">关于价格</button>
+          <button type="button" class="faq-tab" data-cat="quality" aria-pressed="false">关于质量</button>
+          <button type="button" class="faq-tab" data-cat="after" aria-pressed="false">关于售后</button>
+          <button type="button" class="faq-tab" data-cat="privacy" aria-pressed="false">关于保密</button>
+        </div>
+        <p class="faq-cat-tip reveal">共 24 个高频问题，点击分类快速筛选</p>
+
+        <div class="faq-list reveal">
+
+          <!-- ---------- 关于服务 ---------- -->
+          <div class="faq-item" data-cat="service">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              论文是你们全包吗？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                不是全包。我们做的是毕业论文/设计辅导服务，包括选题建议、开题报告指导、大纲搭建、正文写作思路辅导、修改建议、格式规范优化、查重降重辅导、答辩准备指导。说白了就是帮你把论文从无到有弄出来、弄规范、弄到位，所有内容都是辅导性质，最终论文是你自己的。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="service">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              辅导具体包括什么？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                从选题到答辩全覆盖：选题建议、开题报告/任务书指导、大纲搭建（细到三级标题）、正文写作思路辅导、按导师意见修改润色、查重降重辅导、格式规范排版、答辩准备（PPT框架建议、问题预判、模拟答辩）。每个客户建专属服务群，从开题到答辩结束全程跟进，不是交完稿就不管了。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="service">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              你们怎么收费？价格是多少？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                价格按专业、字数、难度和时间评估，扫宣传单上的联系码咨询后我们会根据你的具体情况出方案和报价，当天就能给。费用分定金和尾款：下单时付定金（一般总价50%），初稿确认后付尾款（剩50%）。我们不是层层转包的大机构，没有层层溢价，价格实在，没有隐形消费，每一分钱花在哪都清清楚楚。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="service">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              多久能写完？赶时间怎么办？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                正常情况下：开题/任务书2-3天，大纲框架1-2天，初稿写作辅导5-10天（看字数和专业难度），修改稿每轮2天，终稿排版1-2天，查重降重1-2天，答辩辅导1天。赶时间的话：每个客户有1次免费加急的机会（看辅导老师排期）；特别急的部分也可以你自己先动手改，改完发我们帮你检查，我们很鼓励这种方式。但还是建议早点下单，别卡着截止日期才来，留足修改时间。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="service">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              开题报告能帮我做吗？修改呢？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                可以。开题和任务书我们按学校模板来做，内容完整、逻辑清楚、格式规范，正常2-3天搞定，开题默认2000字左右（学校要求特别多的超出部分要补成本费）。修改方面说句实在话：导师对开题的意见往往很细碎，建议你自己动手改一改——都是小调整，你改起来更快，也更符合导师口味；实在不想自己改，我们全包也可以。另外提醒一句：开题别做太难，我们会根据你的专业和能力推荐难度适中、好写好过的题目和方向。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="service">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              大纲细到什么程度？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                具体到三级标题，每一章、每一节写什么都列清楚，1-2天交付。大纲是非常关键的一步——大纲定了，后面正文就按这个框架写，所以大纲我们会发你确认，你确认没问题了我们才开始写正文，避免后面大方向返工。
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- 关于价格 ---------- -->
+          <div class="faq-item" data-cat="price">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              怎么付款？定金尾款怎么分？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                费用分定金和尾款：下单时付定金（一般总价50%），初稿确认后付尾款（剩50%）。所有钱付到指定收款账户，收款专员确认到账；付完把截图发服务群里，方便我们确认。提醒一句：请别私下转给辅导老师或任何个人——私下转账我们无法登记和担保，出问题只能你自己承担；付到指定收款账户，才有记录、有售后。尾款付之前我们发带水印版本给你核对内容和质量，尾款到账后完整无水印文件开放下载，这是保护双方的行业通行做法。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="price">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              什么情况下修改要加钱？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                在已确认的大纲/开题/初稿范围内、属于我们的问题、修改量不超全文20%、初稿后3轮以内——这些都免费改。需要加钱的主要是「新需求」：换题目、换研究方向/方法、加减章节、单次修改量超全文20%的大段重写、导师突然提全新要求、初稿后超3轮的修改、二次降重、专门降AI检测率、完整PPT制作、程序调试/功能定制、格式要求反复变更。加钱修改会先由辅导老师评估工作量，前端顾问跟你沟通好费用和时间，你同意并付钱了我们才开始改，你不同意就维持原版本，不会强行改。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="price">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              能退款吗？什么规则？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                论文辅导属于虚拟知识服务，服务开始后就产生了人力和时间成本，所以已完成并交付的内容原则上不退款。具体规则：服务没开始（没分配老师、没开工）定金全退；服务进行中按服务进度比例退款——完成了多少、按进度扣多少、剩下的退多少，具体比例和计算方式不口头承诺，签约时逐项写进协议，白纸黑字算清楚；初稿已交付原则上不退定金（确认是我们质量问题的，负责人评估后酌情退部分）；终稿已交付、尾款已付不退，但售后继续有效到答辩结束；因我们原因没法完成服务的，定金和已付尾款全退，酌情补偿。退款由负责人审批，走原支付渠道，3个工作日内到账。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="price">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              有优惠吗？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                有。我们的客户很大一部分是老客户推荐来的，所以推荐机制很实在：你推荐身边有需要的同学来，推荐成功后我们给你发推荐红包表示感谢，你同学也能享受优惠。具体活动扫码问前端顾问，咨询不收费、不催单。
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- 关于质量 ---------- -->
+          <div class="faq-item" data-cat="quality">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              能保证通过吗？不过退款吗？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                我们不画饼、不乱承诺——说「百分百保证通过」的都是骗你的，最终能不能通过受很多因素影响（课题难度、导师要求、答辩临场发挥等）。我们能保证的是：内容和格式做到符合学校要求，帮你准备答辩问题和回答思路，只要你自己上点心、答辩别太紧张，通过没问题。往年我们辅导的学员通过率在95%以上。退款不按「过不过」算，按服务进度规则执行（见「能退款吗？什么规则？」），但因为我们的原因没法完成服务的，全退并酌情补偿。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="quality">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              辅导老师什么水平？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                后端辅导老师20人以上，以工科为主（机械、土木、计算机、电子、化工等），也覆盖文科、理科、艺术类。每位老师都是经过严格筛选、有多年论文辅导经验的，不是临时找的兼职。管理上是「师傅带徒弟」：新老师由资深老师带一段时间，熟悉我们的标准和流程后才能独立接单，保证每篇论文质量在同一水平线上。每位老师同时跟进的订单数量有上限，保证有足够时间精力做好每一篇。我们每年承接5000单以上，各种专业、各种要求都见过。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="quality">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              三级审核是什么？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                每一篇论文交付前都要过三道关卡：辅导老师自审 → 交叉审核（其他老师互查）→ 主理人抽检。质量审核团队5人以上，独立于写作团队，保证审核的客观和严格。订单量大但每一篇都经过严格把关，我们不搞流水线批量生产，旺季宁可控制接单量也不粗制滥造。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="quality">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              查重率能保证吗？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                能。降重包含在服务里，定稿后免费降重1次，人工改写不是机器替换，降到学校要求以下。我们承诺的是定稿时重复率按学校要求的查重率达标——哪怕高0.1%，我们都尽快改。几点提醒：官方查重（知网/维普/万方）你自己买，我们可以给免费软件的报告供参考；不同软件标准不一样，建议严格按学校指定的查；一定要定稿后再查，初稿查的重复率没参考价值；要降重的话给完整查重报告（PDF版含详细对照标红），尽量别只发截图——截图看不全对照来源。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="quality">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              AI检测率怎么办？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                说句实话：毕业季周期很长（一般9月到次年6月），这期间AI检测算法会持续更新，今天查10%、明天算法更新了可能变30%，这是没法避免的行业共性问题。但放心，我们最终保证定稿时重复率、AI检测率按学校要求的标准达标——哪怕高0.1%，我们都尽快改。注意：普通降重不含降AI检测率，学校要求AI率达标的请提前说，我们写作时特别注意；定稿后要专门降AI率的，属于额外服务，另沟通报价。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="quality">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              修改不满意怎么办？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                范围内的问题3轮以内免费改，收到你完整的修改意见后2天内改完。想改得又快又准，修改意见要这样给：整理成文档或在文章里加批注，按「1.第X章第X节第X段，把XX改成XX」的格式标清序号和位置，一次性列完；尽量别发语音、别只发截图——语音和截图没法逐条登记，容易漏改。说句实在话：修改不是所有问题都能100%改好——有些问题我们直接改好，有些教你应对导师，有些不合理要求可以跟导师推掉；实在改不了的，我们会给理由和替代建议。建议先给导师看再改，导师意见才最权威。对处理结果有异议，随时找负责人沟通，我们认真处理。
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- 关于售后 ---------- -->
+          <div class="faq-item" data-cat="after">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              交了钱没人管怎么办？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                这一点不靠自觉、靠机制，不会出现这种情况：每个客户我们都建专属服务群，群里就你、前端咨询顾问、辅导老师三个人。前端客服团队10人以上，经过专业培训、熟悉全流程规则，你有任何问题先找前端顾问，需要专业处理的再拉辅导老师。从开题到答辩结束全程跟进，不是交完稿就不管了；我们主动推进、主动同步进度，不用你天天问「做到哪了」。要是超过3天没收到我们任何消息，你可以在群里问，我们跟你说进度。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="after">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              售后管多久？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                售后从终稿交付那天算，到你答辩结束，一般不超30天，具体以你答辩时间为准。答辩通过后售后结束，服务群保留7天，7天后解散（好友保留，后面有需要随时联系）。学校有二次审核、盲审、往届抽查等后续要求、超出售后时限的，另沟通费用。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="after">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              哪些售后免费？哪些收费？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                免费的：格式微调（字体字号行距页码这些小调整）、错别字修改、答辩问题解答（论文内容相关疑问）、小范围内容调整（不超全文10%）、答辩PPT框架建议和常见问题预判。收费的：大段重写、换研究方向、加章节、导师要求整体重构、二次降重（你大改后重复率回升）、完整答辩PPT制作、模拟答辩多次（免费1次）、超出售后时限的任何修改。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="after">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              回复速度怎么样？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                每天9:00-22:00，消息2小时内肯定回，看到先回一句「收到」，不让你等；22点之后的消息，第二天上午10点前回；答辩旺季（2月15日—5月20日）单多，回复可能略延迟，但当天肯定回、不会不理你。修改时效：常规修改2天内完成（从收到完整修改意见算起）；答辩前3天的加急修改24小时内完成，优先处理。两轮修改之间最少留 24 小时，保证每轮改到位。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="after">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              答辩前紧张，有辅导吗？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                有，而且都是免费的：PPT框架建议（章节结构、每页重点、时间分配）；常见问题预判——根据你的题目和内容预判10-15个答辩老师可能问的问题，附回答思路；答辩话术指导（开场怎么说、被问住了怎么救场、老师挑刺怎么回应、结束怎么致谢）；注意事项提醒（着装、礼仪、时间控制、PPT播放、打印份数）；还有免费1次模拟答辩，我们当老师问你问题，帮你演练，上场一点不慌。
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- 关于保密 ---------- -->
+          <div class="faq-item" data-cat="privacy">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              论文会泄露吗？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                不会。你的论文内容只用于为你提供辅导服务，不会用于其他用途，不会公开发表，未经你同意不会向任何第三方泄露。服务结束后，你的文件在我们系统保留一段时间（用于售后），之后安全删除。也提醒你自己保护好论文：别随便发给同学或上传公共平台，避免被人抄袭导致你自己查重率升高。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="privacy">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              会拿我的论文当案例吗？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                不会，除非你书面同意。客户论文不作为案例展示是写进服务说明里的硬规则。另外明确一下知识产权：最终论文的作者署名权归你本人，你是论文唯一作者；我们提供的辅导内容（写作思路、框架建议、修改意见等），你付费后获得使用权，用于完成自己的毕业论文/设计。
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item" data-cat="privacy">
+            <button type="button" class="faq-item__q" aria-expanded="false">
+              个人信息安全吗？
+              <svg class="icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+            </button>
+            <div class="faq-item__a">
+              <div class="faq-item__a-inner">
+                安全。我们严格保护你的个人信息，包括姓名、学校、专业、联系方式、论文内容等，未经你同意不会向任何第三方泄露。服务全程在专属服务群里进行，全程有记录、可追溯；群里也有规矩：任何人不私自加好友，别拉无关的人进群，从机制上避免信息外流。
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. 底部 CTA（深蓝背景，扫码咨询） ===== -->
+    <section class="section cta-section" id="faq-cta">
+      <div class="hero__deco hero__deco--circle1" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-inner">
+          <div class="reveal">
+            <h2>还有别的疑问？扫宣传单联系码直接问</h2>
+            <p>咨询不收费、不催单，随便问。把你的专业、学校要求、时间告诉我们，当天就能给你出方案和报价。工作时间每天9:00-22:00，消息2小时内肯定回。</p>
+            <p style="margin-top:16px;">
+              <button type="button" class="btn btn--accent btn--lg" data-open-modal="qrcode-modal">
+                <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+                扫码问一句（不收费）
+              </button>
+            </p>
+          </div>
+          <div class="cta-qrcode-box reveal">
+            <img src="images/zhiyu-qrcode.png" alt="知瑜网络自媒体账号整合展示二维码" width="160" height="160" loading="lazy"/>
+            <span>自媒体账号整合展示 · 欢迎关注</span><span style="display:block;font-size:.82rem;opacity:.9;margin-top:6px;">咨询、下单请扫宣传单（宣传页）上的联系二维码</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 公共组件：页脚 footer（全站一致，从 _partials.html 原样复制） ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- 第一栏：品牌简介 -->
+        <div class="footer-brand">
+          <a aria-label="知瑜网络 首页" class="brand" href="index.html">
+            <span class="brand-logo"><img src="images/zhiyu-logo.png" alt="知瑜 ZHIYU NETWORK" width="415" height="296"/></span>
+            <span class="brand-text">
+              <span class="brand-name">知瑜网络</span>
+              <span class="brand-sub">毕业论文辅导</span>
+            </span>
+          </a>
+          <p>2020年成立的毕业论文/设计辅导公司，40人以上专业团队，每年承接5000单以上。让学生少走弯路、少熬夜、顺顺利利毕业。</p>
+        </div>
+
+        <!-- 第二栏：快速导航 -->
+        <nav class="footer-col" aria-label="页脚导航">
+          <h3>快速导航</h3>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="services.html">服务介绍</a></li>
+            <li><a href="process.html">服务流程</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="cases.html">成功案例</a></li>
+            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </nav>
+
+        <!-- 第三栏：服务项目 -->
+        <nav class="footer-col" aria-label="服务项目">
+          <h3>服务项目</h3>
+          <ul>
+            <li><a href="services.html#topic">选题指导</a></li>
+            <li><a href="services.html#proposal">开题报告</a></li>
+            <li><a href="services.html#writing">正文辅导</a></li>
+            <li><a href="services.html#plagiarism">查重降重</a></li>
+            <li><a href="services.html#format">格式排版</a></li>
+            <li><a href="services.html#defense">答辩准备</a></li>
+          </ul>
+        </nav>
+
+        <!-- 第四栏：联系方式 -->
+        <div class="footer-col">
+          <h3>联系方式</h3>
+          <ul class="footer-contact">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+              <span>自媒体账号整合展示码 · 咨询请扫宣传单上的联系码</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+              <span>工作时间：每天 9:00 - 22:00<br/>答辩旺季（2月15日—5月20日）延长营业到 24:00</span>
+            </li>
+          </ul>
+          <img class="footer-qrcode" src="images/zhiyu-qrcode.png" alt="知瑜网络自媒体账号整合展示二维码" width="96" height="96" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部条 -->
+    <div class="footer-bar">
+      <div class="container">
+        <p>© 2020-2026 知瑜网络 版权所有</p>
+        <!-- 【此处替换为真实备案号】 -->
+        <p>辽ICP备XXXXXXXX号</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== 公共组件：扫码弹窗（关注我们） ===== -->
+  <div class="modal" id="qrcode-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="qrcode-modal-title">
+    <div class="modal__overlay" aria-hidden="true"></div>
+    <div class="modal__card">
+      <button type="button" class="modal__close" data-close-modal="" aria-label="关闭弹窗">
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+      </button>
+      <h2 class="modal__title" id="qrcode-modal-title">知瑜网络 · 自媒体矩阵</h2>
+      <p class="modal__desc">各大平台账号一站直达，扫码欢迎关注</p>
+      <img class="modal__qrcode" src="images/zhiyu-qrcode.png" alt="知瑜网络自媒体账号整合展示二维码" width="220" height="220" loading="lazy"/>
+      <p class="modal__note">此码为自媒体账号整合展示码，仅作公开展示<small>咨询、下单请扫宣传单（宣传页）上的联系二维码</small></p>
+      <span class="modal__tip">
+        <svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg>
+        宣传展示站 · 案例资料一站可查
+      </span>
+    </div>
+  </div>
+
+  <!-- ===== 公共组件：移动端底部固定「立即咨询」悬浮条（PC 隐藏） ===== -->
+  <div class="float-cta">
+    <button type="button" class="btn btn--accent" data-open-modal="qrcode-modal">
+      <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+      关注我们
+    </button>
+  </div>
+
+  <!-- ===== 公共组件：回到顶部 ===== -->
+  <button type="button" class="back-to-top" aria-label="回到顶部">
+    <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+  </button>
+
+  <!-- 全站交互脚本（defer，不阻塞渲染） -->
+  <script src="js/main.js" defer=""></script>
+  <!-- 本页专属脚本：FAQ 分类筛选 -->
+  <script src="js/page-faq.js" defer=""></script>
+
+
+</body></html>

@@ -1,0 +1,606 @@
+<!DOCTYPE html><html lang="zh-CN" class="no-js"><head>
+  <meta charset="UTF-8"/>
+  <script>
+    /* 跨页锚点冷加载：浏览器解析到锚点前先把平滑滚动关掉，
+       让初始定位瞬时完成（scroll-padding-top 预留头部高度），
+       load 后由 main.js 二次校正并恢复平滑滚动。 */
+    if (window.location.hash) {
+      document.documentElement.classList.add('hash-cold');
+      window.addEventListener('load', function () {
+        setTimeout(function () { document.documentElement.classList.remove('hash-cold'); }, 500);
+      });
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+
+  <!-- ===== SEO 三要素（本页：客户好评） ===== -->
+  <title>客户好评 - 知瑜网络毕业辅导</title>
+  <meta name="description" content="知瑜网络毕业论文辅导客户好评：六年口碑，每年辅导5000+订单，辅导后通过率95%以上。12条脱敏客户反馈覆盖单片机、PLC、机械、计算机、土木、艺术设计、MATLAB仿真等专业，附查重/AI检测达标报告截图。"/>
+  <meta name="keywords" content="毕业论文辅导好评,论文辅导口碑,论文辅导靠谱吗,查重达标,AI检测达标,毕业设计辅导评价,知瑜网络"/>
+
+  <!-- canonical：【上线前替换为真实域名】 -->
+  <link rel="canonical" href="http://127.0.0.1:3000/reviews.html"/>
+
+  <!-- Open Graph（微信/社交平台分享卡片） -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="知瑜网络·毕业论文辅导"/>
+  <meta property="og:title" content="客户好评 - 知瑜网络毕业辅导"/>
+  <meta property="og:description" content="他们都已经顺利毕业：六年口碑，5000+订单/年，辅导后通过率95%以上。12条脱敏客户反馈一次看完。"/>
+  <meta property="og:url" content="http://127.0.0.1:3000/reviews.html"/>
+  <!-- 分享卡片图已就位：images/zhiyu-share.png（1200×630），替换时直接覆盖同名文件 -->
+  <meta property="og:image" content="http://127.0.0.1:3000/images/zhiyu-share.png"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="客户好评 - 知瑜网络毕业辅导"/>
+  <meta name="twitter:description" content="六年口碑，5000+订单/年，辅导后通过率95%以上。12条脱敏客户反馈一次看完。"/>
+  <meta name="twitter:image" content="http://127.0.0.1:3000/images/zhiyu-share.png"/>
+
+  <meta name="theme-color" content="#133F66"/>
+
+  <!-- ===== 结构化数据 JSON-LD：WebPage ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "http://127.0.0.1:3000/reviews.html",
+    "name": "客户好评 - 知瑜网络毕业辅导",
+    "description": "知瑜网络毕业论文辅导客户好评页：六年口碑，每年辅导5000+订单，辅导后通过率95%以上，12条脱敏客户反馈与查重/AI检测达标报告截图。",
+    "url": "http://127.0.0.1:3000/reviews.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "知瑜网络·毕业论文辅导",
+      "url": "http://127.0.0.1:3000/"
+    }
+  }
+  </script>
+
+  <!-- ===== 关键 CSS 内联（首屏骨架：变量/基础/header/页头），保证首屏无白屏抖动 ===== -->
+  <style>
+    :root{--c-primary:#1a56db;--c-primary2:#3b82f6;--c-primary-bg:#eff6ff;--c-accent:#f59e0b;--c-text:#1f2937;--c-text-2:#4b5563;--c-text-3:#9ca3af;--c-white:#fff;--c-border:#e5e7eb;--c-border-light:#f1f5f9;--font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;--container:1200px;--header-h:64px;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-8:4.5rem;--radius-full:999px;--shadow-sm:0 1px 3px rgba(15,23,42,.06)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-family);font-size:.9375rem;line-height:1.75;color:var(--c-text);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    @media (min-width:768px){body{font-size:1rem}}
+    img{max-width:100%;height:auto;display:block}
+    ul{list-style:none}
+    a{text-decoration:none;color:var(--c-primary)}
+    button{font-family:inherit;border:none;background:none;cursor:pointer}
+    .container{width:100%;max-width:var(--container);margin:0 auto;padding-left:var(--sp-4);padding-right:var(--sp-4)}
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid var(--c-border-light)}
+    .site-header .container{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);gap:var(--sp-4)}
+    .brand{display:flex;align-items:center;gap:var(--sp-3)}
+    .brand .brand-logo{width:40px;height:40px;flex:none}
+    .brand .brand-text{display:flex;flex-direction:column;line-height:1.25}
+    .brand .brand-name{font-size:1.125rem;font-weight:700;color:var(--c-text)}
+    .brand .brand-sub{font-size:.6875rem;color:var(--c-text-3);letter-spacing:.08em}
+    .main-nav,.header-cta{display:none}
+    .nav-toggle{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:44px;height:44px}
+    .nav-toggle .bar{display:block;width:22px;height:2px;border-radius:2px;background:var(--c-text)}
+    .mobile-nav{display:block;max-height:0;overflow:hidden;background:#fff}
+    @media (min-width:992px){.main-nav{display:block}.header-cta{display:inline-flex}.nav-toggle,.mobile-nav{display:none}}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--sp-2);min-height:44px;padding:var(--sp-3) var(--sp-5);border-radius:var(--radius-full);font-weight:600;color:#fff}
+    /* 防止异步 CSS 未加载完成时弹窗/回到顶部闪烁（FOUC 防护） */
+    .modal{visibility:hidden;opacity:0}
+    .back-to-top{visibility:hidden;opacity:0}
+    /* 首屏安全：JS/IO 不可用时内容直接可见 */
+    .no-js .reveal,.no-io .reveal{opacity:1!important;transform:none!important}
+    @media (prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}}
+
+    /* ============================================================
+       reviews.html 页面专属样式（rev- 前缀，品牌色：藏青 #133F66 / 金色 #CB9C4D）
+       公共样式一律复用 style.css，本块只写本页独有样式
+       ============================================================ */
+    /* ---------- 顶部 hero（藏青底 + 金色点缀） ---------- */
+    .rev-hero{position:relative;overflow:hidden;text-align:center;color:#fff;background:linear-gradient(160deg,#133F66 0%,#1b5484 55%,#246394 100%);padding:var(--sp-7) 0 var(--sp-6)}
+    .rev-hero .container{position:relative;z-index:1}
+    .rev-hero h1{font-size:1.75rem;line-height:1.35;margin-bottom:var(--sp-3)}
+    .rev-hero h1 .rev-hl{color:#CB9C4D}
+    .rev-hero__sub{color:rgba(255,255,255,.85);max-width:560px;margin:0 auto}
+    .rev-hero__stats{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-3);max-width:680px;margin:var(--sp-6) auto 0}
+    .rev-stat{background:rgba(255,255,255,.08);border:1px solid rgba(203,156,77,.45);border-radius:16px;padding:var(--sp-4) var(--sp-2)}
+    .rev-stat .stat-num{font-size:1.5rem;font-weight:700;line-height:1.2;color:#fff;font-variant-numeric:tabular-nums}
+    .rev-stat .stat-num .stat-suffix{font-size:.6em;color:#CB9C4D;margin-left:2px}
+    .rev-stat .stat-label{font-size:.8125rem;color:rgba(255,255,255,.75);margin-top:.25rem}
+    @media (min-width:768px){.rev-hero{padding:var(--sp-8) 0 var(--sp-7)}.rev-hero h1{font-size:2.25rem}.rev-stat .stat-num{font-size:2rem}}
+    /* ---------- 好评卡片网格（卡片本体复用 style.css 的 .review-card） ---------- */
+    .rev-grid{display:grid;grid-template-columns:1fr;gap:var(--sp-4)}
+    @media (min-width:576px){.rev-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (min-width:992px){.rev-grid{grid-template-columns:repeat(3,1fr)}}
+    .rev-grid .review-card{display:flex;flex-direction:column}
+    .rev-grid .review-card__text{flex:1}
+    /* 虚拟头像配色变体（叠加在 .avatar-placeholder 上使用，不用真人图） */
+    .rev-avatar--navy{background:linear-gradient(135deg,#133F66 0%,#2a6296 100%)}
+    .rev-avatar--gold{background:linear-gradient(135deg,#CB9C4D 0%,#a67c33 100%)}
+    .rev-avatar--steel{background:linear-gradient(135deg,#3d5a76 0%,#6b8aa8 100%)}
+    /* ---------- 报告截图网格 ---------- */
+    .rev-shots{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--sp-3)}
+    @media (min-width:768px){.rev-shots{grid-template-columns:repeat(4,1fr);gap:var(--sp-4)}}
+    .rev-shot{display:block;background:#fff;border:1px solid var(--c-border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .35s cubic-bezier(.22,.61,.36,1),box-shadow .35s cubic-bezier(.22,.61,.36,1)}
+    .rev-shot:hover{transform:translateY(-4px);box-shadow:0 6px 16px rgba(15,23,42,.08)}
+    .rev-shot img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+    .rev-shot__cap{display:flex;align-items:center;justify-content:center;gap:.25rem;padding:var(--sp-2);font-size:.6875rem;color:var(--c-text-3)}
+    .rev-shot__cap .icon{width:14px;height:14px;flex:none;color:#CB9C4D}
+    .rev-privacy{display:flex;align-items:flex-start;justify-content:center;gap:var(--sp-2);max-width:640px;margin:var(--sp-5) auto 0;font-size:.8125rem;color:var(--c-text-3);text-align:left}
+    .rev-privacy .icon{width:16px;height:16px;flex:none;margin-top:4px;color:#133F66}
+    /* ---------- 获客钩子卡片 ---------- */
+    .rev-gift{position:relative;overflow:hidden;text-align:center;color:#fff;background:linear-gradient(150deg,#133F66 0%,#1d5689 100%);border:1px solid rgba(203,156,77,.5);border-radius:16px;padding:var(--sp-6) var(--sp-5)}
+    .rev-gift__badge{display:inline-block;font-size:.8125rem;font-weight:600;color:#133F66;background:#CB9C4D;border-radius:var(--radius-full);padding:.25rem var(--sp-4);margin-bottom:var(--sp-3)}
+    .rev-gift h2{color:#fff;margin-bottom:var(--sp-4)}
+    .rev-gift__rule{max-width:520px;margin:0 auto var(--sp-4);padding:var(--sp-3) var(--sp-4);background:rgba(255,255,255,.08);border:1px dashed rgba(203,156,77,.6);border-radius:10px;color:rgba(255,255,255,.9)}
+    .rev-gift__rule strong{color:#CB9C4D}
+    .rev-gift p{max-width:520px;margin:0 auto var(--sp-5);color:rgba(255,255,255,.85);font-size:.8125rem}
+    .rev-btn-gold{background-color:#CB9C4D;color:#fff;box-shadow:0 8px 20px rgba(203,156,77,.4)}
+    .rev-btn-gold:hover{background-color:#a67c33;color:#fff;transform:translateY(-2px) scale(1.02);box-shadow:0 14px 34px rgba(15,23,42,.12)}
+  </style>
+
+  <!-- 完整样式表：异步加载 + noscript 兜底（本页无独立 css 文件，专属样式见上方 <style>） -->
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;"/>
+  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+  <link rel="icon" type="image/png" href="images/zhiyu-logo.png"/>
+<script src="https://www.kimi.com/sdk-seed.js" defer="" data-kimi-disable-watermark="false" data-kimi-analytics="true" data-kimi-website-id="1a06be9e-1b22-84fd-8000-0000a44ee933" data-kimi-website-env="published"></script></head>
+
+<body data-page="reviews">
+
+  <!-- ===== 全站内联 SVG 图标库（sprite）：用 <svg class="icon"><use href="#icon-xxx"/></svg> 调用 ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+
+    <!-- 通用线条图标（stroke 风格） -->
+    <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"></circle></symbol>
+    <symbol id="icon-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v4h4"></path><path d="M9 12h6M9 16h6"></path></symbol>
+    <symbol id="icon-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="4" rx="1"></rect><rect x="2.5" y="17.5" width="6" height="4" rx="1"></rect><rect x="15.5" y="17.5" width="6" height="4" rx="1"></rect><path d="M12 6.5v5M5.5 17.5v-3h13v3"></path></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 014 4L7.5 20.5 2 22l1.5-5.5z"></path></symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 4 21 10 15 10"></polyline><path d="M20.5 10a9 9 0 10.4 4.5"></path></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9.2-8 11-4.5-1.8-8-6-8-11V5z"></path><polyline points="8.5 11.5 11 14 15.5 9.5"></polyline></symbol>
+    <symbol id="icon-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></symbol>
+    <symbol id="icon-present" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 16v5"></path><path d="M7 12l3-3 3 2 4-4"></path></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"></circle><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"></path><path d="M17 3.5a4 4 0 010 7M22 21v-2a5 5 0 00-3-4.6"></path></symbol>
+    <symbol id="icon-audit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"></rect><path d="M9 4.5a3 3 0 016 0"></path><polyline points="9 14 11.5 16.5 16 11.5"></polyline></symbol>
+    <symbol id="icon-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0116 0"></path><rect x="2" y="13" width="4" height="6" rx="2"></rect><rect x="18" y="13" width="4" height="6" rx="2"></rect><path d="M20 19a3 3 0 01-3 3h-3"></path></symbol>
+    <symbol id="icon-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></symbol>
+    <symbol id="icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L10.59 3.41A2 2 0 009.17 3H4a1 1 0 00-1 1v5.17a2 2 0 00.59 1.42l10 10a2 2 0 002.82 0l4.18-4.18a2 2 0 000-2.83z"></path><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor" stroke="none"></circle></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></symbol>
+    <symbol id="icon-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polyline points="8.5 12.5 11 15 15.5 9.5"></polyline></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="4"></line><polyline points="5 11 12 4 19 11"></polyline></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M9.6 5C6 7 4 10 4 14v5h6v-6H7c0-2.5 1.2-4.5 3.6-6zm10 0C16 7 14 10 14 14v5h6v-6h-3c0-2.5 1.2-4.5 3.6-6z"></path></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8z"></path></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15.5 14"></polyline></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></symbol>
+  </svg>
+
+  <!-- ===== 公共组件：顶部导航 header（全站一致，从 _partials.html 原样复制） ===== -->
+  <header class="site-header">
+    <div class="container">
+      <!-- logo 区 -->
+      <a aria-label="知瑜网络 首页" class="brand" href="index.html">
+        <span class="brand-logo"><img src="images/zhiyu-logo.png" alt="知瑜 ZHIYU NETWORK" width="415" height="296"/></span>
+        <span class="brand-text">
+          <span class="brand-name">知瑜网络</span>
+          <span class="brand-sub">毕业论文辅导</span>
+        </span>
+      </a>
+
+      <!-- 桌面端导航（data-page 用于当前页高亮，与 body[data-page] 对应） -->
+      <nav class="main-nav" aria-label="主导航">
+        <ul>
+          <li><a data-page="index" href="index.html">首页</a></li>
+          <li><a data-page="services" href="services.html">服务介绍</a></li>
+          <li><a data-page="process" href="process.html">服务流程</a></li>
+          <li><a data-page="about" href="about.html">关于我们</a></li>
+          <li><a data-page="cases" href="cases.html">成功案例</a></li>
+          <li><a data-page="reviews" href="reviews.html">客户好评</a></li>
+          <li><a data-page="faq" href="faq.html">常见问题</a></li>
+          <li><a data-page="contact" href="contact.html">联系我们</a></li>
+        </ul>
+      </nav>
+
+      <!-- 桌面端右侧 CTA：打开扫码弹窗 -->
+      <button type="button" class="btn btn--accent btn--sm header-cta" data-open-modal="qrcode-modal">
+        <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+        关注我们
+      </button>
+
+      <!-- 移动端汉堡按钮 -->
+      <button type="button" class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- 移动端抽屉菜单 -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航">
+      <ul>
+        <li><a data-page="index" href="index.html">首页</a></li>
+        <li><a data-page="services" href="services.html">服务介绍</a></li>
+        <li><a data-page="process" href="process.html">服务流程</a></li>
+        <li><a data-page="about" href="about.html">关于我们</a></li>
+        <li><a data-page="cases" href="cases.html">成功案例</a></li>
+          <li><a data-page="reviews" href="reviews.html">客户好评</a></li>
+        <li><a data-page="faq" href="faq.html">常见问题</a></li>
+        <li><a data-page="contact" href="contact.html">联系我们</a></li>
+      </ul>
+      <div style="padding:0 16px 16px;">
+        <button type="button" class="btn btn--accent" data-open-modal="qrcode-modal">
+          <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+          关注我们
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== 1. 顶部 hero（藏青底，品牌数据条） ===== -->
+    <section class="rev-hero">
+      <div class="container">
+        <h1>他们都已经<span class="rev-hl">顺利毕业</span></h1>
+        <p class="rev-hero__sub">六年口碑，每年辅导 5000+ 订单，辅导后通过率 95% 以上。以下评价与截图均已脱敏处理，不披露任何客户真实信息。</p>
+        <div class="rev-hero__stats">
+          <div class="rev-stat">
+            <div class="stat-num"><span class="num" data-count="6">6</span><span class="stat-suffix">年</span></div>
+            <div class="stat-label">深耕论文辅导</div>
+          </div>
+          <div class="rev-stat">
+            <div class="stat-num"><span class="num" data-count="5000">5000</span><span class="stat-suffix">+</span></div>
+            <div class="stat-label">每年辅导订单</div>
+          </div>
+          <div class="rev-stat">
+            <div class="stat-num"><span class="num" data-count="95">95</span><span class="stat-suffix">%+</span></div>
+            <div class="stat-label">辅导后通过率</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. 客户好评（12 条脱敏反馈，卡片复用 style.css 的 .review-card） ===== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">客户好评</span>
+          <h2>12 条辅导反馈，看看有没有和你一样的情况</h2>
+          <p class="section-desc">以下均为脱敏后的客户反馈，署名不含真实姓名与学校，头像为虚拟标识。</p>
+        </div>
+
+        <div class="rev-grid reveal-group">
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">开题被导师毙了两次，心态差点崩了。辅导老师帮我重新捋选题，把方向收窄到基于STM32的温湿度监测系统，第三次开题直接过。后面硬件选型、程序框架都给了指导，省了我到处翻资料的时间。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--navy" aria-hidden="true">A</span>
+              <div>
+                <div class="user-name">客户A</div>
+                <div class="user-info">单片机方向 · 2025届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">梯形图自己画了半个月就是跑不通，老师远程带着我一段一段排错，原来是定时器逻辑写反了。说明书也按调试思路指导我重写了一遍，答辩时老师还夸程序结构清楚，真的没想到。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--gold" aria-hidden="true">B</span>
+              <div>
+                <div class="user-name">客户B</div>
+                <div class="user-info">PLC电气自动化 · 2024届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">我是一上台就脑子空白的那种人。答辩前老师帮我预判了十几个问题，还免费做了一次模拟答辩，正式上场问的基本都在射程内，全程没卡壳。光这一项我就觉得值了。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--steel" aria-hidden="true">C</span>
+              <div>
+                <div class="user-name">客户C</div>
+                <div class="user-info">机械专业 · 2025届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">实习天天加班，论文一个字没动，离提交只剩二十多天。顾问当天给了排期表，大纲两天确认，初稿写作思路讲得很细，我照着框架往里填内容就行。最后提前三天交稿，谢天谢地。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder" aria-hidden="true">D</span>
+              <div>
+                <div class="user-name">客户D</div>
+                <div class="user-info">计算机专业 · 2025届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">第一次查重46%，人都傻了。老师教我怎么调整表述和语序，是人工一句句改不是机器替换，复查降到8.7%，学校要求15%以下，稳稳达标。格式也顺手按学校模板帮我优化了一遍。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--navy" aria-hidden="true">E</span>
+              <div>
+                <div class="user-name">客户E</div>
+                <div class="user-info">土木专业 · 2024届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">设计做得出来，说明书写不出来，憋了一星期就三行字。老师按我的作品带我理思路，从灵感来源到色彩运用一条一条梳理，最后写了八千多字，导师说逻辑比之前好太多。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--gold" aria-hidden="true">F</span>
+              <div>
+                <div class="user-name">客户F</div>
+                <div class="user-info">艺术设计 · 2025届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">仿真模型完全不会搭，网上教程看了个寂寞。老师从建模思路讲起，带着我一步一步搭出来，参数怎么调、结果图怎么分析都讲明白了。答辩问到仿真部分我也答得上来，因为是真的懂了。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--steel" aria-hidden="true">G</span>
+              <div>
+                <div class="user-name">客户G</div>
+                <div class="user-info">MATLAB仿真方向 · 2024届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">在职读的，只有晚上和周末有空。老师全程按我的节奏来，晚上十点群里问问题也有人回。从开题到答辩四个多月，进度都是他们主动推，我配合确认就行，顺利拿证。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder" aria-hidden="true">H</span>
+              <div>
+                <div class="user-name">客户H</div>
+                <div class="user-info">单片机方向 · 在职 · 2025届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">毕业设计要交图纸加说明书，我手上一堆参考资料乱成一团。老师帮我做了资料整理，文献按章节归好类，大纲细到三级标题，照着写特别顺。最后格式也按学校要求统一排好了。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--navy" aria-hidden="true">I</span>
+              <div>
+                <div class="user-name">客户I</div>
+                <div class="user-info">机械专业 · 2024届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">我们学校今年开始查AI率，初稿一查三十多，吓坏了。老师指导我把标红的段落重新组织语言，补上实际的调试过程和数据分析，复查降到学校标准线以内。这钱花得值。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--gold" aria-hidden="true">J</span>
+              <div>
+                <div class="user-name">客户J</div>
+                <div class="user-info">计算机专业 · 2025届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">开题报告截止前五天找过来的，本来不抱希望。两天就出了初稿，按我们学校模板做的，内容很完整。中间导师提了几条意见，群里反馈完第二天就改好了，效率真的高。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder rev-avatar--steel" aria-hidden="true">K</span>
+              <div>
+                <div class="user-name">客户K</div>
+                <div class="user-info">PLC电气自动化 · 2025届</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-card__quote"><svg class="icon" aria-hidden="true"><use href="#icon-quote"></use></svg></div>
+            <p class="review-card__text">白天跑工地，晚上根本不想动脑子。老师把整个流程拆成一个个小任务，每个节点群里@我确认，我只要配合就行。答辩前连着装、打印份数这些细节都提醒到了，很贴心。</p>
+            <div class="review-card__user">
+              <span class="avatar-placeholder" aria-hidden="true">L</span>
+              <div>
+                <div class="user-name">客户L</div>
+                <div class="user-info">土木专业 · 在职 · 2023届</div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. 通过率佐证：查重 / AI检测 报告截图（缩略图点击看大图） ===== -->
+    <section class="section section--gray" id="proof">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">结果佐证</span>
+          <h2>查重/AI检测，辅导后轻松达标</h2>
+          <p class="section-desc">定稿后按学校要求查重、AI检测达标，以下为客户反馈的部分报告截图，点击缩略图可查看大图。</p>
+        </div>
+
+        <div class="rev-shots reveal-group">
+          <a aria-label="查看查重报告截图大图" class="rev-shot reveal" href="images/check/c-001.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-001_t.webp" alt="查重报告截图（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看查重报告截图大图" class="rev-shot reveal" href="images/check/c-002.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-002_t.webp" alt="查重报告截图（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看查重报告截图大图" class="rev-shot reveal" href="images/check/c-003.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-003_t.webp" alt="查重报告截图（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看AI检测报告截图大图" class="rev-shot reveal" href="images/check/c-007.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-007_t.webp" alt="AI检测报告截图（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看查重报告截图大图" class="rev-shot reveal" href="images/check/c-009.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-009_t.webp" alt="查重报告截图（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看AI检测报告截图大图" class="rev-shot reveal" href="images/check/c-012.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-012_t.webp" alt="AI检测报告截图（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看查重报告截图大图" class="rev-shot reveal" href="images/check/c-017.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-017_t.webp" alt="查重报告截图（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看AI检测报告截图大图" class="rev-shot reveal" href="images/check/c-019.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-019_t.webp" alt="AI检测报告截图（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看查重报告截图大图" class="rev-shot reveal" href="images/check/c-004.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-004_t.webp" alt="知网AIGC检测报告（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看查重报告截图大图" class="rev-shot reveal" href="images/check/c-013.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-013_t.webp" alt="万方检测报告（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+          <a aria-label="查看查重报告截图大图" class="rev-shot reveal" href="images/check/c-016.webp" rel="noopener" target="_blank">
+            <img src="images/check/c-016_t.webp" alt="万方检测报告（已脱敏）" width="600" height="600" loading="lazy"/>
+            <span class="rev-shot__cap"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg>点击查看大图</span>
+          </a>
+        </div>
+
+        <p class="rev-privacy reveal">
+          <svg class="icon" aria-hidden="true"><use href="#icon-lock"></use></svg>
+          <span>为保护客户隐私、防止信息泄露，本页面仅展示部分设计截图，不披露客户真实信息。</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== 4. 获客钩子卡片（加好友送选题建议 + 推荐有礼） ===== -->
+    <section class="section" id="gift">
+      <div class="container">
+        <div class="rev-gift reveal">
+          <span class="rev-gift__badge">限时福利</span>
+          <h2>加好友，免费送选题建议</h2>
+          <div class="rev-gift__rule">
+            扫宣传单（宣传页）上的联系码添加咨询号即送 <strong>免费选题建议</strong>；推荐 <strong>2 位好友</strong>添加，再赠 <strong>开题报告 / 任务书 / 大纲</strong> 指导（三选一）。
+          </div>
+          <p>还没定题、开题没思路的同学先来领一份，咨询不收费、不催单。工作时间每天 9:00 - 22:00，消息 2 小时内回复。</p>
+          <button type="button" class="btn rev-btn-gold btn--lg" data-open-modal="qrcode-modal">
+            <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+            扫宣传单联系码，领选题建议
+          </button>
+          <p style="font-size:.8rem;opacity:.85;margin-top:10px;">注：本站二维码为自媒体账号整合展示码，仅作公开展示</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 公共组件：页脚 footer（全站一致，从 _partials.html 原样复制） ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- 第一栏：品牌简介 -->
+        <div class="footer-brand">
+          <a aria-label="知瑜网络 首页" class="brand" href="index.html">
+            <span class="brand-logo"><img src="images/zhiyu-logo.png" alt="知瑜 ZHIYU NETWORK" width="415" height="296"/></span>
+            <span class="brand-text">
+              <span class="brand-name">知瑜网络</span>
+              <span class="brand-sub">毕业论文辅导</span>
+            </span>
+          </a>
+          <p>2020年成立的毕业论文/设计辅导公司，40人以上专业团队，每年承接5000单以上。让学生少走弯路、少熬夜、顺顺利利毕业。</p>
+        </div>
+
+        <!-- 第二栏：快速导航 -->
+        <nav class="footer-col" aria-label="页脚导航">
+          <h3>快速导航</h3>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="services.html">服务介绍</a></li>
+            <li><a href="process.html">服务流程</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="cases.html">成功案例</a></li>
+            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </nav>
+
+        <!-- 第三栏：服务项目 -->
+        <nav class="footer-col" aria-label="服务项目">
+          <h3>服务项目</h3>
+          <ul>
+            <li><a href="services.html#topic">选题指导</a></li>
+            <li><a href="services.html#proposal">开题报告</a></li>
+            <li><a href="services.html#writing">正文辅导</a></li>
+            <li><a href="services.html#plagiarism">查重降重</a></li>
+            <li><a href="services.html#format">格式排版</a></li>
+            <li><a href="services.html#defense">答辩准备</a></li>
+          </ul>
+        </nav>
+
+        <!-- 第四栏：联系方式 -->
+        <div class="footer-col">
+          <h3>联系方式</h3>
+          <ul class="footer-contact">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+              <span>自媒体账号整合展示码 · 咨询请扫宣传单上的联系码</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+              <span>工作时间：每天 9:00 - 22:00<br/>答辩旺季（2月15日—5月20日）延长营业到 24:00</span>
+            </li>
+          </ul>
+          <img class="footer-qrcode" src="images/zhiyu-qrcode.png" alt="知瑜网络自媒体账号整合展示二维码" width="96" height="96" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部条 -->
+    <div class="footer-bar">
+      <div class="container">
+        <p>© 2020-2026 知瑜网络 版权所有</p>
+        <!-- 【此处替换为真实备案号】 -->
+        <p>辽ICP备XXXXXXXX号</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== 公共组件：扫码弹窗（关注我们） ===== -->
+  <div class="modal" id="qrcode-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="qrcode-modal-title">
+    <div class="modal__overlay" aria-hidden="true"></div>
+    <div class="modal__card">
+      <button type="button" class="modal__close" data-close-modal="" aria-label="关闭弹窗">
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+      </button>
+      <h2 class="modal__title" id="qrcode-modal-title">知瑜网络 · 自媒体矩阵</h2>
+      <p class="modal__desc">各大平台账号一站直达，扫码欢迎关注</p>
+      <img class="modal__qrcode" src="images/zhiyu-qrcode.png" alt="知瑜网络自媒体账号整合展示二维码" width="220" height="220" loading="lazy"/>
+      <p class="modal__note">此码为自媒体账号整合展示码，仅作公开展示<small>咨询、下单请扫宣传单（宣传页）上的联系二维码</small></p>
+      <span class="modal__tip">
+        <svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg>
+        宣传展示站 · 案例资料一站可查
+      </span>
+    </div>
+  </div>
+
+  <!-- ===== 公共组件：移动端底部固定「立即咨询」悬浮条（PC 隐藏） ===== -->
+  <div class="float-cta">
+    <button type="button" class="btn btn--accent" data-open-modal="qrcode-modal">
+      <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+      关注我们
+    </button>
+  </div>
+
+  <!-- ===== 公共组件：回到顶部 ===== -->
+  <button type="button" class="back-to-top" aria-label="回到顶部">
+    <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+  </button>
+
+  <!-- 全站交互脚本（defer，不阻塞渲染），本页无额外页面脚本 -->
+  <script src="js/main.js" defer=""></script>
+
+
+</body></html>

@@ -1,0 +1,20 @@
+# Dependencies and generated builds
+node_modules/
+.next/
+*.tsbuildinfo
+apps/api/bin/
+coverage/
+
+# Local configuration and persistent business data
+.env
+.env.*
+!.env.example
+.runtime/
+*.dump
+*.backup
+
+# Workstation settings and logs
+.idea/
+.vscode/
+.DS_Store
+*.log

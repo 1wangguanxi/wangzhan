@@ -1,0 +1,326 @@
+/* ============================================================
+   page-process.css —— process.html（服务流程页）专属样式
+   依赖 style.css 的设计变量，禁止修改 style.css；
+   本页新增颜色一律再定义为变量后使用。
+   ============================================================ */
+
+:root {
+  /* 本页补充色（沿用品牌橙色系，无紫色） */
+  --c-accent-bg: #fef3c7;        /* 浅橙底（旺季区/提示） */
+  --c-accent-border: #fde68a;    /* 浅橙描边 */
+}
+
+/* 橙色小标签变体（旺季区标题用） */
+.section-tag--accent {
+  color: var(--c-accent-hover, #d97706) !important;
+  background-color: var(--c-accent-bg) !important;
+}
+
+/* ---------- 1. 总览时间轴（PC 横向 / 移动端纵向） ---------- */
+.pstep-overview { padding: var(--sp-6) 0; }
+
+.ptimeline {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--sp-5) var(--sp-4);
+}
+@media (min-width: 768px) { .ptimeline { padding: var(--sp-6) var(--sp-5); } }
+
+/* 移动端：纵向 */
+.ptimeline__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding-left: var(--sp-6);
+}
+/* 纵向连接线 */
+.ptimeline__list::before {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 22px;
+  bottom: 22px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--c-primary2), rgba(59, 130, 246, 0.15));
+}
+.ptimeline__item { position: relative; }
+.ptimeline__node {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-3);
+  border-radius: var(--radius-md);
+  color: var(--c-text);
+  transition: background-color var(--dur) var(--ease);
+}
+.ptimeline__node:hover { background-color: var(--c-primary-bg); }
+.ptimeline__num {
+  position: absolute;
+  left: calc(-1 * var(--sp-6) - 1px);
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--c-white);
+  border: 2px solid var(--c-primary2);
+  color: var(--c-primary);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease),
+              border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.ptimeline__label { font-weight: 600; }
+.ptimeline__time {
+  margin-left: auto;
+  flex: none;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--c-primary);
+  background-color: var(--c-primary-bg);
+  border-radius: var(--radius-full);
+  padding: 2px var(--sp-3);
+  white-space: nowrap;
+}
+/* 当前步骤高亮（page-process.js 滚动监听加 .is-active） */
+.ptimeline__node.is-active { background-color: var(--c-primary-bg); }
+.ptimeline__node.is-active .ptimeline__num {
+  background-color: var(--c-primary);
+  border-color: var(--c-primary);
+  color: var(--c-white);
+  box-shadow: var(--shadow-primary);
+}
+
+/* PC：横向 */
+@media (min-width: 992px) {
+  .ptimeline__list {
+    flex-direction: row;
+    gap: var(--sp-3);
+    padding-left: 0;
+    padding-top: 56px;
+  }
+  .ptimeline__list::before {
+    left: 5%;
+    right: 5%;
+    top: 22px;
+    bottom: auto;
+    width: auto;
+    height: 2px;
+    background: linear-gradient(to right, var(--c-primary2), rgba(59, 130, 246, 0.15));
+  }
+  .ptimeline__item { flex: 1; }
+  .ptimeline__node {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--sp-1);
+    padding: var(--sp-3) var(--sp-2);
+    height: 100%;
+  }
+  .ptimeline__num {
+    left: 50%;
+    top: -56px;
+    transform: translateX(-50%);
+  }
+  .ptimeline__time { margin-left: 0; margin-top: var(--sp-1); }
+}
+
+/* ---------- 2. 六步详解区块 ---------- */
+.pstep {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--sp-5);
+  margin-bottom: var(--sp-6);
+  scroll-margin-top: calc(var(--header-h) + var(--sp-4)); /* 锚点定位避开 sticky 头 */
+  transition: box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.pstep:hover { box-shadow: var(--shadow-md); }
+@media (min-width: 768px) { .pstep { padding: var(--sp-6); } }
+
+/* 头部：大编号 + 标题 + 时间徽章 */
+.pstep__head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-3) var(--sp-4);
+  margin-bottom: var(--sp-3);
+}
+.pstep__bignum {
+  flex: none;
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--c-primary);
+  opacity: 0.18;
+  font-variant-numeric: tabular-nums;
+}
+@media (min-width: 768px) { .pstep__bignum { font-size: 3.5rem; } }
+.pstep__titlebox { flex: 1; min-width: 180px; }
+.pstep__titlebox h2 { margin-bottom: 2px; }
+.pstep__tag {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--c-accent);
+  margin-right: var(--sp-2);
+}
+.pstep__subtitle { font-size: var(--fs-small); color: var(--c-text-3); }
+.pstep__time {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-1);
+  flex: none;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--c-primary);
+  background-color: var(--c-primary-bg);
+  border-radius: var(--radius-full);
+  padding: var(--sp-1) var(--sp-3);
+}
+.pstep__time .icon { width: 14px; height: 14px; }
+
+.pstep__desc { color: var(--c-text-2); margin-bottom: var(--sp-4); }
+
+/* 你做 / 我们做 两栏（移动端单列） */
+.pstep__cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+}
+@media (min-width: 768px) { .pstep__cols { grid-template-columns: 1fr 1fr; } }
+
+.pstep__col {
+  border-radius: var(--radius-md);
+  padding: var(--sp-4);
+  border: 1px solid var(--c-border-light);
+}
+.pstep__col--you { background-color: var(--c-bg-gray); }
+.pstep__col--we { background-color: var(--c-primary-bg); border-color: rgba(59, 130, 246, 0.25); }
+.pstep__col h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--fs-body);
+  margin-bottom: var(--sp-2);
+}
+.pstep__col--you h3 { color: var(--c-text); }
+.pstep__col--we h3 { color: var(--c-primary); }
+.pstep__col h3 .icon { width: 18px; height: 18px; flex: none; }
+.pstep__col--you h3 .icon { color: var(--c-text-3); }
+.pstep__col--we h3 .icon { color: var(--c-primary); }
+
+.plist li {
+  position: relative;
+  padding-left: 18px;
+  font-size: var(--fs-small);
+  color: var(--c-text-2);
+  margin-bottom: var(--sp-2);
+}
+.plist li:last-child { margin-bottom: 0; }
+.plist li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--c-primary2);
+}
+.pstep__col--you .plist li::before { background-color: var(--c-text-3); }
+
+/* 提示条（规则/红线引用） */
+.pstep__note {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+  padding: var(--sp-3) var(--sp-4);
+  background-color: var(--c-primary-bg);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: var(--radius-md);
+}
+.pstep__note .icon {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  margin-top: 3px;
+  color: var(--c-primary);
+}
+.pstep__note p { font-size: var(--fs-small); color: var(--c-text-2); }
+.pstep__note strong { color: var(--c-text); }
+.pstep__note--warn {
+  background-color: var(--c-accent-bg);
+  border-color: var(--c-accent-border);
+}
+.pstep__note--warn .icon { color: var(--c-accent); }
+
+/* 交付物 chip 标签 */
+.pstep__deliver {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+  border-top: 1px dashed var(--c-border);
+  padding-top: var(--sp-3);
+}
+.pstep__deliver-label {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: var(--c-text-3);
+  letter-spacing: 0.05em;
+  margin-right: var(--sp-1);
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--c-primary);
+  background-color: var(--c-primary-bg);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: var(--radius-full);
+  padding: 2px var(--sp-3);
+}
+
+/* ---------- 3. 旺季说明区（浅橙底） ---------- */
+.peak-section { background-color: var(--c-accent-bg); }
+.peak-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+}
+@media (min-width: 768px) { .peak-grid { grid-template-columns: repeat(3, 1fr); } }
+.peak-card {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-accent-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--sp-5);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.peak-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.peak-card__icon {
+  width: 46px;
+  height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  background-color: var(--c-accent-bg);
+  color: var(--c-accent);
+  margin-bottom: var(--sp-3);
+}
+.peak-card__icon .icon { width: 24px; height: 24px; }
+.peak-card h3 { margin-bottom: var(--sp-2); }
+.peak-card p { font-size: var(--fs-small); color: var(--c-text-2); }

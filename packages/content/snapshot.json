@@ -1,0 +1,2302 @@
+{
+  "cases": [
+    {
+      "id": 1,
+      "cat": "单片机·电气",
+      "title": "STM32水质检测系统（PH/浊度/温度）",
+      "imgs": [
+        "/images/cases/mcu/mcu-02.webp",
+        "/images/cases/mcu/mcu-05.webp"
+      ],
+      "thumbnail": "/images/cases/mcu/mcu-02_t.webp"
+    },
+    {
+      "id": 2,
+      "cat": "单片机·电气",
+      "title": "RFID智能门禁系统",
+      "imgs": [
+        "/images/cases/mcu/mcu-08.webp",
+        "/images/cases/mcu/mcu-01.webp"
+      ],
+      "thumbnail": "/images/cases/mcu/mcu-08_t.webp"
+    },
+    {
+      "id": 3,
+      "cat": "单片机·电气",
+      "title": "紫色PCB万年历（DS1302+温湿度）",
+      "imgs": ["/images/cases/mcu/mcu-07.webp"],
+      "thumbnail": "/images/cases/mcu/mcu-07_t.webp"
+    },
+    {
+      "id": 4,
+      "cat": "单片机·电气",
+      "title": "太阳能自动追光装置",
+      "imgs": ["/images/cases/mcu/mcu-12.webp"],
+      "thumbnail": "/images/cases/mcu/mcu-12_t.webp"
+    },
+    {
+      "id": 5,
+      "cat": "单片机·电气",
+      "title": "智能浇花/环境控制系统",
+      "imgs": [
+        "/images/cases/mcu/mcu-13.webp",
+        "/images/cases/mcu/mcu-04.webp"
+      ],
+      "thumbnail": "/images/cases/mcu/mcu-13_t.webp"
+    },
+    {
+      "id": 6,
+      "cat": "单片机·电气",
+      "title": "气体监测报警装置（双MQ传感器）",
+      "imgs": ["/images/cases/mcu/mcu-16.webp"],
+      "thumbnail": "/images/cases/mcu/mcu-16_t.webp"
+    },
+    {
+      "id": 7,
+      "cat": "PLC·工控",
+      "title": "四层电梯PLC控制系统仿真",
+      "imgs": ["/images/cases/plc/plc-01.webp"],
+      "thumbnail": "/images/cases/plc/plc-01_t.webp"
+    },
+    {
+      "id": 8,
+      "cat": "PLC·工控",
+      "title": "智能产线全自动锁螺丝机控制",
+      "imgs": ["/images/cases/plc/plc-03.webp"],
+      "thumbnail": "/images/cases/plc/plc-03_t.webp"
+    },
+    {
+      "id": 9,
+      "cat": "PLC·工控",
+      "title": "智能调温座椅控制系统",
+      "imgs": ["/images/cases/plc/plc-05.webp"],
+      "thumbnail": "/images/cases/plc/plc-05_t.webp"
+    },
+    {
+      "id": 10,
+      "cat": "PLC·工控",
+      "title": "印刷机PLC控制系统（三菱）",
+      "imgs": [
+        "/images/cases/plc/plc-11.webp",
+        "/images/cases/plc/plc-12.webp"
+      ],
+      "thumbnail": "/images/cases/plc/plc-11_t.webp"
+    },
+    {
+      "id": 11,
+      "cat": "PLC·工控",
+      "title": "输液管生产线控制系统",
+      "imgs": ["/images/cases/plc/plc-18.webp"],
+      "thumbnail": "/images/cases/plc/plc-18_t.webp"
+    },
+    {
+      "id": 12,
+      "cat": "PLC·工控",
+      "title": "大型水库闸门控制系统",
+      "imgs": ["/images/cases/plc/plc-20.webp"],
+      "thumbnail": "/images/cases/plc/plc-20_t.webp"
+    },
+    {
+      "id": 13,
+      "cat": "PLC·工控",
+      "title": "楼宇风机照明智能控制",
+      "imgs": [
+        "/images/cases/plc/plc-23.webp",
+        "/images/cases/plc/plc-24.webp"
+      ],
+      "thumbnail": "/images/cases/plc/plc-23_t.webp"
+    },
+    {
+      "id": 14,
+      "cat": "PLC·工控",
+      "title": "板栗制品生产线控制系统",
+      "imgs": ["/images/cases/plc/plc-25.webp"],
+      "thumbnail": "/images/cases/plc/plc-25_t.webp"
+    },
+    {
+      "id": 15,
+      "cat": "PLC·工控",
+      "title": "视觉筛选检测系统",
+      "imgs": ["/images/cases/plc/plc-58.webp"],
+      "thumbnail": "/images/cases/plc/plc-58_t.webp"
+    },
+    {
+      "id": 16,
+      "cat": "PLC·工控",
+      "title": "变频恒压供水系统",
+      "imgs": ["/images/cases/plc/plc-60.webp"],
+      "thumbnail": "/images/cases/plc/plc-60_t.webp"
+    },
+    {
+      "id": 17,
+      "cat": "机械",
+      "title": "管件自动上料搬运设备设计",
+      "imgs": ["/images/cases/mech/mech-02.webp"],
+      "thumbnail": "/images/cases/mech/mech-02_t.webp"
+    },
+    {
+      "id": 18,
+      "cat": "机械",
+      "title": "吊装工装夹具设计",
+      "imgs": ["/images/cases/mech/mech-04.webp"],
+      "thumbnail": "/images/cases/mech/mech-04_t.webp"
+    },
+    {
+      "id": 19,
+      "cat": "机械",
+      "title": "桌面式PCB雕刻机设计",
+      "imgs": [
+        "/images/cases/mech/mech-05.webp",
+        "/images/cases/mech/mech-06.webp",
+        "/images/cases/mech/mech-49.webp"
+      ],
+      "thumbnail": "/images/cases/mech/mech-05_t.webp"
+    },
+    {
+      "id": 20,
+      "cat": "机械",
+      "title": "车门锁机构设计与有限元分析",
+      "imgs": [
+        "/images/cases/mech/mech-17.webp",
+        "/images/cases/mech/mech-18.webp",
+        "/images/cases/mech/mech-19.webp"
+      ],
+      "thumbnail": "/images/cases/mech/mech-17_t.webp"
+    },
+    {
+      "id": 21,
+      "cat": "机械",
+      "title": "小型电动起重机设计",
+      "imgs": [
+        "/images/cases/mech/mech-09.webp",
+        "/images/cases/mech/mech-12.webp",
+        "/images/cases/mech/mech-47.webp"
+      ],
+      "thumbnail": "/images/cases/mech/mech-09_t.webp"
+    },
+    {
+      "id": 22,
+      "cat": "机械",
+      "title": "ANSYS结构仿真分析",
+      "imgs": [
+        "/images/cases/mech/mech-23.webp",
+        "/images/cases/mech/mech-24.webp",
+        "/images/cases/mech/mech-25.webp",
+        "/images/cases/mech/mech-48.webp"
+      ],
+      "thumbnail": "/images/cases/mech/mech-23_t.webp"
+    },
+    {
+      "id": 23,
+      "cat": "机械",
+      "title": "二级减速器设计",
+      "imgs": [
+        "/images/cases/mech/mech-26.webp",
+        "/images/cases/mech/mech-43.webp",
+        "/images/cases/mech/mech-50.webp",
+        "/images/cases/mech/mech-51.webp"
+      ],
+      "thumbnail": "/images/cases/mech/mech-26_t.webp"
+    },
+    {
+      "id": 24,
+      "cat": "机械",
+      "title": "料袋码垛机器人设计",
+      "imgs": ["/images/cases/mech/mech-33.webp"],
+      "thumbnail": "/images/cases/mech/mech-33_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "固定板换热器（壳管式）设计",
+      "imgs": ["/images/cases/mech/mech-01.webp"],
+      "id": 25,
+      "thumbnail": "/images/cases/mech/mech-01_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "带料斗自动化加工设备",
+      "imgs": ["/images/cases/mech/mech-03.webp"],
+      "id": 26,
+      "thumbnail": "/images/cases/mech/mech-03_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "工装零件工程图（卡板/止动爪）",
+      "imgs": [
+        "/images/cases/mech/mech-15.webp",
+        "/images/cases/mech/mech-16.webp"
+      ],
+      "id": 27,
+      "thumbnail": "/images/cases/mech/mech-15_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "管道检测爬行机器人",
+      "imgs": ["/images/cases/mech/mech-21.webp"],
+      "id": 28,
+      "thumbnail": "/images/cases/mech/mech-21_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "四旋翼无人机结构设计",
+      "imgs": ["/images/cases/mech/mech-22.webp"],
+      "id": 29,
+      "thumbnail": "/images/cases/mech/mech-22_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "皮带输送机参数化设计",
+      "imgs": ["/images/cases/mech/mech-30.webp"],
+      "id": 30,
+      "thumbnail": "/images/cases/mech/mech-30_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "履带式机器人底盘",
+      "imgs": ["/images/cases/mech/mech-35.webp"],
+      "id": 31,
+      "thumbnail": "/images/cases/mech/mech-35_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "双螺旋输送搅拌装置",
+      "imgs": ["/images/cases/mech/mech-36.webp"],
+      "id": 32,
+      "thumbnail": "/images/cases/mech/mech-36_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "翻转工装夹具设计",
+      "imgs": [
+        "/images/cases/mech/mech-44.webp",
+        "/images/cases/mech/mech-45.webp",
+        "/images/cases/mech/mech-46.webp"
+      ],
+      "id": 33,
+      "thumbnail": "/images/cases/mech/mech-44_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "叶片泵装配与图纸（长图）",
+      "imgs": ["/images/cases/mech/mech-40.webp"],
+      "id": 34,
+      "thumbnail": "/images/cases/mech/mech-40_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "阀门装配与CAD图纸（长图）",
+      "imgs": ["/images/cases/mech/mech-41.webp"],
+      "id": 35,
+      "thumbnail": "/images/cases/mech/mech-41_t.webp"
+    },
+    {
+      "cat": "机械",
+      "title": "球阀等CAD图纸拼版（长图）",
+      "imgs": ["/images/cases/mech/mech-42.webp"],
+      "id": 36,
+      "thumbnail": "/images/cases/mech/mech-42_t.webp"
+    },
+    {
+      "id": 37,
+      "cat": "计算机",
+      "title": "个人健康管理系统（Web）",
+      "imgs": [
+        "/images/cases/cs/cs-13-zhiyu.webp",
+        "/images/cases/cs/cs-14-zhiyu.webp",
+        "/images/cases/cs/cs-15-zhiyu.webp"
+      ],
+      "thumbnail": "/images/cases/cs/cs-13-zhiyu_t.webp"
+    },
+    {
+      "id": 38,
+      "cat": "计算机",
+      "title": "汀州古城旅游攻略小程序",
+      "imgs": [
+        "/images/cases/cs/cs-01.webp",
+        "/images/cases/cs/cs-29.webp",
+        "/images/cases/cs/cs-31.webp"
+      ],
+      "thumbnail": "/images/cases/cs/cs-01_t.webp"
+    },
+    {
+      "id": 39,
+      "cat": "计算机",
+      "title": "农产品交易平台",
+      "imgs": [
+        "/images/cases/cs/cs-23.webp",
+        "/images/cases/cs/cs-24.webp",
+        "/images/cases/cs/cs-25.webp"
+      ],
+      "thumbnail": "/images/cases/cs/cs-23_t.webp"
+    },
+    {
+      "id": 40,
+      "cat": "计算机",
+      "title": "AI职场助手",
+      "imgs": ["/images/cases/cs/cs-18.webp", "/images/cases/cs/cs-21.webp"],
+      "thumbnail": "/images/cases/cs/cs-18_t.webp"
+    },
+    {
+      "id": 41,
+      "cat": "计算机",
+      "title": "皮影纹样智能识别系统",
+      "imgs": ["/images/cases/cs/cs-02.webp"],
+      "thumbnail": "/images/cases/cs/cs-02_t.webp"
+    },
+    {
+      "id": 42,
+      "cat": "计算机",
+      "title": "深度学习预测算法优化（CNN-LSTM）",
+      "imgs": ["/images/cases/cs/cs-05.webp", "/images/cases/cs/cs-06.webp"],
+      "thumbnail": "/images/cases/cs/cs-05_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "综合能源多时间尺度调度优化",
+      "imgs": [
+        "/images/cases/sim/sim-01.webp",
+        "/images/cases/sim/sim-02.webp",
+        "/images/cases/sim/sim-03.webp",
+        "/images/cases/sim/sim-04.webp",
+        "/images/cases/sim/sim-05.webp",
+        "/images/cases/sim/sim-06.webp"
+      ],
+      "id": 43,
+      "thumbnail": "/images/cases/sim/sim-01_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "四旋翼无人机控制仿真",
+      "imgs": [
+        "/images/cases/sim/sim-07.webp",
+        "/images/cases/sim/sim-08.webp",
+        "/images/cases/sim/sim-09.webp",
+        "/images/cases/sim/sim-10.webp",
+        "/images/cases/sim/sim-11.webp",
+        "/images/cases/sim/sim-12.webp"
+      ],
+      "id": 44,
+      "thumbnail": "/images/cases/sim/sim-07_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "无人机编队飞行控制仿真",
+      "imgs": ["/images/cases/sim/sim-13.webp"],
+      "id": 45,
+      "thumbnail": "/images/cases/sim/sim-13_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "机器人轨迹跟踪控制",
+      "imgs": ["/images/cases/sim/sim-14.webp"],
+      "id": 46,
+      "thumbnail": "/images/cases/sim/sim-14_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "PID/微分先行PID/卡尔曼滤波对比",
+      "imgs": ["/images/cases/sim/sim-15.webp"],
+      "id": 47,
+      "thumbnail": "/images/cases/sim/sim-15_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "机械臂运动学轨迹仿真",
+      "imgs": [
+        "/images/cases/sim/sim-16.webp",
+        "/images/cases/sim/sim-17.webp",
+        "/images/cases/sim/sim-18.webp"
+      ],
+      "id": 48,
+      "thumbnail": "/images/cases/sim/sim-16_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "三相桥式整流电路仿真",
+      "imgs": [
+        "/images/cases/sim/sim-19.webp",
+        "/images/cases/sim/sim-20.webp",
+        "/images/cases/sim/sim-21.webp"
+      ],
+      "id": 49,
+      "thumbnail": "/images/cases/sim/sim-19_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "风光储微电网仿真",
+      "imgs": [
+        "/images/cases/sim/sim-22.webp",
+        "/images/cases/sim/sim-23.webp",
+        "/images/cases/sim/sim-24.webp",
+        "/images/cases/sim/sim-25.webp"
+      ],
+      "id": 50,
+      "thumbnail": "/images/cases/sim/sim-22_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "电源与功率电子系统仿真",
+      "imgs": [
+        "/images/cases/sim/sim-26.webp",
+        "/images/cases/sim/sim-27.webp",
+        "/images/cases/sim/sim-28.webp",
+        "/images/cases/sim/sim-29.webp",
+        "/images/cases/sim/sim-30.webp",
+        "/images/cases/sim/sim-31.webp",
+        "/images/cases/sim/sim-32.webp"
+      ],
+      "id": 51,
+      "thumbnail": "/images/cases/sim/sim-26_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "电机拖动与控制系统仿真",
+      "imgs": [
+        "/images/cases/sim/sim-33.webp",
+        "/images/cases/sim/sim-34.webp",
+        "/images/cases/sim/sim-35.webp"
+      ],
+      "id": 52,
+      "thumbnail": "/images/cases/sim/sim-33_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "电力系统暂态稳定分析",
+      "imgs": ["/images/cases/sim/sim-36.webp"],
+      "id": 53,
+      "thumbnail": "/images/cases/sim/sim-36_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "水泥水化微观结构仿真",
+      "imgs": [
+        "/images/cases/sim/sim-37.webp",
+        "/images/cases/sim/sim-38.webp",
+        "/images/cases/sim/sim-39.webp"
+      ],
+      "id": 54,
+      "thumbnail": "/images/cases/sim/sim-37_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "通信信号处理仿真",
+      "imgs": [
+        "/images/cases/sim/sim-40.webp",
+        "/images/cases/sim/sim-41.webp",
+        "/images/cases/sim/sim-42.webp"
+      ],
+      "id": 55,
+      "thumbnail": "/images/cases/sim/sim-40_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "金融时间序列分析",
+      "imgs": ["/images/cases/sim/sim-43.webp"],
+      "id": 56,
+      "thumbnail": "/images/cases/sim/sim-43_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "多目标优化算法（Pareto前沿）",
+      "imgs": ["/images/cases/sim/sim-44.webp"],
+      "id": 57,
+      "thumbnail": "/images/cases/sim/sim-44_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "物理场与曲面建模可视化",
+      "imgs": [
+        "/images/cases/sim/sim-45.webp",
+        "/images/cases/sim/sim-46.webp",
+        "/images/cases/sim/sim-47.webp"
+      ],
+      "id": 58,
+      "thumbnail": "/images/cases/sim/sim-45_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "运动学建模与数据拟合",
+      "imgs": [
+        "/images/cases/sim/sim-48.webp",
+        "/images/cases/sim/sim-49.webp",
+        "/images/cases/sim/sim-50.webp"
+      ],
+      "id": 59,
+      "thumbnail": "/images/cases/sim/sim-48_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "汽车悬架动力学仿真",
+      "imgs": ["/images/cases/sim/sim-51.webp"],
+      "id": 60,
+      "thumbnail": "/images/cases/sim/sim-51_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "电池充放电特性仿真",
+      "imgs": ["/images/cases/sim/sim-52.webp"],
+      "id": 61,
+      "thumbnail": "/images/cases/sim/sim-52_t.webp"
+    },
+    {
+      "cat": "仿真建模",
+      "title": "传感器标定仿真（磁力计/陀螺仪）",
+      "imgs": ["/images/cases/sim/sim-53.webp"],
+      "id": 62,
+      "thumbnail": "/images/cases/sim/sim-53_t.webp"
+    },
+    {
+      "id": 63,
+      "cat": "土木",
+      "title": "中学宿舍楼建筑平面设计",
+      "imgs": ["/images/cases/civil/civil-01.webp"],
+      "thumbnail": "/images/cases/civil/civil-01_t.webp"
+    },
+    {
+      "id": 64,
+      "cat": "土木",
+      "title": "宿舍楼立面与剖面设计",
+      "imgs": [
+        "/images/cases/civil/civil-06.webp",
+        "/images/cases/civil/civil-07.webp",
+        "/images/cases/civil/civil-08.webp",
+        "/images/cases/civil/civil-03.webp",
+        "/images/cases/civil/civil-04.webp",
+        "/images/cases/civil/civil-05.webp"
+      ],
+      "thumbnail": "/images/cases/civil/civil-06_t.webp"
+    },
+    {
+      "id": 65,
+      "cat": "艺术设计",
+      "title": "医用艾灸理疗床设计",
+      "imgs": ["/images/cases/art/art-01a.webp"],
+      "thumbnail": "/images/cases/art/art-01a_t.webp"
+    },
+    {
+      "id": 66,
+      "cat": "艺术设计",
+      "title": "膝离断义肢造型设计",
+      "imgs": ["/images/cases/art/art-01b.webp"],
+      "thumbnail": "/images/cases/art/art-01b_t.webp"
+    },
+    {
+      "id": 67,
+      "cat": "艺术设计",
+      "title": "叠式风力灭火器设计",
+      "imgs": ["/images/cases/art/art-02a.webp"],
+      "thumbnail": "/images/cases/art/art-02a_t.webp"
+    },
+    {
+      "id": 68,
+      "cat": "艺术设计",
+      "title": "民族元素服装《风花雪月》设计",
+      "imgs": ["/images/cases/art/art-02b.webp"],
+      "thumbnail": "/images/cases/art/art-02b_t.webp"
+    },
+    {
+      "id": 69,
+      "cat": "艺术设计",
+      "title": "高空壁面清洗机器人设计",
+      "imgs": ["/images/cases/art/art-03a.webp"],
+      "thumbnail": "/images/cases/art/art-03a_t.webp"
+    },
+    {
+      "id": 70,
+      "cat": "艺术设计",
+      "title": "CMF茶室家具设计",
+      "imgs": ["/images/cases/art/art-03b.webp"],
+      "thumbnail": "/images/cases/art/art-03b_t.webp"
+    },
+    {
+      "id": 71,
+      "cat": "艺术设计",
+      "title": "汽车展厅空间设计",
+      "imgs": ["/images/cases/art/art-04b.webp"],
+      "thumbnail": "/images/cases/art/art-04b_t.webp"
+    },
+    {
+      "id": 72,
+      "cat": "艺术设计",
+      "title": "「三茶序」茶叶包装设计",
+      "imgs": [
+        "/images/cases/art/art-05b.webp",
+        "/images/cases/art/art-07b.webp"
+      ],
+      "thumbnail": "/images/cases/art/art-05b_t.webp"
+    },
+    {
+      "id": 73,
+      "cat": "艺术设计",
+      "title": "通用笔壳结构设计",
+      "imgs": ["/images/cases/art/art-07a.webp"],
+      "thumbnail": "/images/cases/art/art-07a_t.webp"
+    },
+    {
+      "id": 74,
+      "cat": "艺术设计",
+      "title": "近海无人浒苔清洁船设计",
+      "imgs": ["/images/cases/art/art-08a.webp"],
+      "thumbnail": "/images/cases/art/art-08a_t.webp"
+    },
+    {
+      "id": 75,
+      "cat": "艺术设计",
+      "title": "「庐山云雾」茶品牌VI设计",
+      "imgs": [
+        "/images/cases/art/art-08b.webp",
+        "/images/cases/art/art-09b.webp",
+        "/images/cases/art/art-10b.webp",
+        "/images/cases/art/art-12b.webp"
+      ],
+      "thumbnail": "/images/cases/art/art-08b_t.webp"
+    },
+    {
+      "id": 76,
+      "cat": "艺术设计",
+      "title": "明清江南私家庭院设计",
+      "imgs": ["/images/cases/art/art-09a.webp"],
+      "thumbnail": "/images/cases/art/art-09a_t.webp"
+    },
+    {
+      "id": 77,
+      "cat": "艺术设计",
+      "title": "社区景观更新设计",
+      "imgs": ["/images/cases/art/art-10a.webp"],
+      "thumbnail": "/images/cases/art/art-10a_t.webp"
+    },
+    {
+      "id": 78,
+      "cat": "艺术设计",
+      "title": "「秋野树屋」糕点包装设计",
+      "imgs": ["/images/cases/art/art-13b.webp"],
+      "thumbnail": "/images/cases/art/art-13b_t.webp"
+    },
+    {
+      "id": 79,
+      "cat": "艺术设计",
+      "title": "城市街道更新·光影记忆",
+      "imgs": ["/images/cases/art/art-13a.webp"],
+      "thumbnail": "/images/cases/art/art-13a_t.webp"
+    },
+    {
+      "id": 80,
+      "cat": "艺术设计",
+      "title": "适老化智慧社区设计",
+      "imgs": ["/images/cases/art/art-15a.webp"],
+      "thumbnail": "/images/cases/art/art-15a_t.webp"
+    },
+    {
+      "id": 81,
+      "cat": "艺术设计",
+      "title": "可上楼婴儿车设计",
+      "imgs": ["/images/cases/art/art-16a.webp"],
+      "thumbnail": "/images/cases/art/art-16a_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "单片机仿真题目合集（10宫格）",
+      "imgs": ["/images/cases/mcu/mcu-101.webp"],
+      "id": 82,
+      "thumbnail": "/images/cases/mcu/mcu-101_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "智能鱼缸+STM32智能门禁功能设计",
+      "imgs": ["/images/cases/mcu/mcu-102.webp"],
+      "id": 83,
+      "thumbnail": "/images/cases/mcu/mcu-102_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "电子时钟+五种波形发生器",
+      "imgs": ["/images/cases/mcu/mcu-103.webp"],
+      "id": 84,
+      "thumbnail": "/images/cases/mcu/mcu-103_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "智能路灯控制+简易计数器",
+      "imgs": ["/images/cases/mcu/mcu-104.webp"],
+      "id": 85,
+      "thumbnail": "/images/cases/mcu/mcu-104_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "宠物自动喂养机+交通灯控制",
+      "imgs": ["/images/cases/mcu/mcu-105.webp"],
+      "id": 86,
+      "thumbnail": "/images/cases/mcu/mcu-105_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "环境光/人体红外/声控+光控照明",
+      "imgs": ["/images/cases/mcu/mcu-106.webp"],
+      "id": 87,
+      "thumbnail": "/images/cases/mcu/mcu-106_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "51/STM32仿真题目合集（12宫格）",
+      "imgs": ["/images/cases/mcu/mcu-107.webp"],
+      "id": 88,
+      "thumbnail": "/images/cases/mcu/mcu-107_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "节日彩灯控制器+万用表检测",
+      "imgs": ["/images/cases/mcu/mcu-108.webp"],
+      "id": 89,
+      "thumbnail": "/images/cases/mcu/mcu-108_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "教室灯光控制+太阳能充电",
+      "imgs": ["/images/cases/mcu/mcu-109.webp"],
+      "id": 90,
+      "thumbnail": "/images/cases/mcu/mcu-109_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "模拟红外遥控器+步进电机控制",
+      "imgs": ["/images/cases/mcu/mcu-110.webp"],
+      "id": 91,
+      "thumbnail": "/images/cases/mcu/mcu-110_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "RLC测量仪+RS485多机通信",
+      "imgs": ["/images/cases/mcu/mcu-111.webp"],
+      "id": 92,
+      "thumbnail": "/images/cases/mcu/mcu-111_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "单片机原理图合集（12宫格·一）",
+      "imgs": ["/images/cases/mcu/mcu-112.webp"],
+      "id": 93,
+      "thumbnail": "/images/cases/mcu/mcu-112_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "遥控/避障/循迹小车",
+      "imgs": ["/images/cases/mcu/mcu-113.webp"],
+      "id": 94,
+      "thumbnail": "/images/cases/mcu/mcu-113_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "红外测距报警器+机械臂",
+      "imgs": ["/images/cases/mcu/mcu-114.webp"],
+      "id": 95,
+      "thumbnail": "/images/cases/mcu/mcu-114_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "电流检测+灯光控制系统",
+      "imgs": ["/images/cases/mcu/mcu-115.webp"],
+      "id": 96,
+      "thumbnail": "/images/cases/mcu/mcu-115_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "大棚温控系统+定时流水灯",
+      "imgs": ["/images/cases/mcu/mcu-116.webp"],
+      "id": 97,
+      "thumbnail": "/images/cases/mcu/mcu-116_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "智能家居+智能花卉养护",
+      "imgs": ["/images/cases/mcu/mcu-117.webp"],
+      "id": 98,
+      "thumbnail": "/images/cases/mcu/mcu-117_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "单片机原理图合集（12宫格·二）",
+      "imgs": ["/images/cases/mcu/mcu-118.webp"],
+      "id": 99,
+      "thumbnail": "/images/cases/mcu/mcu-118_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "八路抢答器+30秒倒计时",
+      "imgs": ["/images/cases/mcu/mcu-119.webp"],
+      "id": 100,
+      "thumbnail": "/images/cases/mcu/mcu-119_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "篮球计时记分器+简易密码锁",
+      "imgs": ["/images/cases/mcu/mcu-120.webp"],
+      "id": 101,
+      "thumbnail": "/images/cases/mcu/mcu-120_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "称重检测系统+LED点阵广告牌",
+      "imgs": ["/images/cases/mcu/mcu-121.webp"],
+      "id": 102,
+      "thumbnail": "/images/cases/mcu/mcu-121_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "加热炉恒温+直流电机调速",
+      "imgs": ["/images/cases/mcu/mcu-122.webp"],
+      "id": 103,
+      "thumbnail": "/images/cases/mcu/mcu-122_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "单片机实物题目合集（18宫格）",
+      "imgs": ["/images/cases/mcu/mcu-123.webp"],
+      "id": 104,
+      "thumbnail": "/images/cases/mcu/mcu-123_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "温湿度检测控制系统",
+      "imgs": ["/images/cases/mcu/mcu-124.webp"],
+      "id": 105,
+      "thumbnail": "/images/cases/mcu/mcu-124_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能厨房安全检测",
+      "imgs": ["/images/cases/mcu/mcu-125.webp"],
+      "id": 106,
+      "thumbnail": "/images/cases/mcu/mcu-125_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能花盆系统",
+      "imgs": ["/images/cases/mcu/mcu-126.webp"],
+      "id": 107,
+      "thumbnail": "/images/cases/mcu/mcu-126_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "水塔水位监测+无刷电机调速",
+      "imgs": ["/images/cases/mcu/mcu-127.webp"],
+      "id": 108,
+      "thumbnail": "/images/cases/mcu/mcu-127_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "电流电压功率测试+编码器",
+      "imgs": ["/images/cases/mcu/mcu-128.webp"],
+      "id": 109,
+      "thumbnail": "/images/cases/mcu/mcu-128_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "单片机实物精品合集（6宫格）",
+      "imgs": ["/images/cases/mcu/mcu-129.webp"],
+      "id": 110,
+      "thumbnail": "/images/cases/mcu/mcu-129_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能窗帘系统",
+      "imgs": ["/images/cases/mcu/mcu-130.webp"],
+      "id": 111,
+      "thumbnail": "/images/cases/mcu/mcu-130_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "51智能多功能探测小车",
+      "imgs": ["/images/cases/mcu/mcu-131.webp"],
+      "id": 112,
+      "thumbnail": "/images/cases/mcu/mcu-131_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能药箱/定时药盒",
+      "imgs": ["/images/cases/mcu/mcu-132.webp"],
+      "id": 113,
+      "thumbnail": "/images/cases/mcu/mcu-132_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "单片机最小系统原理图合集",
+      "imgs": ["/images/cases/mcu/mcu-133.webp"],
+      "id": 114,
+      "thumbnail": "/images/cases/mcu/mcu-133_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "浇水/时钟/照明/温控风扇合集",
+      "imgs": ["/images/cases/mcu/mcu-134.webp"],
+      "id": 115,
+      "thumbnail": "/images/cases/mcu/mcu-134_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "PM2.5/温湿度/密码锁等合集",
+      "imgs": ["/images/cases/mcu/mcu-135.webp"],
+      "id": 116,
+      "thumbnail": "/images/cases/mcu/mcu-135_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32冷链运输监控",
+      "imgs": ["/images/cases/mcu/mcu-136.webp"],
+      "id": 117,
+      "thumbnail": "/images/cases/mcu/mcu-136_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能净化器",
+      "imgs": ["/images/cases/mcu/mcu-137.webp"],
+      "id": 118,
+      "thumbnail": "/images/cases/mcu/mcu-137_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32厨房火灾监测",
+      "imgs": ["/images/cases/mcu/mcu-138.webp"],
+      "id": 119,
+      "thumbnail": "/images/cases/mcu/mcu-138_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "恒温箱/病床呼叫/心率计合集",
+      "imgs": ["/images/cases/mcu/mcu-139.webp"],
+      "id": 120,
+      "thumbnail": "/images/cases/mcu/mcu-139_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "单片机设计实物合集（招牌版）",
+      "imgs": ["/images/cases/mcu/mcu-140.webp"],
+      "id": 121,
+      "thumbnail": "/images/cases/mcu/mcu-140_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "PWM调光灯+心率脉搏计",
+      "imgs": ["/images/cases/mcu/mcu-141.webp"],
+      "id": 122,
+      "thumbnail": "/images/cases/mcu/mcu-141_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能井盖系统",
+      "imgs": ["/images/cases/mcu/mcu-142.webp"],
+      "id": 123,
+      "thumbnail": "/images/cases/mcu/mcu-142_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能体重秤",
+      "imgs": ["/images/cases/mcu/mcu-143.webp"],
+      "id": 124,
+      "thumbnail": "/images/cases/mcu/mcu-143_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能头盔系统",
+      "imgs": ["/images/cases/mcu/mcu-144.webp"],
+      "id": 125,
+      "thumbnail": "/images/cases/mcu/mcu-144_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "转速仪+数码秒表",
+      "imgs": ["/images/cases/mcu/mcu-145.webp"],
+      "id": 126,
+      "thumbnail": "/images/cases/mcu/mcu-145_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "密码锁+热敏电阻测温",
+      "imgs": ["/images/cases/mcu/mcu-146.webp"],
+      "id": 127,
+      "thumbnail": "/images/cases/mcu/mcu-146_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32人体健康监测+智能花盆",
+      "imgs": ["/images/cases/mcu/mcu-147.webp"],
+      "id": 128,
+      "thumbnail": "/images/cases/mcu/mcu-147_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32水质检测+语音分类垃圾桶",
+      "imgs": ["/images/cases/mcu/mcu-148.webp"],
+      "id": 129,
+      "thumbnail": "/images/cases/mcu/mcu-148_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "门铃音乐播放器+数码管时钟",
+      "imgs": ["/images/cases/mcu/mcu-149.webp"],
+      "id": 130,
+      "thumbnail": "/images/cases/mcu/mcu-149_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "8x8点阵广告牌+电子秤",
+      "imgs": ["/images/cases/mcu/mcu-150.webp"],
+      "id": 131,
+      "thumbnail": "/images/cases/mcu/mcu-150_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "单片机模块原理图散集",
+      "imgs": ["/images/cases/mcu/mcu-151.webp"],
+      "id": 132,
+      "thumbnail": "/images/cases/mcu/mcu-151_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "RP2040/树莓派主控原理图合集",
+      "imgs": ["/images/cases/mcu/mcu-152.webp"],
+      "id": 133,
+      "thumbnail": "/images/cases/mcu/mcu-152_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "AD590温度检测+PT100测温计",
+      "imgs": ["/images/cases/mcu/mcu-153.webp"],
+      "id": 134,
+      "thumbnail": "/images/cases/mcu/mcu-153_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "竞赛抢答器+直流电压电流测量",
+      "imgs": ["/images/cases/mcu/mcu-154.webp"],
+      "id": 135,
+      "thumbnail": "/images/cases/mcu/mcu-154_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "智能鞋柜+冷链运输（双拼）",
+      "imgs": ["/images/cases/mcu/mcu-155.webp"],
+      "id": 136,
+      "thumbnail": "/images/cases/mcu/mcu-155_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "汽车充电安全检测+智能花盆",
+      "imgs": ["/images/cases/mcu/mcu-156.webp"],
+      "id": 137,
+      "thumbnail": "/images/cases/mcu/mcu-156_t.webp"
+    },
+    {
+      "cat": "单片机·电气",
+      "title": "STM32智能衣柜系统",
+      "imgs": ["/images/cases/mcu/mcu-157.webp"],
+      "id": 138,
+      "thumbnail": "/images/cases/mcu/mcu-157_t.webp"
+    }
+  ],
+  "schools": [
+    {
+      "id": 1,
+      "thumbnail": "/images/schools/s-036_t.webp",
+      "src": "/images/schools/s-036.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 2,
+      "thumbnail": "/images/schools/s-037_t.webp",
+      "src": "/images/schools/s-037.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 3,
+      "thumbnail": "/images/schools/s-038_t.webp",
+      "src": "/images/schools/s-038.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 4,
+      "thumbnail": "/images/schools/s-039_t.webp",
+      "src": "/images/schools/s-039.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 5,
+      "thumbnail": "/images/schools/s-040_t.webp",
+      "src": "/images/schools/s-040.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 6,
+      "thumbnail": "/images/schools/s-041_t.webp",
+      "src": "/images/schools/s-041.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 7,
+      "thumbnail": "/images/schools/s-042_t.webp",
+      "src": "/images/schools/s-042.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 8,
+      "thumbnail": "/images/schools/s-043_t.webp",
+      "src": "/images/schools/s-043.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 9,
+      "thumbnail": "/images/schools/s-044_t.webp",
+      "src": "/images/schools/s-044.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 10,
+      "thumbnail": "/images/schools/s-045_t.webp",
+      "src": "/images/schools/s-045.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 11,
+      "thumbnail": "/images/schools/s-046_t.webp",
+      "src": "/images/schools/s-046.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 12,
+      "thumbnail": "/images/schools/s-047_t.webp",
+      "src": "/images/schools/s-047.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 13,
+      "thumbnail": "/images/schools/s-048_t.webp",
+      "src": "/images/schools/s-048.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 14,
+      "thumbnail": "/images/schools/s-049_t.webp",
+      "src": "/images/schools/s-049.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 15,
+      "thumbnail": "/images/schools/s-050_t.webp",
+      "src": "/images/schools/s-050.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 16,
+      "thumbnail": "/images/schools/s-051_t.webp",
+      "src": "/images/schools/s-051.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 17,
+      "thumbnail": "/images/schools/s-052_t.webp",
+      "src": "/images/schools/s-052.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 18,
+      "thumbnail": "/images/schools/s-053_t.webp",
+      "src": "/images/schools/s-053.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 19,
+      "thumbnail": "/images/schools/s-054_t.webp",
+      "src": "/images/schools/s-054.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 20,
+      "thumbnail": "/images/schools/s-055_t.webp",
+      "src": "/images/schools/s-055.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 21,
+      "thumbnail": "/images/schools/s-056_t.webp",
+      "src": "/images/schools/s-056.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 22,
+      "thumbnail": "/images/schools/s-057_t.webp",
+      "src": "/images/schools/s-057.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 23,
+      "thumbnail": "/images/schools/s-058_t.webp",
+      "src": "/images/schools/s-058.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 24,
+      "thumbnail": "/images/schools/s-059_t.webp",
+      "src": "/images/schools/s-059.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 25,
+      "thumbnail": "/images/schools/s-060_t.webp",
+      "src": "/images/schools/s-060.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 26,
+      "thumbnail": "/images/schools/s-061_t.webp",
+      "src": "/images/schools/s-061.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 27,
+      "thumbnail": "/images/schools/s-062_t.webp",
+      "src": "/images/schools/s-062.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 28,
+      "thumbnail": "/images/schools/s-063_t.webp",
+      "src": "/images/schools/s-063.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 29,
+      "thumbnail": "/images/schools/s-064_t.webp",
+      "src": "/images/schools/s-064.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 30,
+      "thumbnail": "/images/schools/s-065_t.webp",
+      "src": "/images/schools/s-065.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 31,
+      "thumbnail": "/images/schools/s-066_t.webp",
+      "src": "/images/schools/s-066.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 32,
+      "thumbnail": "/images/schools/s-067_t.webp",
+      "src": "/images/schools/s-067.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 33,
+      "thumbnail": "/images/schools/s-068_t.webp",
+      "src": "/images/schools/s-068.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 34,
+      "thumbnail": "/images/schools/s-069_t.webp",
+      "src": "/images/schools/s-069.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 35,
+      "thumbnail": "/images/schools/s-070_t.webp",
+      "src": "/images/schools/s-070.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 36,
+      "thumbnail": "/images/schools/s-071_t.webp",
+      "src": "/images/schools/s-071.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 37,
+      "thumbnail": "/images/schools/s-072_t.webp",
+      "src": "/images/schools/s-072.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 38,
+      "thumbnail": "/images/schools/s-073_t.webp",
+      "src": "/images/schools/s-073.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 39,
+      "thumbnail": "/images/schools/s-074_t.webp",
+      "src": "/images/schools/s-074.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 40,
+      "thumbnail": "/images/schools/s-075_t.webp",
+      "src": "/images/schools/s-075.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 41,
+      "thumbnail": "/images/schools/s-076_t.webp",
+      "src": "/images/schools/s-076.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 42,
+      "thumbnail": "/images/schools/s-077_t.webp",
+      "src": "/images/schools/s-077.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 43,
+      "thumbnail": "/images/schools/s-078_t.webp",
+      "src": "/images/schools/s-078.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 44,
+      "thumbnail": "/images/schools/s-079_t.webp",
+      "src": "/images/schools/s-079.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 45,
+      "thumbnail": "/images/schools/s-080_t.webp",
+      "src": "/images/schools/s-080.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 46,
+      "thumbnail": "/images/schools/s-081_t.webp",
+      "src": "/images/schools/s-081.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 47,
+      "thumbnail": "/images/schools/s-083_t.webp",
+      "src": "/images/schools/s-083.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 48,
+      "thumbnail": "/images/schools/s-084_t.webp",
+      "src": "/images/schools/s-084.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 49,
+      "thumbnail": "/images/schools/s-085_t.webp",
+      "src": "/images/schools/s-085.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 50,
+      "thumbnail": "/images/schools/s-086_t.webp",
+      "src": "/images/schools/s-086.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 51,
+      "thumbnail": "/images/schools/s-087_t.webp",
+      "src": "/images/schools/s-087.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 52,
+      "thumbnail": "/images/schools/s-088_t.webp",
+      "src": "/images/schools/s-088.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 53,
+      "thumbnail": "/images/schools/s-089_t.webp",
+      "src": "/images/schools/s-089.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 54,
+      "thumbnail": "/images/schools/s-090_t.webp",
+      "src": "/images/schools/s-090.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 55,
+      "thumbnail": "/images/schools/s-091_t.webp",
+      "src": "/images/schools/s-091.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 56,
+      "thumbnail": "/images/schools/s-092_t.webp",
+      "src": "/images/schools/s-092.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 57,
+      "thumbnail": "/images/schools/s-093_t.webp",
+      "src": "/images/schools/s-093.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 58,
+      "thumbnail": "/images/schools/s-094_t.webp",
+      "src": "/images/schools/s-094.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 59,
+      "thumbnail": "/images/schools/s-095_t.webp",
+      "src": "/images/schools/s-095.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 60,
+      "thumbnail": "/images/schools/s-096_t.webp",
+      "src": "/images/schools/s-096.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 61,
+      "thumbnail": "/images/schools/s-097_t.webp",
+      "src": "/images/schools/s-097.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 62,
+      "thumbnail": "/images/schools/s-098_t.webp",
+      "src": "/images/schools/s-098.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 63,
+      "thumbnail": "/images/schools/s-101_t.webp",
+      "src": "/images/schools/s-101.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 64,
+      "thumbnail": "/images/schools/s-102_t.webp",
+      "src": "/images/schools/s-102.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 65,
+      "thumbnail": "/images/schools/s-103_t.webp",
+      "src": "/images/schools/s-103.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 66,
+      "thumbnail": "/images/schools/s-104_t.webp",
+      "src": "/images/schools/s-104.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 67,
+      "thumbnail": "/images/schools/s-105_t.webp",
+      "src": "/images/schools/s-105.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 68,
+      "thumbnail": "/images/schools/s-106_t.webp",
+      "src": "/images/schools/s-106.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 69,
+      "thumbnail": "/images/schools/s-107_t.webp",
+      "src": "/images/schools/s-107.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 70,
+      "thumbnail": "/images/schools/s-108_t.webp",
+      "src": "/images/schools/s-108.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 71,
+      "thumbnail": "/images/schools/s-109_t.webp",
+      "src": "/images/schools/s-109.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 72,
+      "thumbnail": "/images/schools/s-110_t.webp",
+      "src": "/images/schools/s-110.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 73,
+      "thumbnail": "/images/schools/s-111_t.webp",
+      "src": "/images/schools/s-111.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 74,
+      "thumbnail": "/images/schools/s-112_t.webp",
+      "src": "/images/schools/s-112.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 75,
+      "thumbnail": "/images/schools/s-113_t.webp",
+      "src": "/images/schools/s-113.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 76,
+      "thumbnail": "/images/schools/s-114_t.webp",
+      "src": "/images/schools/s-114.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 77,
+      "thumbnail": "/images/schools/s-115_t.webp",
+      "src": "/images/schools/s-115.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 78,
+      "thumbnail": "/images/schools/s-116_t.webp",
+      "src": "/images/schools/s-116.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 79,
+      "thumbnail": "/images/schools/s-117_t.webp",
+      "src": "/images/schools/s-117.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 80,
+      "thumbnail": "/images/schools/s-118_t.webp",
+      "src": "/images/schools/s-118.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 81,
+      "thumbnail": "/images/schools/s-119_t.webp",
+      "src": "/images/schools/s-119.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 82,
+      "thumbnail": "/images/schools/s-120_t.webp",
+      "src": "/images/schools/s-120.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 83,
+      "thumbnail": "/images/schools/s-121_t.webp",
+      "src": "/images/schools/s-121.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 84,
+      "thumbnail": "/images/schools/s-122_t.webp",
+      "src": "/images/schools/s-122.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 85,
+      "thumbnail": "/images/schools/s-123_t.webp",
+      "src": "/images/schools/s-123.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 86,
+      "thumbnail": "/images/schools/s-124_t.webp",
+      "src": "/images/schools/s-124.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 87,
+      "thumbnail": "/images/schools/s-125_t.webp",
+      "src": "/images/schools/s-125.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 88,
+      "thumbnail": "/images/schools/s-126_t.webp",
+      "src": "/images/schools/s-126.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 89,
+      "thumbnail": "/images/schools/s-127_t.webp",
+      "src": "/images/schools/s-127.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 90,
+      "thumbnail": "/images/schools/s-128_t.webp",
+      "src": "/images/schools/s-128.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 91,
+      "thumbnail": "/images/schools/s-129_t.webp",
+      "src": "/images/schools/s-129.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 92,
+      "thumbnail": "/images/schools/s-130_t.webp",
+      "src": "/images/schools/s-130.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 93,
+      "thumbnail": "/images/schools/s-131_t.webp",
+      "src": "/images/schools/s-131.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 94,
+      "thumbnail": "/images/schools/s-132_t.webp",
+      "src": "/images/schools/s-132.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 95,
+      "thumbnail": "/images/schools/s-133_t.webp",
+      "src": "/images/schools/s-133.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 96,
+      "thumbnail": "/images/schools/s-183_t.webp",
+      "src": "/images/schools/s-183.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 97,
+      "thumbnail": "/images/schools/s-184_t.webp",
+      "src": "/images/schools/s-184.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 98,
+      "thumbnail": "/images/schools/s-185_t.webp",
+      "src": "/images/schools/s-185.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 99,
+      "thumbnail": "/images/schools/s-186_t.webp",
+      "src": "/images/schools/s-186.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 100,
+      "thumbnail": "/images/schools/s-187_t.webp",
+      "src": "/images/schools/s-187.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 101,
+      "thumbnail": "/images/schools/s-188_t.webp",
+      "src": "/images/schools/s-188.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 102,
+      "thumbnail": "/images/schools/s-189_t.webp",
+      "src": "/images/schools/s-189.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 103,
+      "thumbnail": "/images/schools/s-190_t.webp",
+      "src": "/images/schools/s-190.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 104,
+      "thumbnail": "/images/schools/s-191_t.webp",
+      "src": "/images/schools/s-191.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 105,
+      "thumbnail": "/images/schools/s-192_t.webp",
+      "src": "/images/schools/s-192.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 106,
+      "thumbnail": "/images/schools/s-193_t.webp",
+      "src": "/images/schools/s-193.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 107,
+      "thumbnail": "/images/schools/s-194_t.webp",
+      "src": "/images/schools/s-194.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 108,
+      "thumbnail": "/images/schools/s-195_t.webp",
+      "src": "/images/schools/s-195.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 109,
+      "thumbnail": "/images/schools/s-196_t.webp",
+      "src": "/images/schools/s-196.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 110,
+      "thumbnail": "/images/schools/s-197_t.webp",
+      "src": "/images/schools/s-197.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 111,
+      "thumbnail": "/images/schools/s-198_t.webp",
+      "src": "/images/schools/s-198.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 112,
+      "thumbnail": "/images/schools/s-199_t.webp",
+      "src": "/images/schools/s-199.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 113,
+      "thumbnail": "/images/schools/s-200_t.webp",
+      "src": "/images/schools/s-200.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 114,
+      "thumbnail": "/images/schools/s-201_t.webp",
+      "src": "/images/schools/s-201.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 115,
+      "thumbnail": "/images/schools/s-202_t.webp",
+      "src": "/images/schools/s-202.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 116,
+      "thumbnail": "/images/schools/s-203_t.webp",
+      "src": "/images/schools/s-203.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 117,
+      "thumbnail": "/images/schools/s-204_t.webp",
+      "src": "/images/schools/s-204.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 118,
+      "thumbnail": "/images/schools/s-205_t.webp",
+      "src": "/images/schools/s-205.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 119,
+      "thumbnail": "/images/schools/s-206_t.webp",
+      "src": "/images/schools/s-206.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 120,
+      "thumbnail": "/images/schools/s-207_t.webp",
+      "src": "/images/schools/s-207.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 121,
+      "thumbnail": "/images/schools/s-208_t.webp",
+      "src": "/images/schools/s-208.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 122,
+      "thumbnail": "/images/schools/s-209_t.webp",
+      "src": "/images/schools/s-209.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 123,
+      "thumbnail": "/images/schools/s-210_t.webp",
+      "src": "/images/schools/s-210.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 124,
+      "thumbnail": "/images/schools/s-211_t.webp",
+      "src": "/images/schools/s-211.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 125,
+      "thumbnail": "/images/schools/s-212_t.webp",
+      "src": "/images/schools/s-212.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 126,
+      "thumbnail": "/images/schools/s-213_t.webp",
+      "src": "/images/schools/s-213.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 127,
+      "thumbnail": "/images/schools/s-214_t.webp",
+      "src": "/images/schools/s-214.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 128,
+      "thumbnail": "/images/schools/s-215_t.webp",
+      "src": "/images/schools/s-215.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 129,
+      "thumbnail": "/images/schools/s-216_t.webp",
+      "src": "/images/schools/s-216.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 130,
+      "thumbnail": "/images/schools/s-001_t.webp",
+      "src": "/images/schools/s-001.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 131,
+      "thumbnail": "/images/schools/s-002_t.webp",
+      "src": "/images/schools/s-002.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 132,
+      "thumbnail": "/images/schools/s-003_t.webp",
+      "src": "/images/schools/s-003.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 133,
+      "thumbnail": "/images/schools/s-004_t.webp",
+      "src": "/images/schools/s-004.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 134,
+      "thumbnail": "/images/schools/s-005_t.webp",
+      "src": "/images/schools/s-005.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 135,
+      "thumbnail": "/images/schools/s-006_t.webp",
+      "src": "/images/schools/s-006.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 136,
+      "thumbnail": "/images/schools/s-007_t.webp",
+      "src": "/images/schools/s-007.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 137,
+      "thumbnail": "/images/schools/s-008_t.webp",
+      "src": "/images/schools/s-008.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 138,
+      "thumbnail": "/images/schools/s-009_t.webp",
+      "src": "/images/schools/s-009.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 139,
+      "thumbnail": "/images/schools/s-010_t.webp",
+      "src": "/images/schools/s-010.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 140,
+      "thumbnail": "/images/schools/s-011_t.webp",
+      "src": "/images/schools/s-011.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 141,
+      "thumbnail": "/images/schools/s-012_t.webp",
+      "src": "/images/schools/s-012.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 142,
+      "thumbnail": "/images/schools/s-013_t.webp",
+      "src": "/images/schools/s-013.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 143,
+      "thumbnail": "/images/schools/s-014_t.webp",
+      "src": "/images/schools/s-014.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 144,
+      "thumbnail": "/images/schools/s-015_t.webp",
+      "src": "/images/schools/s-015.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 145,
+      "thumbnail": "/images/schools/s-016_t.webp",
+      "src": "/images/schools/s-016.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 146,
+      "thumbnail": "/images/schools/s-017_t.webp",
+      "src": "/images/schools/s-017.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 147,
+      "thumbnail": "/images/schools/s-018_t.webp",
+      "src": "/images/schools/s-018.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 148,
+      "thumbnail": "/images/schools/s-019_t.webp",
+      "src": "/images/schools/s-019.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 149,
+      "thumbnail": "/images/schools/s-020_t.webp",
+      "src": "/images/schools/s-020.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 150,
+      "thumbnail": "/images/schools/s-021_t.webp",
+      "src": "/images/schools/s-021.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 151,
+      "thumbnail": "/images/schools/s-022_t.webp",
+      "src": "/images/schools/s-022.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 152,
+      "thumbnail": "/images/schools/s-023_t.webp",
+      "src": "/images/schools/s-023.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 153,
+      "thumbnail": "/images/schools/s-024_t.webp",
+      "src": "/images/schools/s-024.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 154,
+      "thumbnail": "/images/schools/s-025_t.webp",
+      "src": "/images/schools/s-025.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 155,
+      "thumbnail": "/images/schools/s-026_t.webp",
+      "src": "/images/schools/s-026.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 156,
+      "thumbnail": "/images/schools/s-027_t.webp",
+      "src": "/images/schools/s-027.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 157,
+      "thumbnail": "/images/schools/s-028_t.webp",
+      "src": "/images/schools/s-028.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 158,
+      "thumbnail": "/images/schools/s-029_t.webp",
+      "src": "/images/schools/s-029.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 159,
+      "thumbnail": "/images/schools/s-031_t.webp",
+      "src": "/images/schools/s-031.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 160,
+      "thumbnail": "/images/schools/s-032_t.webp",
+      "src": "/images/schools/s-032.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 161,
+      "thumbnail": "/images/schools/s-034_t.webp",
+      "src": "/images/schools/s-034.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    },
+    {
+      "id": 162,
+      "thumbnail": "/images/schools/s-035_t.webp",
+      "src": "/images/schools/s-035.webp",
+      "alt": "合作院校毕业设计封面（仅展示封面，已脱敏）"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1,
+      "category": "service",
+      "question": "论文是你们全包吗？",
+      "answer": "不是全包。我们做的是毕业论文/设计辅导服务，包括选题建议、开题报告指导、大纲搭建、正文写作思路辅导、修改建议、格式规范优化、查重降重辅导、答辩准备指导。说白了就是帮你把论文从无到有弄出来、弄规范、弄到位，所有内容都是辅导性质，最终论文是你自己的。"
+    },
+    {
+      "id": 2,
+      "category": "service",
+      "question": "辅导具体包括什么？",
+      "answer": "从选题到答辩全覆盖：选题建议、开题报告/任务书指导、大纲搭建（细到三级标题）、正文写作思路辅导、按导师意见修改润色、查重降重辅导、格式规范排版、答辩准备（PPT框架建议、问题预判、模拟答辩）。每个客户建专属服务群，从开题到答辩结束全程跟进，不是交完稿就不管了。"
+    },
+    {
+      "id": 3,
+      "category": "service",
+      "question": "你们怎么收费？价格是多少？",
+      "answer": "价格按专业、字数、难度和时间评估，扫宣传单上的联系码咨询后我们会根据你的具体情况出方案和报价，当天就能给。费用分定金和尾款：下单时付定金（一般总价50%），初稿确认后付尾款（剩50%）。我们不是层层转包的大机构，没有层层溢价，价格实在，没有隐形消费，每一分钱花在哪都清清楚楚。"
+    },
+    {
+      "id": 4,
+      "category": "service",
+      "question": "多久能写完？赶时间怎么办？",
+      "answer": "正常情况下：开题/任务书2-3天，大纲框架1-2天，初稿写作辅导5-10天（看字数和专业难度），修改稿每轮2天，终稿排版1-2天，查重降重1-2天，答辩辅导1天。赶时间的话：每个客户有1次免费加急的机会（看辅导老师排期）；特别急的部分也可以你自己先动手改，改完发我们帮你检查，我们很鼓励这种方式。但还是建议早点下单，别卡着截止日期才来，留足修改时间。"
+    },
+    {
+      "id": 5,
+      "category": "service",
+      "question": "开题报告能帮我做吗？修改呢？",
+      "answer": "可以。开题和任务书我们按学校模板来做，内容完整、逻辑清楚、格式规范，正常2-3天搞定，开题默认2000字左右（学校要求特别多的超出部分要补成本费）。修改方面说句实在话：导师对开题的意见往往很细碎，建议你自己动手改一改——都是小调整，你改起来更快，也更符合导师口味；实在不想自己改，我们全包也可以。另外提醒一句：开题别做太难，我们会根据你的专业和能力推荐难度适中、好写好过的题目和方向。"
+    },
+    {
+      "id": 6,
+      "category": "service",
+      "question": "大纲细到什么程度？",
+      "answer": "具体到三级标题，每一章、每一节写什么都列清楚，1-2天交付。大纲是非常关键的一步——大纲定了，后面正文就按这个框架写，所以大纲我们会发你确认，你确认没问题了我们才开始写正文，避免后面大方向返工。"
+    },
+    {
+      "id": 7,
+      "category": "price",
+      "question": "怎么付款？定金尾款怎么分？",
+      "answer": "费用分定金和尾款：下单时付定金（一般总价50%），初稿确认后付尾款（剩50%）。所有钱付到指定收款账户，收款专员确认到账；付完把截图发服务群里，方便我们确认。提醒一句：请别私下转给辅导老师或任何个人——私下转账我们无法登记和担保，出问题只能你自己承担；付到指定收款账户，才有记录、有售后。尾款付之前我们发带水印版本给你核对内容和质量，尾款到账后完整无水印文件开放下载，这是保护双方的行业通行做法。"
+    },
+    {
+      "id": 8,
+      "category": "price",
+      "question": "什么情况下修改要加钱？",
+      "answer": "在已确认的大纲/开题/初稿范围内、属于我们的问题、修改量不超全文20%、初稿后3轮以内——这些都免费改。需要加钱的主要是「新需求」：换题目、换研究方向/方法、加减章节、单次修改量超全文20%的大段重写、导师突然提全新要求、初稿后超3轮的修改、二次降重、专门降AI检测率、完整PPT制作、程序调试/功能定制、格式要求反复变更。加钱修改会先由辅导老师评估工作量，前端顾问跟你沟通好费用和时间，你同意并付钱了我们才开始改，你不同意就维持原版本，不会强行改。"
+    },
+    {
+      "id": 9,
+      "category": "price",
+      "question": "能退款吗？什么规则？",
+      "answer": "论文辅导属于虚拟知识服务，服务开始后就产生了人力和时间成本，所以已完成并交付的内容原则上不退款。具体规则：服务没开始（没分配老师、没开工）定金全退；服务进行中按服务进度比例退款——完成了多少、按进度扣多少、剩下的退多少，具体比例和计算方式不口头承诺，签约时逐项写进协议，白纸黑字算清楚；初稿已交付原则上不退定金（确认是我们质量问题的，负责人评估后酌情退部分）；终稿已交付、尾款已付不退，但售后继续有效到答辩结束；因我们原因没法完成服务的，定金和已付尾款全退，酌情补偿。退款由负责人审批，走原支付渠道，3个工作日内到账。"
+    },
+    {
+      "id": 10,
+      "category": "price",
+      "question": "有优惠吗？",
+      "answer": "有。我们的客户很大一部分是老客户推荐来的，所以推荐机制很实在：你推荐身边有需要的同学来，推荐成功后我们给你发推荐红包表示感谢，你同学也能享受优惠。具体活动扫码问前端顾问，咨询不收费、不催单。"
+    },
+    {
+      "id": 11,
+      "category": "quality",
+      "question": "能保证通过吗？不过退款吗？",
+      "answer": "我们不画饼、不乱承诺——说「百分百保证通过」的都是骗你的，最终能不能通过受很多因素影响（课题难度、导师要求、答辩临场发挥等）。我们能保证的是：内容和格式做到符合学校要求，帮你准备答辩问题和回答思路，只要你自己上点心、答辩别太紧张，通过没问题。往年我们辅导的学员通过率在95%以上。退款不按「过不过」算，按服务进度规则执行（见「能退款吗？什么规则？」），但因为我们的原因没法完成服务的，全退并酌情补偿。"
+    },
+    {
+      "id": 12,
+      "category": "quality",
+      "question": "辅导老师什么水平？",
+      "answer": "后端辅导老师20人以上，以工科为主（机械、土木、计算机、电子、化工等），也覆盖文科、理科、艺术类。每位老师都是经过严格筛选、有多年论文辅导经验的，不是临时找的兼职。管理上是「师傅带徒弟」：新老师由资深老师带一段时间，熟悉我们的标准和流程后才能独立接单，保证每篇论文质量在同一水平线上。每位老师同时跟进的订单数量有上限，保证有足够时间精力做好每一篇。我们每年承接5000单以上，各种专业、各种要求都见过。"
+    },
+    {
+      "id": 13,
+      "category": "quality",
+      "question": "三级审核是什么？",
+      "answer": "每一篇论文交付前都要过三道关卡：辅导老师自审 → 交叉审核（其他老师互查）→ 主理人抽检。质量审核团队5人以上，独立于写作团队，保证审核的客观和严格。订单量大但每一篇都经过严格把关，我们不搞流水线批量生产，旺季宁可控制接单量也不粗制滥造。"
+    },
+    {
+      "id": 14,
+      "category": "quality",
+      "question": "查重率能保证吗？",
+      "answer": "能。降重包含在服务里，定稿后免费降重1次，人工改写不是机器替换，降到学校要求以下。我们承诺的是定稿时重复率按学校要求的查重率达标——哪怕高0.1%，我们都尽快改。几点提醒：官方查重（知网/维普/万方）你自己买，我们可以给免费软件的报告供参考；不同软件标准不一样，建议严格按学校指定的查；一定要定稿后再查，初稿查的重复率没参考价值；要降重的话给完整查重报告（PDF版含详细对照标红），尽量别只发截图——截图看不全对照来源。"
+    },
+    {
+      "id": 15,
+      "category": "quality",
+      "question": "AI检测率怎么办？",
+      "answer": "说句实话：毕业季周期很长（一般9月到次年6月），这期间AI检测算法会持续更新，今天查10%、明天算法更新了可能变30%，这是没法避免的行业共性问题。但放心，我们最终保证定稿时重复率、AI检测率按学校要求的标准达标——哪怕高0.1%，我们都尽快改。注意：普通降重不含降AI检测率，学校要求AI率达标的请提前说，我们写作时特别注意；定稿后要专门降AI率的，属于额外服务，另沟通报价。"
+    },
+    {
+      "id": 16,
+      "category": "quality",
+      "question": "修改不满意怎么办？",
+      "answer": "范围内的问题3轮以内免费改，收到你完整的修改意见后2天内改完。想改得又快又准，修改意见要这样给：整理成文档或在文章里加批注，按「1.第X章第X节第X段，把XX改成XX」的格式标清序号和位置，一次性列完；尽量别发语音、别只发截图——语音和截图没法逐条登记，容易漏改。说句实在话：修改不是所有问题都能100%改好——有些问题我们直接改好，有些教你应对导师，有些不合理要求可以跟导师推掉；实在改不了的，我们会给理由和替代建议。建议先给导师看再改，导师意见才最权威。对处理结果有异议，随时找负责人沟通，我们认真处理。"
+    },
+    {
+      "id": 17,
+      "category": "after",
+      "question": "交了钱没人管怎么办？",
+      "answer": "这一点不靠自觉、靠机制，不会出现这种情况：每个客户我们都建专属服务群，群里就你、前端咨询顾问、辅导老师三个人。前端客服团队10人以上，经过专业培训、熟悉全流程规则，你有任何问题先找前端顾问，需要专业处理的再拉辅导老师。从开题到答辩结束全程跟进，不是交完稿就不管了；我们主动推进、主动同步进度，不用你天天问「做到哪了」。要是超过3天没收到我们任何消息，你可以在群里问，我们跟你说进度。"
+    },
+    {
+      "id": 18,
+      "category": "after",
+      "question": "售后管多久？",
+      "answer": "售后从终稿交付那天算，到你答辩结束，一般不超30天，具体以你答辩时间为准。答辩通过后售后结束，服务群保留7天，7天后解散（好友保留，后面有需要随时联系）。学校有二次审核、盲审、往届抽查等后续要求、超出售后时限的，另沟通费用。"
+    },
+    {
+      "id": 19,
+      "category": "after",
+      "question": "哪些售后免费？哪些收费？",
+      "answer": "免费的：格式微调（字体字号行距页码这些小调整）、错别字修改、答辩问题解答（论文内容相关疑问）、小范围内容调整（不超全文10%）、答辩PPT框架建议和常见问题预判。收费的：大段重写、换研究方向、加章节、导师要求整体重构、二次降重（你大改后重复率回升）、完整答辩PPT制作、模拟答辩多次（免费1次）、超出售后时限的任何修改。"
+    },
+    {
+      "id": 20,
+      "category": "after",
+      "question": "回复速度怎么样？",
+      "answer": "每天9:00-22:00，消息2小时内肯定回，看到先回一句「收到」，不让你等；22点之后的消息，第二天上午10点前回；答辩旺季（2月15日—5月20日）单多，回复可能略延迟，但当天肯定回、不会不理你。修改时效：常规修改2天内完成（从收到完整修改意见算起）；答辩前3天的加急修改24小时内完成，优先处理。两轮修改之间最少留 24 小时，保证每轮改到位。"
+    },
+    {
+      "id": 21,
+      "category": "after",
+      "question": "答辩前紧张，有辅导吗？",
+      "answer": "有，而且都是免费的：PPT框架建议（章节结构、每页重点、时间分配）；常见问题预判——根据你的题目和内容预判10-15个答辩老师可能问的问题，附回答思路；答辩话术指导（开场怎么说、被问住了怎么救场、老师挑刺怎么回应、结束怎么致谢）；注意事项提醒（着装、礼仪、时间控制、PPT播放、打印份数）；还有免费1次模拟答辩，我们当老师问你问题，帮你演练，上场一点不慌。"
+    },
+    {
+      "id": 22,
+      "category": "privacy",
+      "question": "论文会泄露吗？",
+      "answer": "不会。你的论文内容只用于为你提供辅导服务，不会用于其他用途，不会公开发表，未经你同意不会向任何第三方泄露。服务结束后，你的文件在我们系统保留一段时间（用于售后），之后安全删除。也提醒你自己保护好论文：别随便发给同学或上传公共平台，避免被人抄袭导致你自己查重率升高。"
+    },
+    {
+      "id": 23,
+      "category": "privacy",
+      "question": "会拿我的论文当案例吗？",
+      "answer": "不会，除非你书面同意。客户论文不作为案例展示是写进服务说明里的硬规则。另外明确一下知识产权：最终论文的作者署名权归你本人，你是论文唯一作者；我们提供的辅导内容（写作思路、框架建议、修改意见等），你付费后获得使用权，用于完成自己的毕业论文/设计。"
+    },
+    {
+      "id": 24,
+      "category": "privacy",
+      "question": "个人信息安全吗？",
+      "answer": "安全。我们严格保护你的个人信息，包括姓名、学校、专业、联系方式、论文内容等，未经你同意不会向任何第三方泄露。服务全程在专属服务群里进行，全程有记录、可追溯；群里也有规矩：任何人不私自加好友，别拉无关的人进群，从机制上避免信息外流。"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "text": "开题被导师毙了两次，心态差点崩了。辅导老师帮我重新捋选题，把方向收窄到基于STM32的温湿度监测系统，第三次开题直接过。后面硬件选型、程序框架都给了指导，省了我到处翻资料的时间。",
+      "name": "客户A",
+      "info": "单片机方向 · 2025届",
+      "avatarClass": "avatar-placeholder rev-avatar--navy"
+    },
+    {
+      "id": 2,
+      "text": "梯形图自己画了半个月就是跑不通，老师远程带着我一段一段排错，原来是定时器逻辑写反了。说明书也按调试思路指导我重写了一遍，答辩时老师还夸程序结构清楚，真的没想到。",
+      "name": "客户B",
+      "info": "PLC电气自动化 · 2024届",
+      "avatarClass": "avatar-placeholder rev-avatar--gold"
+    },
+    {
+      "id": 3,
+      "text": "我是一上台就脑子空白的那种人。答辩前老师帮我预判了十几个问题，还免费做了一次模拟答辩，正式上场问的基本都在射程内，全程没卡壳。光这一项我就觉得值了。",
+      "name": "客户C",
+      "info": "机械专业 · 2025届",
+      "avatarClass": "avatar-placeholder rev-avatar--steel"
+    },
+    {
+      "id": 4,
+      "text": "实习天天加班，论文一个字没动，离提交只剩二十多天。顾问当天给了排期表，大纲两天确认，初稿写作思路讲得很细，我照着框架往里填内容就行。最后提前三天交稿，谢天谢地。",
+      "name": "客户D",
+      "info": "计算机专业 · 2025届",
+      "avatarClass": "avatar-placeholder"
+    },
+    {
+      "id": 5,
+      "text": "第一次查重46%，人都傻了。老师教我怎么调整表述和语序，是人工一句句改不是机器替换，复查降到8.7%，学校要求15%以下，稳稳达标。格式也顺手按学校模板帮我优化了一遍。",
+      "name": "客户E",
+      "info": "土木专业 · 2024届",
+      "avatarClass": "avatar-placeholder rev-avatar--navy"
+    },
+    {
+      "id": 6,
+      "text": "设计做得出来，说明书写不出来，憋了一星期就三行字。老师按我的作品带我理思路，从灵感来源到色彩运用一条一条梳理，最后写了八千多字，导师说逻辑比之前好太多。",
+      "name": "客户F",
+      "info": "艺术设计 · 2025届",
+      "avatarClass": "avatar-placeholder rev-avatar--gold"
+    },
+    {
+      "id": 7,
+      "text": "仿真模型完全不会搭，网上教程看了个寂寞。老师从建模思路讲起，带着我一步一步搭出来，参数怎么调、结果图怎么分析都讲明白了。答辩问到仿真部分我也答得上来，因为是真的懂了。",
+      "name": "客户G",
+      "info": "MATLAB仿真方向 · 2024届",
+      "avatarClass": "avatar-placeholder rev-avatar--steel"
+    },
+    {
+      "id": 8,
+      "text": "在职读的，只有晚上和周末有空。老师全程按我的节奏来，晚上十点群里问问题也有人回。从开题到答辩四个多月，进度都是他们主动推，我配合确认就行，顺利拿证。",
+      "name": "客户H",
+      "info": "单片机方向 · 在职 · 2025届",
+      "avatarClass": "avatar-placeholder"
+    },
+    {
+      "id": 9,
+      "text": "毕业设计要交图纸加说明书，我手上一堆参考资料乱成一团。老师帮我做了资料整理，文献按章节归好类，大纲细到三级标题，照着写特别顺。最后格式也按学校要求统一排好了。",
+      "name": "客户I",
+      "info": "机械专业 · 2024届",
+      "avatarClass": "avatar-placeholder rev-avatar--navy"
+    },
+    {
+      "id": 10,
+      "text": "我们学校今年开始查AI率，初稿一查三十多，吓坏了。老师指导我把标红的段落重新组织语言，补上实际的调试过程和数据分析，复查降到学校标准线以内。这钱花得值。",
+      "name": "客户J",
+      "info": "计算机专业 · 2025届",
+      "avatarClass": "avatar-placeholder rev-avatar--gold"
+    },
+    {
+      "id": 11,
+      "text": "开题报告截止前五天找过来的，本来不抱希望。两天就出了初稿，按我们学校模板做的，内容很完整。中间导师提了几条意见，群里反馈完第二天就改好了，效率真的高。",
+      "name": "客户K",
+      "info": "PLC电气自动化 · 2025届",
+      "avatarClass": "avatar-placeholder rev-avatar--steel"
+    },
+    {
+      "id": 12,
+      "text": "白天跑工地，晚上根本不想动脑子。老师把整个流程拆成一个个小任务，每个节点群里@我确认，我只要配合就行。答辩前连着装、打印份数这些细节都提醒到了，很贴心。",
+      "name": "客户L",
+      "info": "土木专业 · 在职 · 2023届",
+      "avatarClass": "avatar-placeholder"
+    }
+  ]
+}

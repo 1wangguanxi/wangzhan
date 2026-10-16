@@ -1,0 +1,1577 @@
+<!DOCTYPE html><html lang="zh-CN" class="no-js"><head>
+  <meta charset="UTF-8"/>
+  <script>
+    /* 跨页锚点冷加载：浏览器解析到锚点前先把平滑滚动关掉，
+       让初始定位瞬时完成（scroll-padding-top 预留头部高度），
+       load 后由 main.js 二次校正并恢复平滑滚动。 */
+    if (window.location.hash) {
+      document.documentElement.classList.add('hash-cold');
+      window.addEventListener('load', function () {
+        setTimeout(function () { document.documentElement.classList.remove('hash-cold'); }, 500);
+      });
+    }
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+
+  <!-- ===== SEO 三要素（成功案例页） ===== -->
+  <title>成功案例 | 知瑜网络·毕业论文辅导 — 他们都顺利毕业了</title>
+  <meta name="description" content="知瑜网络毕业论文辅导成功案例展示：机械、土木、计算机、电子、文科、艺术类等专业的毕业论文/设计辅导案例，选题、开题、正文、查重降重、答辩全程跟进，辅导后通过率95%以上。"/>
+  <meta name="keywords" content="毕业论文辅导案例,毕业设计案例,论文辅导成功案例,机械毕业设计,计算机毕业设计,土木毕业设计,知瑜网络"/>
+
+  <!-- canonical：【上线前替换为真实域名】 -->
+  <link rel="canonical" href="http://127.0.0.1:3000/cases.html"/>
+
+  <!-- Open Graph（微信/社交平台分享卡片） -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content="知瑜网络·毕业论文辅导"/>
+  <meta property="og:title" content="成功案例 | 知瑜网络 — 他们都顺利毕业了"/>
+  <meta property="og:description" content="机械、土木、计算机、电子、文科、艺术类全覆盖，部分脱敏案例展示，更多案例可咨询了解。"/>
+  <meta property="og:url" content="http://127.0.0.1:3000/cases.html"/>
+  <!-- 分享卡片图已就位：images/zhiyu-share.png（1200×630），替换时直接覆盖同名文件 -->
+  <meta property="og:image" content="http://127.0.0.1:3000/images/zhiyu-share.png"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="成功案例 | 知瑜网络·毕业论文辅导"/>
+  <meta name="twitter:description" content="部分脱敏案例展示，工科为主全专业覆盖，辅导后通过率95%以上。"/>
+  <meta name="twitter:image" content="http://127.0.0.1:3000/images/zhiyu-share.png"/>
+
+  <meta name="theme-color" content="#1a56db"/>
+
+  <!-- ===== 结构化数据 JSON-LD：Organization + CollectionPage ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "http://127.0.0.1:3000/#org",
+        "name": "知瑜网络·毕业论文辅导公司",
+        "url": "http://127.0.0.1:3000/",
+        "description": "专注大学生毕业论文/设计辅导的公司，2020年成立，40人以上专业团队，每年承接5000单以上。",
+        "foundingDate": "2020",
+        "areaServed": "全国",
+        "openingHours": "Mo-Su 09:00-22:00"
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "http://127.0.0.1:3000/cases.html#cases",
+        "name": "成功案例 | 知瑜网络·毕业论文辅导",
+        "url": "http://127.0.0.1:3000/cases.html",
+        "description": "毕业论文/毕业设计辅导成功案例展示（信息已脱敏），覆盖机械、土木、计算机、电子、文科、艺术类等专业。",
+        "isPartOf": { "@id": "http://127.0.0.1:3000/#org" }
+      }
+    ]
+  }
+  </script>
+
+  <!-- ===== 关键 CSS 内联（首屏骨架：变量/基础/header/hero），保证首屏无白屏抖动 ===== -->
+  <style>
+    :root{--c-primary:#1a56db;--c-primary2:#3b82f6;--c-primary-bg:#eff6ff;--c-accent:#f59e0b;--c-text:#1f2937;--c-text-2:#4b5563;--c-text-3:#9ca3af;--c-white:#fff;--c-border:#e5e7eb;--c-border-light:#f1f5f9;--font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;--container:1200px;--header-h:64px;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-8:4.5rem;--radius-full:999px;--shadow-sm:0 1px 3px rgba(15,23,42,.06)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-family);font-size:.9375rem;line-height:1.75;color:var(--c-text);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    @media (min-width:768px){body{font-size:1rem}}
+    img{max-width:100%;height:auto;display:block}
+    ul{list-style:none}
+    a{text-decoration:none;color:var(--c-primary)}
+    button{font-family:inherit;border:none;background:none;cursor:pointer}
+    .container{width:100%;max-width:var(--container);margin:0 auto;padding-left:var(--sp-4);padding-right:var(--sp-4)}
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid var(--c-border-light)}
+    .site-header .container{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);gap:var(--sp-4)}
+    .brand{display:flex;align-items:center;gap:var(--sp-3)}
+    .brand .brand-logo{width:40px;height:40px;flex:none}
+    .brand .brand-text{display:flex;flex-direction:column;line-height:1.25}
+    .brand .brand-name{font-size:1.125rem;font-weight:700;color:var(--c-text)}
+    .brand .brand-sub{font-size:.6875rem;color:var(--c-text-3);letter-spacing:.08em}
+    .main-nav,.header-cta{display:none}
+    .nav-toggle{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:44px;height:44px}
+    .nav-toggle .bar{display:block;width:22px;height:2px;border-radius:2px;background:var(--c-text)}
+    .mobile-nav{display:block;max-height:0;overflow:hidden;background:#fff}
+    @media (min-width:992px){.main-nav{display:block}.header-cta{display:inline-flex}.nav-toggle,.mobile-nav{display:none}}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--c-primary-bg) 0%,#dbeafe 55%,#fff 100%);padding:var(--sp-7) 0 var(--sp-6)}
+    .hero .container{position:relative;z-index:1}
+    .hero__content{max-width:720px;text-align:center;margin:0 auto}
+    .hero h1{font-size:2rem;line-height:1.35;margin-bottom:var(--sp-4)}
+    @media (min-width:768px){.hero{padding:var(--sp-8) 0 var(--sp-7)}.hero h1{font-size:2.5rem}}
+    .hero__sub{color:var(--c-text-2);max-width:560px;margin:0 auto var(--sp-6)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--sp-2);min-height:44px;padding:var(--sp-3) var(--sp-5);border-radius:var(--radius-full);font-weight:600;color:#fff}
+    /* 防止异步 CSS 未加载完成时弹窗/回到顶部闪烁（FOUC 防护） */
+    .modal{visibility:hidden;opacity:0}
+    .back-to-top{visibility:hidden;opacity:0}
+    /* 首屏安全：JS/IO 不可用时内容直接可见 */
+    .no-js .reveal,.no-io .reveal{opacity:1!important;transform:none!important}
+    @media (prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}}
+  </style>
+
+  <!-- 完整样式表 + 页面专属样式，异步加载 + noscript 兜底 -->
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;"/>
+  <link rel="preload" href="css/page-cases.css" as="style" onload="this.onload=null;this.rel=&#39;stylesheet&#39;"/>
+  <noscript>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page-cases.css">
+  </noscript>
+  <link rel="icon" type="image/png" href="images/zhiyu-logo.png"/>
+<script src="https://www.kimi.com/sdk-seed.js" defer="" data-kimi-disable-watermark="false" data-kimi-analytics="true" data-kimi-website-id="1a06be9e-1b22-84fd-8000-0000a44ee933" data-kimi-website-env="published"></script></head>
+
+<body data-page="cases">
+
+  <!-- ===== 全站内联 SVG 图标库（sprite）：用 <svg class="icon"><use href="#icon-xxx"/></svg> 调用 ===== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+
+    <!-- 通用线条图标（stroke 风格） -->
+    <symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="5"></circle><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"></circle></symbol>
+    <symbol id="icon-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h8l4 4v16H6z"></path><path d="M14 2v4h4"></path><path d="M9 12h6M9 16h6"></path></symbol>
+    <symbol id="icon-tree" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2.5" width="6" height="4" rx="1"></rect><rect x="2.5" y="17.5" width="6" height="4" rx="1"></rect><rect x="15.5" y="17.5" width="6" height="4" rx="1"></rect><path d="M12 6.5v5M5.5 17.5v-3h13v3"></path></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 014 4L7.5 20.5 2 22l1.5-5.5z"></path></symbol>
+    <symbol id="icon-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="21 4 21 10 15 10"></polyline><path d="M20.5 10a9 9 0 10.4 4.5"></path></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 9.2-8 11-4.5-1.8-8-6-8-11V5z"></path><polyline points="8.5 11.5 11 14 15.5 9.5"></polyline></symbol>
+    <symbol id="icon-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></symbol>
+    <symbol id="icon-present" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="13" rx="2"></rect><path d="M8 21h8M12 16v5"></path><path d="M7 12l3-3 3 2 4-4"></path></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"></circle><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"></path><path d="M17 3.5a4 4 0 010 7M22 21v-2a5 5 0 00-3-4.6"></path></symbol>
+    <symbol id="icon-audit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"></rect><path d="M9 4.5a3 3 0 016 0"></path><polyline points="9 14 11.5 16.5 16 11.5"></polyline></symbol>
+    <symbol id="icon-headset" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 13a8 8 0 0116 0"></path><rect x="2" y="13" width="4" height="6" rx="2"></rect><rect x="18" y="13" width="4" height="6" rx="2"></rect><path d="M20 19a3 3 0 01-3 3h-3"></path></symbol>
+    <symbol id="icon-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></symbol>
+    <symbol id="icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41L10.59 3.41A2 2 0 009.17 3H4a1 1 0 00-1 1v5.17a2 2 0 00.59 1.42l10 10a2 2 0 002.82 0l4.18-4.18a2 2 0 000-2.83z"></path><circle cx="7.5" cy="7.5" r="1.2" fill="currentColor" stroke="none"></circle></symbol>
+    <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"></rect><path d="M8 11V7a4 4 0 018 0v4"></path></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></symbol>
+    <symbol id="icon-check-circle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polyline points="8.5 12.5 11 15 15.5 9.5"></polyline></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="13 5 20 12 13 19"></polyline></symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="4"></line><polyline points="5 11 12 4 19 11"></polyline></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"></line><line x1="18" y1="6" x2="6" y2="18"></line></symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M9.6 5C6 7 4 10 4 14v5h6v-6H7c0-2.5 1.2-4.5 3.6-6zm10 0C16 7 14 10 14 14v5h6v-6h-3c0-2.5 1.2-4.5 3.6-6z"></path></symbol>
+    <symbol id="icon-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8z"></path></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15.5 14"></polyline></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></symbol>
+  </svg>
+
+  <!-- ===== 公共组件：顶部导航 header（全站一致） ===== -->
+  <header class="site-header">
+    <div class="container">
+      <!-- logo 区 -->
+      <a aria-label="知瑜网络 首页" class="brand" href="index.html">
+        <span class="brand-logo"><img src="images/zhiyu-logo.png" alt="知瑜 ZHIYU NETWORK" width="415" height="296"/></span>
+        <span class="brand-text">
+          <span class="brand-name">知瑜网络</span>
+          <span class="brand-sub">毕业论文辅导</span>
+        </span>
+      </a>
+
+      <!-- 桌面端导航（data-page 用于当前页高亮，与 body[data-page] 对应） -->
+      <nav class="main-nav" aria-label="主导航">
+        <ul>
+          <li><a data-page="index" href="index.html">首页</a></li>
+          <li><a data-page="services" href="services.html">服务介绍</a></li>
+          <li><a data-page="process" href="process.html">服务流程</a></li>
+          <li><a data-page="about" href="about.html">关于我们</a></li>
+          <li><a data-page="cases" href="cases.html">成功案例</a></li>
+          <li><a data-page="reviews" href="reviews.html">客户好评</a></li>
+          <li><a data-page="faq" href="faq.html">常见问题</a></li>
+          <li><a data-page="contact" href="contact.html">联系我们</a></li>
+        </ul>
+      </nav>
+
+      <!-- 桌面端右侧 CTA：打开扫码弹窗 -->
+      <button type="button" class="btn btn--accent btn--sm header-cta" data-open-modal="qrcode-modal">
+        <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+        关注我们
+      </button>
+
+      <!-- 移动端汉堡按钮 -->
+      <button type="button" class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- 移动端抽屉菜单 -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="移动端导航">
+      <ul>
+        <li><a data-page="index" href="index.html">首页</a></li>
+        <li><a data-page="services" href="services.html">服务介绍</a></li>
+        <li><a data-page="process" href="process.html">服务流程</a></li>
+        <li><a data-page="about" href="about.html">关于我们</a></li>
+        <li><a data-page="cases" href="cases.html">成功案例</a></li>
+          <li><a data-page="reviews" href="reviews.html">客户好评</a></li>
+        <li><a data-page="faq" href="faq.html">常见问题</a></li>
+        <li><a data-page="contact" href="contact.html">联系我们</a></li>
+      </ul>
+      <div style="padding:0 16px 16px;">
+        <button type="button" class="btn btn--accent" data-open-modal="qrcode-modal">
+          <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+          关注我们
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== 1. 页头 Hero ===== -->
+    <section class="hero cases-hero">
+      <div class="hero__deco hero__deco--circle1" aria-hidden="true"></div>
+      <div class="hero__deco hero__deco--circle2" aria-hidden="true"></div>
+      <div class="hero__deco hero__deco--ring" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__badge"><span class="dot" aria-hidden="true"></span>成功案例 · 辅导后通过率95%以上</p>
+          <h1>他们都<span class="hl">顺利毕业了</span></h1>
+          <p class="hero__sub">以下为脱敏后的示例案例，展示各专业常见的辅导方式和结果。工科为主，文科、理科、艺术类全覆盖——你的专业我们也有把握。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. 案例筛选 + 案例网格 ===== -->
+    <section class="section" id="cases">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">真实辅导案例</span>
+          <h2>138 个真实辅导案例，覆盖七大专业类</h2>
+          <p class="section-desc">单片机 / PLC / 机械 / 计算机 / 仿真建模 / 土木 / 艺术设计，点击案例卡可左右翻看更多截图。本页所有案例图片均为知瑜网络辅导项目原创素材，已做脱敏处理，不披露客户真实信息，盗图必究。</p>
+        </div>
+
+        <!-- 专业筛选器（按钮式 tab） -->
+        <div class="case-filter" role="group" aria-label="按专业筛选案例">
+          <button type="button" class="case-filter__btn is-active" data-filter="all" aria-pressed="true">全部</button>
+          <button type="button" class="case-filter__btn" data-filter="单片机·电气" aria-pressed="false">单片机·电气</button>
+          <button type="button" class="case-filter__btn" data-filter="PLC·工控" aria-pressed="false">PLC·工控</button>
+          <button type="button" class="case-filter__btn" data-filter="机械" aria-pressed="false">机械</button>
+          <button type="button" class="case-filter__btn" data-filter="计算机" aria-pressed="false">计算机</button>
+          <button type="button" class="case-filter__btn" data-filter="仿真建模" aria-pressed="false">仿真建模</button>
+          <button type="button" class="case-filter__btn" data-filter="土木" aria-pressed="false">土木</button>
+          <button type="button" class="case-filter__btn" data-filter="艺术设计" aria-pressed="false">艺术设计</button>
+        </div>
+
+        <!-- 案例网格（12 张卡，点击弹出详情） -->
+        <!-- 案例网格（50 个真实辅导案例，点击弹出详情翻图） -->
+        <div class="cases-page-grid" id="cases-grid">
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="1" tabindex="0" role="button" aria-label="查看案例详情：STM32水质检测系统（PH/浊度/温度）">
+            <img class="img-fill" src="images/cases/mcu/mcu-02_t.webp" alt="STM32水质检测系统（PH/浊度/温度）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">STM32水质检测系统（PH/浊度/温度）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="2" tabindex="0" role="button" aria-label="查看案例详情：RFID智能门禁系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-08_t.webp" alt="RFID智能门禁系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">RFID智能门禁系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="3" tabindex="0" role="button" aria-label="查看案例详情：紫色PCB万年历（DS1302+温湿度）">
+            <img class="img-fill" src="images/cases/mcu/mcu-07_t.webp" alt="紫色PCB万年历（DS1302+温湿度）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">紫色PCB万年历（DS1302+温湿度）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="4" tabindex="0" role="button" aria-label="查看案例详情：太阳能自动追光装置">
+            <img class="img-fill" src="images/cases/mcu/mcu-12_t.webp" alt="太阳能自动追光装置（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">太阳能自动追光装置</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="5" tabindex="0" role="button" aria-label="查看案例详情：智能浇花/环境控制系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-13_t.webp" alt="智能浇花/环境控制系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">智能浇花/环境控制系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="6" tabindex="0" role="button" aria-label="查看案例详情：气体监测报警装置（双MQ传感器）">
+            <img class="img-fill" src="images/cases/mcu/mcu-16_t.webp" alt="气体监测报警装置（双MQ传感器）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">气体监测报警装置（双MQ传感器）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="7" tabindex="0" role="button" aria-label="查看案例详情：四层电梯PLC控制系统仿真">
+            <img class="img-fill" src="images/cases/plc/plc-01_t.webp" alt="四层电梯PLC控制系统仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">四层电梯PLC控制系统仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="8" tabindex="0" role="button" aria-label="查看案例详情：智能产线全自动锁螺丝机控制">
+            <img class="img-fill" src="images/cases/plc/plc-03_t.webp" alt="智能产线全自动锁螺丝机控制（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">智能产线全自动锁螺丝机控制</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="9" tabindex="0" role="button" aria-label="查看案例详情：智能调温座椅控制系统">
+            <img class="img-fill" src="images/cases/plc/plc-05_t.webp" alt="智能调温座椅控制系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">智能调温座椅控制系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="10" tabindex="0" role="button" aria-label="查看案例详情：印刷机PLC控制系统（三菱）">
+            <img class="img-fill" src="images/cases/plc/plc-11_t.webp" alt="印刷机PLC控制系统（三菱）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">印刷机PLC控制系统（三菱）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="11" tabindex="0" role="button" aria-label="查看案例详情：输液管生产线控制系统">
+            <img class="img-fill" src="images/cases/plc/plc-18_t.webp" alt="输液管生产线控制系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">输液管生产线控制系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="12" tabindex="0" role="button" aria-label="查看案例详情：大型水库闸门控制系统">
+            <img class="img-fill" src="images/cases/plc/plc-20_t.webp" alt="大型水库闸门控制系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">大型水库闸门控制系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="13" tabindex="0" role="button" aria-label="查看案例详情：楼宇风机照明智能控制">
+            <img class="img-fill" src="images/cases/plc/plc-23_t.webp" alt="楼宇风机照明智能控制（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">楼宇风机照明智能控制</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="14" tabindex="0" role="button" aria-label="查看案例详情：板栗制品生产线控制系统">
+            <img class="img-fill" src="images/cases/plc/plc-25_t.webp" alt="板栗制品生产线控制系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">板栗制品生产线控制系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="15" tabindex="0" role="button" aria-label="查看案例详情：视觉筛选检测系统">
+            <img class="img-fill" src="images/cases/plc/plc-58_t.webp" alt="视觉筛选检测系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">视觉筛选检测系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="PLC·工控" data-case-id="16" tabindex="0" role="button" aria-label="查看案例详情：变频恒压供水系统">
+            <img class="img-fill" src="images/cases/plc/plc-60_t.webp" alt="变频恒压供水系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">PLC·工控</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">变频恒压供水系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="17" tabindex="0" role="button" aria-label="查看案例详情：管件自动上料搬运设备设计">
+            <img class="img-fill" src="images/cases/mech/mech-02_t.webp" alt="管件自动上料搬运设备设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">管件自动上料搬运设备设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="18" tabindex="0" role="button" aria-label="查看案例详情：吊装工装夹具设计">
+            <img class="img-fill" src="images/cases/mech/mech-04_t.webp" alt="吊装工装夹具设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">吊装工装夹具设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="19" tabindex="0" role="button" aria-label="查看案例详情：桌面式PCB雕刻机设计">
+            <img class="img-fill" src="images/cases/mech/mech-05_t.webp" alt="桌面式PCB雕刻机设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">桌面式PCB雕刻机设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="20" tabindex="0" role="button" aria-label="查看案例详情：车门锁机构设计与有限元分析">
+            <img class="img-fill" src="images/cases/mech/mech-17_t.webp" alt="车门锁机构设计与有限元分析（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">车门锁机构设计与有限元分析</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="21" tabindex="0" role="button" aria-label="查看案例详情：小型电动起重机设计">
+            <img class="img-fill" src="images/cases/mech/mech-09_t.webp" alt="小型电动起重机设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">小型电动起重机设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="22" tabindex="0" role="button" aria-label="查看案例详情：ANSYS结构仿真分析">
+            <img class="img-fill" src="images/cases/mech/mech-23_t.webp" alt="ANSYS结构仿真分析（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">4 张截图</span></div>
+              <h3 class="case-card__type">ANSYS结构仿真分析</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="23" tabindex="0" role="button" aria-label="查看案例详情：二级减速器设计">
+            <img class="img-fill" src="images/cases/mech/mech-26_t.webp" alt="二级减速器设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">4 张截图</span></div>
+              <h3 class="case-card__type">二级减速器设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="24" tabindex="0" role="button" aria-label="查看案例详情：料袋码垛机器人设计">
+            <img class="img-fill" src="images/cases/mech/mech-33_t.webp" alt="料袋码垛机器人设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">料袋码垛机器人设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="25" tabindex="0" role="button" aria-label="查看案例详情：固定板换热器（壳管式）设计">
+            <img class="img-fill" src="images/cases/mech/mech-01_t.webp" alt="固定板换热器（壳管式）设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">固定板换热器（壳管式）设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="26" tabindex="0" role="button" aria-label="查看案例详情：带料斗自动化加工设备">
+            <img class="img-fill" src="images/cases/mech/mech-03_t.webp" alt="带料斗自动化加工设备（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">带料斗自动化加工设备</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="27" tabindex="0" role="button" aria-label="查看案例详情：工装零件工程图（卡板/止动爪）">
+            <img class="img-fill" src="images/cases/mech/mech-15_t.webp" alt="工装零件工程图（卡板/止动爪）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">工装零件工程图（卡板/止动爪）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="28" tabindex="0" role="button" aria-label="查看案例详情：管道检测爬行机器人">
+            <img class="img-fill" src="images/cases/mech/mech-21_t.webp" alt="管道检测爬行机器人（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">管道检测爬行机器人</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="29" tabindex="0" role="button" aria-label="查看案例详情：四旋翼无人机结构设计">
+            <img class="img-fill" src="images/cases/mech/mech-22_t.webp" alt="四旋翼无人机结构设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">四旋翼无人机结构设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="30" tabindex="0" role="button" aria-label="查看案例详情：皮带输送机参数化设计">
+            <img class="img-fill" src="images/cases/mech/mech-30_t.webp" alt="皮带输送机参数化设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">皮带输送机参数化设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="31" tabindex="0" role="button" aria-label="查看案例详情：履带式机器人底盘">
+            <img class="img-fill" src="images/cases/mech/mech-35_t.webp" alt="履带式机器人底盘（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">履带式机器人底盘</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="32" tabindex="0" role="button" aria-label="查看案例详情：双螺旋输送搅拌装置">
+            <img class="img-fill" src="images/cases/mech/mech-36_t.webp" alt="双螺旋输送搅拌装置（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">双螺旋输送搅拌装置</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="33" tabindex="0" role="button" aria-label="查看案例详情：翻转工装夹具设计">
+            <img class="img-fill" src="images/cases/mech/mech-44_t.webp" alt="翻转工装夹具设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">翻转工装夹具设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="34" tabindex="0" role="button" aria-label="查看案例详情：叶片泵装配与图纸（长图）">
+            <img class="img-fill" src="images/cases/mech/mech-40_t.webp" alt="叶片泵装配与图纸（长图）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">叶片泵装配与图纸（长图）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="35" tabindex="0" role="button" aria-label="查看案例详情：阀门装配与CAD图纸（长图）">
+            <img class="img-fill" src="images/cases/mech/mech-41_t.webp" alt="阀门装配与CAD图纸（长图）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">阀门装配与CAD图纸（长图）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="机械" data-case-id="36" tabindex="0" role="button" aria-label="查看案例详情：球阀等CAD图纸拼版（长图）">
+            <img class="img-fill" src="images/cases/mech/mech-42_t.webp" alt="球阀等CAD图纸拼版（长图）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">机械</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">球阀等CAD图纸拼版（长图）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="计算机" data-case-id="37" tabindex="0" role="button" aria-label="查看案例详情：个人健康管理系统（Web）">
+            <img class="img-fill" src="images/cases/cs/cs-13-zhiyu_t.webp" alt="个人健康管理系统（Web）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">计算机</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">个人健康管理系统（Web）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="计算机" data-case-id="38" tabindex="0" role="button" aria-label="查看案例详情：汀州古城旅游攻略小程序">
+            <img class="img-fill" src="images/cases/cs/cs-01_t.webp" alt="汀州古城旅游攻略小程序（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">计算机</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">汀州古城旅游攻略小程序</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="计算机" data-case-id="39" tabindex="0" role="button" aria-label="查看案例详情：农产品交易平台">
+            <img class="img-fill" src="images/cases/cs/cs-23_t.webp" alt="农产品交易平台（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">计算机</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">农产品交易平台</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="计算机" data-case-id="40" tabindex="0" role="button" aria-label="查看案例详情：AI职场助手">
+            <img class="img-fill" src="images/cases/cs/cs-18_t.webp" alt="AI职场助手（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">计算机</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">AI职场助手</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="计算机" data-case-id="41" tabindex="0" role="button" aria-label="查看案例详情：皮影纹样智能识别系统">
+            <img class="img-fill" src="images/cases/cs/cs-02_t.webp" alt="皮影纹样智能识别系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">计算机</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">皮影纹样智能识别系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="计算机" data-case-id="42" tabindex="0" role="button" aria-label="查看案例详情：深度学习预测算法优化（CNN-LSTM）">
+            <img class="img-fill" src="images/cases/cs/cs-05_t.webp" alt="深度学习预测算法优化（CNN-LSTM）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">计算机</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">深度学习预测算法优化（CNN-LSTM）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="43" tabindex="0" role="button" aria-label="查看案例详情：综合能源多时间尺度调度优化">
+            <img class="img-fill" src="images/cases/sim/sim-01_t.webp" alt="综合能源多时间尺度调度优化（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">6 张截图</span></div>
+              <h3 class="case-card__type">综合能源多时间尺度调度优化</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="44" tabindex="0" role="button" aria-label="查看案例详情：四旋翼无人机控制仿真">
+            <img class="img-fill" src="images/cases/sim/sim-07_t.webp" alt="四旋翼无人机控制仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">6 张截图</span></div>
+              <h3 class="case-card__type">四旋翼无人机控制仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="45" tabindex="0" role="button" aria-label="查看案例详情：无人机编队飞行控制仿真">
+            <img class="img-fill" src="images/cases/sim/sim-13_t.webp" alt="无人机编队飞行控制仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">无人机编队飞行控制仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="46" tabindex="0" role="button" aria-label="查看案例详情：机器人轨迹跟踪控制">
+            <img class="img-fill" src="images/cases/sim/sim-14_t.webp" alt="机器人轨迹跟踪控制（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">机器人轨迹跟踪控制</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="47" tabindex="0" role="button" aria-label="查看案例详情：PID/微分先行PID/卡尔曼滤波对比">
+            <img class="img-fill" src="images/cases/sim/sim-15_t.webp" alt="PID/微分先行PID/卡尔曼滤波对比（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">PID/微分先行PID/卡尔曼滤波对比</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="48" tabindex="0" role="button" aria-label="查看案例详情：机械臂运动学轨迹仿真">
+            <img class="img-fill" src="images/cases/sim/sim-16_t.webp" alt="机械臂运动学轨迹仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">机械臂运动学轨迹仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="49" tabindex="0" role="button" aria-label="查看案例详情：三相桥式整流电路仿真">
+            <img class="img-fill" src="images/cases/sim/sim-19_t.webp" alt="三相桥式整流电路仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">三相桥式整流电路仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="50" tabindex="0" role="button" aria-label="查看案例详情：风光储微电网仿真">
+            <img class="img-fill" src="images/cases/sim/sim-22_t.webp" alt="风光储微电网仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">4 张截图</span></div>
+              <h3 class="case-card__type">风光储微电网仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="51" tabindex="0" role="button" aria-label="查看案例详情：电源与功率电子系统仿真">
+            <img class="img-fill" src="images/cases/sim/sim-26_t.webp" alt="电源与功率电子系统仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">7 张截图</span></div>
+              <h3 class="case-card__type">电源与功率电子系统仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="52" tabindex="0" role="button" aria-label="查看案例详情：电机拖动与控制系统仿真">
+            <img class="img-fill" src="images/cases/sim/sim-33_t.webp" alt="电机拖动与控制系统仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">电机拖动与控制系统仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="53" tabindex="0" role="button" aria-label="查看案例详情：电力系统暂态稳定分析">
+            <img class="img-fill" src="images/cases/sim/sim-36_t.webp" alt="电力系统暂态稳定分析（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">电力系统暂态稳定分析</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="54" tabindex="0" role="button" aria-label="查看案例详情：水泥水化微观结构仿真">
+            <img class="img-fill" src="images/cases/sim/sim-37_t.webp" alt="水泥水化微观结构仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">水泥水化微观结构仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="55" tabindex="0" role="button" aria-label="查看案例详情：通信信号处理仿真">
+            <img class="img-fill" src="images/cases/sim/sim-40_t.webp" alt="通信信号处理仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">通信信号处理仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="56" tabindex="0" role="button" aria-label="查看案例详情：金融时间序列分析">
+            <img class="img-fill" src="images/cases/sim/sim-43_t.webp" alt="金融时间序列分析（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">金融时间序列分析</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="57" tabindex="0" role="button" aria-label="查看案例详情：多目标优化算法（Pareto前沿）">
+            <img class="img-fill" src="images/cases/sim/sim-44_t.webp" alt="多目标优化算法（Pareto前沿）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">多目标优化算法（Pareto前沿）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="58" tabindex="0" role="button" aria-label="查看案例详情：物理场与曲面建模可视化">
+            <img class="img-fill" src="images/cases/sim/sim-45_t.webp" alt="物理场与曲面建模可视化（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">物理场与曲面建模可视化</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="59" tabindex="0" role="button" aria-label="查看案例详情：运动学建模与数据拟合">
+            <img class="img-fill" src="images/cases/sim/sim-48_t.webp" alt="运动学建模与数据拟合（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">3 张截图</span></div>
+              <h3 class="case-card__type">运动学建模与数据拟合</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="60" tabindex="0" role="button" aria-label="查看案例详情：汽车悬架动力学仿真">
+            <img class="img-fill" src="images/cases/sim/sim-51_t.webp" alt="汽车悬架动力学仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">汽车悬架动力学仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="61" tabindex="0" role="button" aria-label="查看案例详情：电池充放电特性仿真">
+            <img class="img-fill" src="images/cases/sim/sim-52_t.webp" alt="电池充放电特性仿真（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">电池充放电特性仿真</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="仿真建模" data-case-id="62" tabindex="0" role="button" aria-label="查看案例详情：传感器标定仿真（磁力计/陀螺仪）">
+            <img class="img-fill" src="images/cases/sim/sim-53_t.webp" alt="传感器标定仿真（磁力计/陀螺仪）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">仿真建模</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">传感器标定仿真（磁力计/陀螺仪）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="土木" data-case-id="63" tabindex="0" role="button" aria-label="查看案例详情：中学宿舍楼建筑平面设计">
+            <img class="img-fill" src="images/cases/civil/civil-01_t.webp" alt="中学宿舍楼建筑平面设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">土木</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">中学宿舍楼建筑平面设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="土木" data-case-id="64" tabindex="0" role="button" aria-label="查看案例详情：宿舍楼立面与剖面设计">
+            <img class="img-fill" src="images/cases/civil/civil-06_t.webp" alt="宿舍楼立面与剖面设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">土木</span><span class="tag tag--accent">6 张截图</span></div>
+              <h3 class="case-card__type">宿舍楼立面与剖面设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="65" tabindex="0" role="button" aria-label="查看案例详情：医用艾灸理疗床设计">
+            <img class="img-fill" src="images/cases/art/art-01a_t.webp" alt="医用艾灸理疗床设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">医用艾灸理疗床设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="66" tabindex="0" role="button" aria-label="查看案例详情：膝离断义肢造型设计">
+            <img class="img-fill" src="images/cases/art/art-01b_t.webp" alt="膝离断义肢造型设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">膝离断义肢造型设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="67" tabindex="0" role="button" aria-label="查看案例详情：叠式风力灭火器设计">
+            <img class="img-fill" src="images/cases/art/art-02a_t.webp" alt="叠式风力灭火器设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">叠式风力灭火器设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="68" tabindex="0" role="button" aria-label="查看案例详情：民族元素服装《风花雪月》设计">
+            <img class="img-fill" src="images/cases/art/art-02b_t.webp" alt="民族元素服装《风花雪月》设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">民族元素服装《风花雪月》设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="69" tabindex="0" role="button" aria-label="查看案例详情：高空壁面清洗机器人设计">
+            <img class="img-fill" src="images/cases/art/art-03a_t.webp" alt="高空壁面清洗机器人设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">高空壁面清洗机器人设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="70" tabindex="0" role="button" aria-label="查看案例详情：CMF茶室家具设计">
+            <img class="img-fill" src="images/cases/art/art-03b_t.webp" alt="CMF茶室家具设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">CMF茶室家具设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="71" tabindex="0" role="button" aria-label="查看案例详情：汽车展厅空间设计">
+            <img class="img-fill" src="images/cases/art/art-04b_t.webp" alt="汽车展厅空间设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">汽车展厅空间设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="72" tabindex="0" role="button" aria-label="查看案例详情：「三茶序」茶叶包装设计">
+            <img class="img-fill" src="images/cases/art/art-05b_t.webp" alt="「三茶序」茶叶包装设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">2 张截图</span></div>
+              <h3 class="case-card__type">「三茶序」茶叶包装设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="73" tabindex="0" role="button" aria-label="查看案例详情：通用笔壳结构设计">
+            <img class="img-fill" src="images/cases/art/art-07a_t.webp" alt="通用笔壳结构设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">通用笔壳结构设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="74" tabindex="0" role="button" aria-label="查看案例详情：近海无人浒苔清洁船设计">
+            <img class="img-fill" src="images/cases/art/art-08a_t.webp" alt="近海无人浒苔清洁船设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">近海无人浒苔清洁船设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="75" tabindex="0" role="button" aria-label="查看案例详情：「庐山云雾」茶品牌VI设计">
+            <img class="img-fill" src="images/cases/art/art-08b_t.webp" alt="「庐山云雾」茶品牌VI设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">4 张截图</span></div>
+              <h3 class="case-card__type">「庐山云雾」茶品牌VI设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="76" tabindex="0" role="button" aria-label="查看案例详情：明清江南私家庭院设计">
+            <img class="img-fill" src="images/cases/art/art-09a_t.webp" alt="明清江南私家庭院设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">明清江南私家庭院设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="77" tabindex="0" role="button" aria-label="查看案例详情：社区景观更新设计">
+            <img class="img-fill" src="images/cases/art/art-10a_t.webp" alt="社区景观更新设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">社区景观更新设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="78" tabindex="0" role="button" aria-label="查看案例详情：「秋野树屋」糕点包装设计">
+            <img class="img-fill" src="images/cases/art/art-13b_t.webp" alt="「秋野树屋」糕点包装设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">「秋野树屋」糕点包装设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="79" tabindex="0" role="button" aria-label="查看案例详情：城市街道更新·光影记忆">
+            <img class="img-fill" src="images/cases/art/art-13a_t.webp" alt="城市街道更新·光影记忆（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">城市街道更新·光影记忆</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="80" tabindex="0" role="button" aria-label="查看案例详情：适老化智慧社区设计">
+            <img class="img-fill" src="images/cases/art/art-15a_t.webp" alt="适老化智慧社区设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">适老化智慧社区设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="艺术设计" data-case-id="81" tabindex="0" role="button" aria-label="查看案例详情：可上楼婴儿车设计">
+            <img class="img-fill" src="images/cases/art/art-16a_t.webp" alt="可上楼婴儿车设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">艺术设计</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">可上楼婴儿车设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="82" tabindex="0" role="button" aria-label="查看案例详情：单片机仿真题目合集（10宫格）">
+            <img class="img-fill" src="images/cases/mcu/mcu-101_t.webp" alt="单片机仿真题目合集（10宫格）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">单片机仿真题目合集（10宫格）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="83" tabindex="0" role="button" aria-label="查看案例详情：智能鱼缸+STM32智能门禁功能设计">
+            <img class="img-fill" src="images/cases/mcu/mcu-102_t.webp" alt="智能鱼缸+STM32智能门禁功能设计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">智能鱼缸+STM32智能门禁功能设计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="84" tabindex="0" role="button" aria-label="查看案例详情：电子时钟+五种波形发生器">
+            <img class="img-fill" src="images/cases/mcu/mcu-103_t.webp" alt="电子时钟+五种波形发生器（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">电子时钟+五种波形发生器</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="85" tabindex="0" role="button" aria-label="查看案例详情：智能路灯控制+简易计数器">
+            <img class="img-fill" src="images/cases/mcu/mcu-104_t.webp" alt="智能路灯控制+简易计数器（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">智能路灯控制+简易计数器</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="86" tabindex="0" role="button" aria-label="查看案例详情：宠物自动喂养机+交通灯控制">
+            <img class="img-fill" src="images/cases/mcu/mcu-105_t.webp" alt="宠物自动喂养机+交通灯控制（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">宠物自动喂养机+交通灯控制</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="87" tabindex="0" role="button" aria-label="查看案例详情：环境光/人体红外/声控+光控照明">
+            <img class="img-fill" src="images/cases/mcu/mcu-106_t.webp" alt="环境光/人体红外/声控+光控照明（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">环境光/人体红外/声控+光控照明</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="88" tabindex="0" role="button" aria-label="查看案例详情：51/STM32仿真题目合集（12宫格）">
+            <img class="img-fill" src="images/cases/mcu/mcu-107_t.webp" alt="51/STM32仿真题目合集（12宫格）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">51/STM32仿真题目合集（12宫格）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="89" tabindex="0" role="button" aria-label="查看案例详情：节日彩灯控制器+万用表检测">
+            <img class="img-fill" src="images/cases/mcu/mcu-108_t.webp" alt="节日彩灯控制器+万用表检测（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">节日彩灯控制器+万用表检测</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="90" tabindex="0" role="button" aria-label="查看案例详情：教室灯光控制+太阳能充电">
+            <img class="img-fill" src="images/cases/mcu/mcu-109_t.webp" alt="教室灯光控制+太阳能充电（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">教室灯光控制+太阳能充电</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="91" tabindex="0" role="button" aria-label="查看案例详情：模拟红外遥控器+步进电机控制">
+            <img class="img-fill" src="images/cases/mcu/mcu-110_t.webp" alt="模拟红外遥控器+步进电机控制（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">模拟红外遥控器+步进电机控制</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="92" tabindex="0" role="button" aria-label="查看案例详情：RLC测量仪+RS485多机通信">
+            <img class="img-fill" src="images/cases/mcu/mcu-111_t.webp" alt="RLC测量仪+RS485多机通信（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">RLC测量仪+RS485多机通信</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="93" tabindex="0" role="button" aria-label="查看案例详情：单片机原理图合集（12宫格·一）">
+            <img class="img-fill" src="images/cases/mcu/mcu-112_t.webp" alt="单片机原理图合集（12宫格·一）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">单片机原理图合集（12宫格·一）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="94" tabindex="0" role="button" aria-label="查看案例详情：遥控/避障/循迹小车">
+            <img class="img-fill" src="images/cases/mcu/mcu-113_t.webp" alt="遥控/避障/循迹小车（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">遥控/避障/循迹小车</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="95" tabindex="0" role="button" aria-label="查看案例详情：红外测距报警器+机械臂">
+            <img class="img-fill" src="images/cases/mcu/mcu-114_t.webp" alt="红外测距报警器+机械臂（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">红外测距报警器+机械臂</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="96" tabindex="0" role="button" aria-label="查看案例详情：电流检测+灯光控制系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-115_t.webp" alt="电流检测+灯光控制系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">电流检测+灯光控制系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="97" tabindex="0" role="button" aria-label="查看案例详情：大棚温控系统+定时流水灯">
+            <img class="img-fill" src="images/cases/mcu/mcu-116_t.webp" alt="大棚温控系统+定时流水灯（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">大棚温控系统+定时流水灯</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="98" tabindex="0" role="button" aria-label="查看案例详情：智能家居+智能花卉养护">
+            <img class="img-fill" src="images/cases/mcu/mcu-117_t.webp" alt="智能家居+智能花卉养护（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">智能家居+智能花卉养护</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="99" tabindex="0" role="button" aria-label="查看案例详情：单片机原理图合集（12宫格·二）">
+            <img class="img-fill" src="images/cases/mcu/mcu-118_t.webp" alt="单片机原理图合集（12宫格·二）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">单片机原理图合集（12宫格·二）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="100" tabindex="0" role="button" aria-label="查看案例详情：八路抢答器+30秒倒计时">
+            <img class="img-fill" src="images/cases/mcu/mcu-119_t.webp" alt="八路抢答器+30秒倒计时（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">八路抢答器+30秒倒计时</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="101" tabindex="0" role="button" aria-label="查看案例详情：篮球计时记分器+简易密码锁">
+            <img class="img-fill" src="images/cases/mcu/mcu-120_t.webp" alt="篮球计时记分器+简易密码锁（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">篮球计时记分器+简易密码锁</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="102" tabindex="0" role="button" aria-label="查看案例详情：称重检测系统+LED点阵广告牌">
+            <img class="img-fill" src="images/cases/mcu/mcu-121_t.webp" alt="称重检测系统+LED点阵广告牌（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">称重检测系统+LED点阵广告牌</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="103" tabindex="0" role="button" aria-label="查看案例详情：加热炉恒温+直流电机调速">
+            <img class="img-fill" src="images/cases/mcu/mcu-122_t.webp" alt="加热炉恒温+直流电机调速（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">加热炉恒温+直流电机调速</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="104" tabindex="0" role="button" aria-label="查看案例详情：单片机实物题目合集（18宫格）">
+            <img class="img-fill" src="images/cases/mcu/mcu-123_t.webp" alt="单片机实物题目合集（18宫格）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">单片机实物题目合集（18宫格）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="105" tabindex="0" role="button" aria-label="查看案例详情：温湿度检测控制系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-124_t.webp" alt="温湿度检测控制系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">温湿度检测控制系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="106" tabindex="0" role="button" aria-label="查看案例详情：STM32智能厨房安全检测">
+            <img class="img-fill" src="images/cases/mcu/mcu-125_t.webp" alt="STM32智能厨房安全检测（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能厨房安全检测</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="107" tabindex="0" role="button" aria-label="查看案例详情：STM32智能花盆系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-126_t.webp" alt="STM32智能花盆系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能花盆系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="108" tabindex="0" role="button" aria-label="查看案例详情：水塔水位监测+无刷电机调速">
+            <img class="img-fill" src="images/cases/mcu/mcu-127_t.webp" alt="水塔水位监测+无刷电机调速（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">水塔水位监测+无刷电机调速</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="109" tabindex="0" role="button" aria-label="查看案例详情：电流电压功率测试+编码器">
+            <img class="img-fill" src="images/cases/mcu/mcu-128_t.webp" alt="电流电压功率测试+编码器（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">电流电压功率测试+编码器</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="110" tabindex="0" role="button" aria-label="查看案例详情：单片机实物精品合集（6宫格）">
+            <img class="img-fill" src="images/cases/mcu/mcu-129_t.webp" alt="单片机实物精品合集（6宫格）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">单片机实物精品合集（6宫格）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="111" tabindex="0" role="button" aria-label="查看案例详情：STM32智能窗帘系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-130_t.webp" alt="STM32智能窗帘系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能窗帘系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="112" tabindex="0" role="button" aria-label="查看案例详情：51智能多功能探测小车">
+            <img class="img-fill" src="images/cases/mcu/mcu-131_t.webp" alt="51智能多功能探测小车（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">51智能多功能探测小车</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="113" tabindex="0" role="button" aria-label="查看案例详情：STM32智能药箱/定时药盒">
+            <img class="img-fill" src="images/cases/mcu/mcu-132_t.webp" alt="STM32智能药箱/定时药盒（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能药箱/定时药盒</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="114" tabindex="0" role="button" aria-label="查看案例详情：单片机最小系统原理图合集">
+            <img class="img-fill" src="images/cases/mcu/mcu-133_t.webp" alt="单片机最小系统原理图合集（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">单片机最小系统原理图合集</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="115" tabindex="0" role="button" aria-label="查看案例详情：浇水/时钟/照明/温控风扇合集">
+            <img class="img-fill" src="images/cases/mcu/mcu-134_t.webp" alt="浇水/时钟/照明/温控风扇合集（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">浇水/时钟/照明/温控风扇合集</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="116" tabindex="0" role="button" aria-label="查看案例详情：PM2.5/温湿度/密码锁等合集">
+            <img class="img-fill" src="images/cases/mcu/mcu-135_t.webp" alt="PM2.5/温湿度/密码锁等合集（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">PM2.5/温湿度/密码锁等合集</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="117" tabindex="0" role="button" aria-label="查看案例详情：STM32冷链运输监控">
+            <img class="img-fill" src="images/cases/mcu/mcu-136_t.webp" alt="STM32冷链运输监控（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32冷链运输监控</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="118" tabindex="0" role="button" aria-label="查看案例详情：STM32智能净化器">
+            <img class="img-fill" src="images/cases/mcu/mcu-137_t.webp" alt="STM32智能净化器（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能净化器</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="119" tabindex="0" role="button" aria-label="查看案例详情：STM32厨房火灾监测">
+            <img class="img-fill" src="images/cases/mcu/mcu-138_t.webp" alt="STM32厨房火灾监测（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32厨房火灾监测</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="120" tabindex="0" role="button" aria-label="查看案例详情：恒温箱/病床呼叫/心率计合集">
+            <img class="img-fill" src="images/cases/mcu/mcu-139_t.webp" alt="恒温箱/病床呼叫/心率计合集（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">恒温箱/病床呼叫/心率计合集</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="121" tabindex="0" role="button" aria-label="查看案例详情：单片机设计实物合集（招牌版）">
+            <img class="img-fill" src="images/cases/mcu/mcu-140_t.webp" alt="单片机设计实物合集（招牌版）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">单片机设计实物合集（招牌版）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="122" tabindex="0" role="button" aria-label="查看案例详情：PWM调光灯+心率脉搏计">
+            <img class="img-fill" src="images/cases/mcu/mcu-141_t.webp" alt="PWM调光灯+心率脉搏计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">PWM调光灯+心率脉搏计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="123" tabindex="0" role="button" aria-label="查看案例详情：STM32智能井盖系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-142_t.webp" alt="STM32智能井盖系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能井盖系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="124" tabindex="0" role="button" aria-label="查看案例详情：STM32智能体重秤">
+            <img class="img-fill" src="images/cases/mcu/mcu-143_t.webp" alt="STM32智能体重秤（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能体重秤</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="125" tabindex="0" role="button" aria-label="查看案例详情：STM32智能头盔系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-144_t.webp" alt="STM32智能头盔系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能头盔系统</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="126" tabindex="0" role="button" aria-label="查看案例详情：转速仪+数码秒表">
+            <img class="img-fill" src="images/cases/mcu/mcu-145_t.webp" alt="转速仪+数码秒表（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">转速仪+数码秒表</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="127" tabindex="0" role="button" aria-label="查看案例详情：密码锁+热敏电阻测温">
+            <img class="img-fill" src="images/cases/mcu/mcu-146_t.webp" alt="密码锁+热敏电阻测温（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">密码锁+热敏电阻测温</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="128" tabindex="0" role="button" aria-label="查看案例详情：STM32人体健康监测+智能花盆">
+            <img class="img-fill" src="images/cases/mcu/mcu-147_t.webp" alt="STM32人体健康监测+智能花盆（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32人体健康监测+智能花盆</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="129" tabindex="0" role="button" aria-label="查看案例详情：STM32水质检测+语音分类垃圾桶">
+            <img class="img-fill" src="images/cases/mcu/mcu-148_t.webp" alt="STM32水质检测+语音分类垃圾桶（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32水质检测+语音分类垃圾桶</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="130" tabindex="0" role="button" aria-label="查看案例详情：门铃音乐播放器+数码管时钟">
+            <img class="img-fill" src="images/cases/mcu/mcu-149_t.webp" alt="门铃音乐播放器+数码管时钟（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">门铃音乐播放器+数码管时钟</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="131" tabindex="0" role="button" aria-label="查看案例详情：8x8点阵广告牌+电子秤">
+            <img class="img-fill" src="images/cases/mcu/mcu-150_t.webp" alt="8x8点阵广告牌+电子秤（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">8x8点阵广告牌+电子秤</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="132" tabindex="0" role="button" aria-label="查看案例详情：单片机模块原理图散集">
+            <img class="img-fill" src="images/cases/mcu/mcu-151_t.webp" alt="单片机模块原理图散集（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">单片机模块原理图散集</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="133" tabindex="0" role="button" aria-label="查看案例详情：RP2040/树莓派主控原理图合集">
+            <img class="img-fill" src="images/cases/mcu/mcu-152_t.webp" alt="RP2040/树莓派主控原理图合集（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">RP2040/树莓派主控原理图合集</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="134" tabindex="0" role="button" aria-label="查看案例详情：AD590温度检测+PT100测温计">
+            <img class="img-fill" src="images/cases/mcu/mcu-153_t.webp" alt="AD590温度检测+PT100测温计（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">AD590温度检测+PT100测温计</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="135" tabindex="0" role="button" aria-label="查看案例详情：竞赛抢答器+直流电压电流测量">
+            <img class="img-fill" src="images/cases/mcu/mcu-154_t.webp" alt="竞赛抢答器+直流电压电流测量（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">竞赛抢答器+直流电压电流测量</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="136" tabindex="0" role="button" aria-label="查看案例详情：智能鞋柜+冷链运输（双拼）">
+            <img class="img-fill" src="images/cases/mcu/mcu-155_t.webp" alt="智能鞋柜+冷链运输（双拼）（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">智能鞋柜+冷链运输（双拼）</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="137" tabindex="0" role="button" aria-label="查看案例详情：汽车充电安全检测+智能花盆">
+            <img class="img-fill" src="images/cases/mcu/mcu-156_t.webp" alt="汽车充电安全检测+智能花盆（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">汽车充电安全检测+智能花盆</h3>
+            </div>
+          </article>
+          <article class="case-card case-card--img" data-cat="单片机·电气" data-case-id="138" tabindex="0" role="button" aria-label="查看案例详情：STM32智能衣柜系统">
+            <img class="img-fill" src="images/cases/mcu/mcu-157_t.webp" alt="STM32智能衣柜系统（辅导案例原创素材，已脱敏）" loading="lazy"/>
+            <div class="case-card__body">
+              <div class="case-card__tags"><span class="tag">单片机·电气</span><span class="tag tag--accent">1 张截图</span></div>
+              <h3 class="case-card__type">STM32智能衣柜系统</h3>
+            </div>
+          </article>
+        
+
+        <p style="text-align:center;margin:28px 0 0;color:#5a6a7d;font-size:.95rem;">你的专业或题目不在上面？每个大类都有更多存货——
+        <a data-open-modal="qrcode-modal" href="javascript:void(0)" style="color:#133F66;font-weight:600;text-decoration:underline;">扫宣传单上的联系码加好友，发你同专业案例</a>
+      </p>
+
+        <div class="cases-empty" id="cases-empty" role="status">
+          <svg class="icon" aria-hidden="true"><use href="#icon-doc"></use></svg>
+          <p>该分类暂无公开案例。为保护客户隐私，很多案例未做展示，<br/>你的专业我们大概率也做过，扫码问问就知道了。</p>
+          <button type="button" class="btn btn--accent" data-open-modal="qrcode-modal">
+            <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+            扫码问一句：我的专业能做吗
+          </button>
+        </div>
+      </div>
+    </div></section>
+
+    <!-- ===== 3. CTA 区（深蓝背景，扫码咨询） ===== -->
+    
+      <!-- ============ 合作院校展示 ============ -->
+      <section class="section section--tint" id="schools">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-tag">合作院校展示</span>
+            <h2>业务覆盖全国 100+ 院校</h2>
+            <p class="section-desc">承接大量院校毕业设计辅导。仅展示部分合作院校封面，大量案例因客户隐私不予展示。点击封面可放大查看。</p>
+          </div>
+          <div class="schools-grid reveal-group" id="schools-grid">
+<img class="schools-grid__item" src="images/schools/s-036_t.webp" data-full="images/schools/s-036.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-037_t.webp" data-full="images/schools/s-037.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-038_t.webp" data-full="images/schools/s-038.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-039_t.webp" data-full="images/schools/s-039.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-040_t.webp" data-full="images/schools/s-040.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-041_t.webp" data-full="images/schools/s-041.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-042_t.webp" data-full="images/schools/s-042.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-043_t.webp" data-full="images/schools/s-043.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-044_t.webp" data-full="images/schools/s-044.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-045_t.webp" data-full="images/schools/s-045.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-046_t.webp" data-full="images/schools/s-046.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-047_t.webp" data-full="images/schools/s-047.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-048_t.webp" data-full="images/schools/s-048.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-049_t.webp" data-full="images/schools/s-049.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-050_t.webp" data-full="images/schools/s-050.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-051_t.webp" data-full="images/schools/s-051.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-052_t.webp" data-full="images/schools/s-052.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-053_t.webp" data-full="images/schools/s-053.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-054_t.webp" data-full="images/schools/s-054.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-055_t.webp" data-full="images/schools/s-055.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-056_t.webp" data-full="images/schools/s-056.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-057_t.webp" data-full="images/schools/s-057.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-058_t.webp" data-full="images/schools/s-058.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-059_t.webp" data-full="images/schools/s-059.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-060_t.webp" data-full="images/schools/s-060.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-061_t.webp" data-full="images/schools/s-061.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-062_t.webp" data-full="images/schools/s-062.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-063_t.webp" data-full="images/schools/s-063.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-064_t.webp" data-full="images/schools/s-064.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-065_t.webp" data-full="images/schools/s-065.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-066_t.webp" data-full="images/schools/s-066.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-067_t.webp" data-full="images/schools/s-067.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-068_t.webp" data-full="images/schools/s-068.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-069_t.webp" data-full="images/schools/s-069.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-070_t.webp" data-full="images/schools/s-070.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-071_t.webp" data-full="images/schools/s-071.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-072_t.webp" data-full="images/schools/s-072.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-073_t.webp" data-full="images/schools/s-073.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-074_t.webp" data-full="images/schools/s-074.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-075_t.webp" data-full="images/schools/s-075.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-076_t.webp" data-full="images/schools/s-076.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-077_t.webp" data-full="images/schools/s-077.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-078_t.webp" data-full="images/schools/s-078.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-079_t.webp" data-full="images/schools/s-079.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-080_t.webp" data-full="images/schools/s-080.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-081_t.webp" data-full="images/schools/s-081.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-083_t.webp" data-full="images/schools/s-083.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-084_t.webp" data-full="images/schools/s-084.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-085_t.webp" data-full="images/schools/s-085.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-086_t.webp" data-full="images/schools/s-086.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-087_t.webp" data-full="images/schools/s-087.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-088_t.webp" data-full="images/schools/s-088.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-089_t.webp" data-full="images/schools/s-089.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-090_t.webp" data-full="images/schools/s-090.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-091_t.webp" data-full="images/schools/s-091.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-092_t.webp" data-full="images/schools/s-092.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-093_t.webp" data-full="images/schools/s-093.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-094_t.webp" data-full="images/schools/s-094.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-095_t.webp" data-full="images/schools/s-095.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-096_t.webp" data-full="images/schools/s-096.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-097_t.webp" data-full="images/schools/s-097.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-098_t.webp" data-full="images/schools/s-098.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-101_t.webp" data-full="images/schools/s-101.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-102_t.webp" data-full="images/schools/s-102.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-103_t.webp" data-full="images/schools/s-103.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-104_t.webp" data-full="images/schools/s-104.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-105_t.webp" data-full="images/schools/s-105.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-106_t.webp" data-full="images/schools/s-106.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-107_t.webp" data-full="images/schools/s-107.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-108_t.webp" data-full="images/schools/s-108.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-109_t.webp" data-full="images/schools/s-109.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-110_t.webp" data-full="images/schools/s-110.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-111_t.webp" data-full="images/schools/s-111.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-112_t.webp" data-full="images/schools/s-112.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-113_t.webp" data-full="images/schools/s-113.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-114_t.webp" data-full="images/schools/s-114.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-115_t.webp" data-full="images/schools/s-115.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-116_t.webp" data-full="images/schools/s-116.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-117_t.webp" data-full="images/schools/s-117.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-118_t.webp" data-full="images/schools/s-118.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-119_t.webp" data-full="images/schools/s-119.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-120_t.webp" data-full="images/schools/s-120.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-121_t.webp" data-full="images/schools/s-121.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-122_t.webp" data-full="images/schools/s-122.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-123_t.webp" data-full="images/schools/s-123.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-124_t.webp" data-full="images/schools/s-124.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-125_t.webp" data-full="images/schools/s-125.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-126_t.webp" data-full="images/schools/s-126.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-127_t.webp" data-full="images/schools/s-127.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-128_t.webp" data-full="images/schools/s-128.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-129_t.webp" data-full="images/schools/s-129.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-130_t.webp" data-full="images/schools/s-130.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-131_t.webp" data-full="images/schools/s-131.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-132_t.webp" data-full="images/schools/s-132.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-133_t.webp" data-full="images/schools/s-133.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-183_t.webp" data-full="images/schools/s-183.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-184_t.webp" data-full="images/schools/s-184.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-185_t.webp" data-full="images/schools/s-185.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-186_t.webp" data-full="images/schools/s-186.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-187_t.webp" data-full="images/schools/s-187.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-188_t.webp" data-full="images/schools/s-188.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-189_t.webp" data-full="images/schools/s-189.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-190_t.webp" data-full="images/schools/s-190.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-191_t.webp" data-full="images/schools/s-191.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-192_t.webp" data-full="images/schools/s-192.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-193_t.webp" data-full="images/schools/s-193.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-194_t.webp" data-full="images/schools/s-194.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-195_t.webp" data-full="images/schools/s-195.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-196_t.webp" data-full="images/schools/s-196.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-197_t.webp" data-full="images/schools/s-197.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-198_t.webp" data-full="images/schools/s-198.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-199_t.webp" data-full="images/schools/s-199.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-200_t.webp" data-full="images/schools/s-200.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-201_t.webp" data-full="images/schools/s-201.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-202_t.webp" data-full="images/schools/s-202.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-203_t.webp" data-full="images/schools/s-203.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-204_t.webp" data-full="images/schools/s-204.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-205_t.webp" data-full="images/schools/s-205.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-206_t.webp" data-full="images/schools/s-206.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-207_t.webp" data-full="images/schools/s-207.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-208_t.webp" data-full="images/schools/s-208.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-209_t.webp" data-full="images/schools/s-209.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-210_t.webp" data-full="images/schools/s-210.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-211_t.webp" data-full="images/schools/s-211.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-212_t.webp" data-full="images/schools/s-212.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-213_t.webp" data-full="images/schools/s-213.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-214_t.webp" data-full="images/schools/s-214.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-215_t.webp" data-full="images/schools/s-215.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-216_t.webp" data-full="images/schools/s-216.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-001_t.webp" data-full="images/schools/s-001.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-002_t.webp" data-full="images/schools/s-002.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-003_t.webp" data-full="images/schools/s-003.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-004_t.webp" data-full="images/schools/s-004.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-005_t.webp" data-full="images/schools/s-005.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-006_t.webp" data-full="images/schools/s-006.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-007_t.webp" data-full="images/schools/s-007.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-008_t.webp" data-full="images/schools/s-008.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-009_t.webp" data-full="images/schools/s-009.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-010_t.webp" data-full="images/schools/s-010.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-011_t.webp" data-full="images/schools/s-011.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-012_t.webp" data-full="images/schools/s-012.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-013_t.webp" data-full="images/schools/s-013.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-014_t.webp" data-full="images/schools/s-014.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-015_t.webp" data-full="images/schools/s-015.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-016_t.webp" data-full="images/schools/s-016.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-017_t.webp" data-full="images/schools/s-017.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-018_t.webp" data-full="images/schools/s-018.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-019_t.webp" data-full="images/schools/s-019.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-020_t.webp" data-full="images/schools/s-020.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-021_t.webp" data-full="images/schools/s-021.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-022_t.webp" data-full="images/schools/s-022.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-023_t.webp" data-full="images/schools/s-023.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-024_t.webp" data-full="images/schools/s-024.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-025_t.webp" data-full="images/schools/s-025.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-026_t.webp" data-full="images/schools/s-026.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-027_t.webp" data-full="images/schools/s-027.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-028_t.webp" data-full="images/schools/s-028.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-029_t.webp" data-full="images/schools/s-029.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-031_t.webp" data-full="images/schools/s-031.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-032_t.webp" data-full="images/schools/s-032.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-034_t.webp" data-full="images/schools/s-034.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+<img class="schools-grid__item" src="images/schools/s-035_t.webp" data-full="images/schools/s-035.webp" alt="合作院校毕业设计封面（仅展示封面，已脱敏）" loading="lazy"/>
+        </div>
+          <p class="schools-note">为保护客户隐私、防止信息泄露，本页面仅展示部分设计截图，不披露客户真实信息。</p>
+        </div>
+      </section>
+
+    <section class="section cta-section" id="contact">
+      <div class="hero__deco hero__deco--circle1" aria-hidden="true"></div>
+      <div class="container">
+        <div class="cta-inner">
+          <div class="reveal">
+            <h2>你的专业我们也有把握，扫宣传单联系码聊聊</h2>
+            <p>工科为主，文科、理科、艺术类都接过。把你的专业、学校要求、时间告诉我们，当天出方案和报价，咨询不收费、不催单。</p>
+            <p style="margin-top:16px;">
+              <button type="button" class="btn btn--accent btn--lg" data-open-modal="qrcode-modal">
+                <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+                扫码问我的专业能不能做
+              </button>
+            </p>
+          </div>
+          <div class="cta-qrcode-box reveal">
+            <img src="images/zhiyu-qrcode.png" alt="知瑜网络自媒体账号整合展示二维码" width="160" height="160" loading="lazy"/>
+            <span>自媒体账号整合展示 · 欢迎关注</span><span style="display:block;font-size:.82rem;opacity:.9;margin-top:6px;">咨询、下单请扫宣传单（宣传页）上的联系二维码</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== 公共组件：页脚 footer（全站一致） ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <!-- 第一栏：品牌简介 -->
+        <div class="footer-brand">
+          <a aria-label="知瑜网络 首页" class="brand" href="index.html">
+            <span class="brand-logo"><img src="images/zhiyu-logo.png" alt="知瑜 ZHIYU NETWORK" width="415" height="296"/></span>
+            <span class="brand-text">
+              <span class="brand-name">知瑜网络</span>
+              <span class="brand-sub">毕业论文辅导</span>
+            </span>
+          </a>
+          <p>2020年成立的毕业论文/设计辅导公司，40人以上专业团队，每年承接5000单以上。让学生少走弯路、少熬夜、顺顺利利毕业。</p>
+        </div>
+
+        <!-- 第二栏：快速导航 -->
+        <nav class="footer-col" aria-label="页脚导航">
+          <h3>快速导航</h3>
+          <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="services.html">服务介绍</a></li>
+            <li><a href="process.html">服务流程</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="cases.html">成功案例</a></li>
+            <li><a href="faq.html">常见问题</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+          </ul>
+        </nav>
+
+        <!-- 第三栏：服务项目 -->
+        <nav class="footer-col" aria-label="服务项目">
+          <h3>服务项目</h3>
+          <ul>
+            <li><a href="services.html#topic">选题指导</a></li>
+            <li><a href="services.html#proposal">开题报告</a></li>
+            <li><a href="services.html#writing">正文辅导</a></li>
+            <li><a href="services.html#plagiarism">查重降重</a></li>
+            <li><a href="services.html#format">格式排版</a></li>
+            <li><a href="services.html#defense">答辩准备</a></li>
+          </ul>
+        </nav>
+
+        <!-- 第四栏：联系方式 -->
+        <div class="footer-col">
+          <h3>联系方式</h3>
+          <ul class="footer-contact">
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+              <span>自媒体账号整合展示码 · 咨询请扫宣传单上的联系码</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+              <span>工作时间：每天 9:00 - 22:00<br/>答辩旺季（2月15日—5月20日）延长营业到 24:00</span>
+            </li>
+          </ul>
+          <img class="footer-qrcode" src="images/zhiyu-qrcode.png" alt="知瑜网络自媒体账号整合展示二维码" width="96" height="96" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+
+    <!-- 底部条 -->
+    <div class="footer-bar">
+      <div class="container">
+        <p>© 2020-2026 知瑜网络 版权所有</p>
+        <!-- 【此处替换为真实备案号】 -->
+        <p>辽ICP备XXXXXXXX号</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 图片灯箱（合作院校封面放大） -->
+  <div class="lb" id="img-lightbox" aria-hidden="true" role="dialog" aria-label="查看大图">
+    <div class="lb__overlay" data-lb-close=""></div>
+    <figure class="lb__box">
+      <button type="button" class="lb__close" data-lb-close="" aria-label="关闭">
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+      </button>
+      <img class="lb__img" id="lb-img" src="" alt="封面大图"/>
+      <button type="button" class="lb__nav lb__prev" id="lb-prev" aria-label="上一张">‹</button>
+      <button type="button" class="lb__nav lb__next" id="lb-next" aria-label="下一张">›</button>
+    </figure>
+  </div>
+
+  <!-- 扫码弹窗 -->
+
+  <!-- ===== 公共组件：扫码弹窗（关注我们） ===== -->
+  <div class="modal" id="qrcode-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="qrcode-modal-title">
+    <div class="modal__overlay" aria-hidden="true"></div>
+    <div class="modal__card">
+      <button type="button" class="modal__close" data-close-modal="" aria-label="关闭弹窗">
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+      </button>
+      <h2 class="modal__title" id="qrcode-modal-title">知瑜网络 · 自媒体矩阵</h2>
+      <p class="modal__desc">各大平台账号一站直达，扫码欢迎关注</p>
+      <img class="modal__qrcode" src="images/zhiyu-qrcode.png" alt="知瑜网络自媒体账号整合展示二维码" width="220" height="220" loading="lazy"/>
+      <p class="modal__note">此码为自媒体账号整合展示码，仅作公开展示<small>咨询、下单请扫宣传单（宣传页）上的联系二维码</small></p>
+      <span class="modal__tip">
+        <svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg>
+        宣传展示站 · 案例资料一站可查
+      </span>
+    </div>
+  </div>
+
+  <!-- ===== 案例详情弹窗（内容由 js/page-cases.js 按案例动态填充） ===== -->
+  <div class="modal" id="case-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="case-modal-title">
+    <div class="modal__overlay" aria-hidden="true"></div>
+    <div class="modal__card modal__card--case">
+      <button type="button" class="modal__close" data-close-modal="" aria-label="关闭弹窗">
+        <svg class="icon" aria-hidden="true"><use href="#icon-close"></use></svg>
+      </button>
+      <div class="case-modal__tags" id="case-modal-tags"></div>
+      <h2 class="case-modal__title" id="case-modal-title">案例详情</h2>
+      <div class="case-flip" id="case-flip">
+        <img class="case-flip__img" id="case-flip-img" src="" alt="案例截图（已脱敏）"/>
+        <button type="button" class="case-flip__btn case-flip__prev" id="case-flip-prev" aria-label="上一张">‹</button>
+        <button type="button" class="case-flip__btn case-flip__next" id="case-flip-next" aria-label="下一张">›</button>
+        <span class="case-flip__count" id="case-flip-count">1 / 1</span>
+      </div>
+      <div class="case-modal__section">
+        <p class="case-modal__privacy">为保护客户隐私、防止信息泄露，本页面仅展示部分设计截图，不披露客户真实信息。</p>
+      </div>
+      <div class="case-modal__section case-modal__cta">
+        <button type="button" class="btn btn--primary" data-open-modal="qrcode-modal">扫宣传单联系码，免费评估你的题目</button>
+      </div>
+    </div>
+
+  <!-- ===== 公共组件：移动端底部固定「立即咨询」悬浮条（PC 隐藏） ===== -->
+  <div class="float-cta">
+    <button type="button" class="btn btn--accent" data-open-modal="qrcode-modal">
+      <svg class="icon" aria-hidden="true"><use href="#icon-chat"></use></svg>
+      关注我们
+    </button>
+  </div>
+
+  <!-- ===== 公共组件：回到顶部 ===== -->
+  <button type="button" class="back-to-top" aria-label="回到顶部">
+    <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+  </button>
+
+  <!-- 全站交互脚本 + 页面专属脚本（defer，按顺序执行，不阻塞渲染） -->
+  <script src="js/main.js" defer=""></script>
+  <script src="js/page-cases.js" defer=""></script>
+
+
+</div></body></html>

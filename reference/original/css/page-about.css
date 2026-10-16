@@ -1,0 +1,203 @@
+/* ============================================================
+   about.html 页面专属样式（关于我们）
+   ------------------------------------------------------------
+   规范：只使用 style.css 的 CSS 变量与既有类；布局 Flex/Grid；
+   动画复用 .reveal 体系；本文件经 preload 异步加载（在 style.css 之后）。
+   ============================================================ */
+
+/* ---------- 1. 页头 Hero（复用 .hero 基础，微调内容宽度） ---------- */
+.about-hero .hero__content { max-width: 780px; }
+
+/* ---------- 2. 工作室故事（左文右时间轴，移动端上下排列） ---------- */
+.story-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-6);
+  align-items: start;
+}
+@media (min-width: 992px) {
+  .story-wrap { grid-template-columns: 1.05fr 1fr; gap: var(--sp-7); }
+}
+.story-text p { color: var(--c-text-2); margin-bottom: var(--sp-4); }
+.story-text p:last-child { margin-bottom: 0; }
+.story-text strong { color: var(--c-primary); font-weight: 600; }
+
+/* 发展历程时间轴（纵向，年份圆点 + 卡片） */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  padding-left: var(--sp-6);
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 14px;
+  bottom: 14px;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--c-primary2), rgba(59, 130, 246, 0.15));
+}
+.timeline__item { position: relative; }
+.timeline__year {
+  position: absolute;
+  left: calc(-1 * var(--sp-6) - 1px);
+  top: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--c-primary);
+  color: var(--c-white);
+  font-weight: 700;
+  font-size: 0.75rem;
+  box-shadow: var(--shadow-primary);
+}
+.timeline__item--now .timeline__year { background-color: var(--c-accent); box-shadow: var(--shadow-accent); }
+.timeline__body {
+  background-color: var(--c-white);
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-4) var(--sp-5);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.timeline__body:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.timeline__body h3 { font-size: 1rem; margin-bottom: var(--sp-1); }
+.timeline__body p { font-size: var(--fs-small); color: var(--c-text-2); }
+
+/* ---------- 3. 数据展示（白底数据带，复用 .stat-item 系列类） ---------- */
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-3);
+  background-color: var(--c-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  padding: var(--sp-5) var(--sp-4);
+}
+@media (min-width: 576px) { .about-stats-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 992px) {
+  .about-stats-grid { grid-template-columns: repeat(5, 1fr); gap: var(--sp-4); }
+  .about-stats-grid .stat-item + .stat-item::before {
+    content: "";
+    position: absolute;
+    left: calc(-1 * var(--sp-2));
+    top: 15%;
+    bottom: 15%;
+    width: 1px;
+    background-color: var(--c-border);
+  }
+}
+
+/* ---------- 4. 团队介绍（5 卡） ---------- */
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+}
+@media (min-width: 576px) { .team-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 992px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--c-white);
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.team-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.team-card .img-placeholder {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1.5px dashed var(--c-primary2);
+  min-height: 150px;
+}
+.team-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-4) var(--sp-5) var(--sp-5);
+}
+.team-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-2);
+}
+.team-card__head h3 { font-size: 1.0625rem; }
+.team-card__head .tag { flex: none; }
+.team-card__body > p { font-size: var(--fs-small); color: var(--c-text-2); }
+
+/* 「师傅带徒弟」管理模式说明块 */
+.team-note {
+  margin-top: var(--sp-5);
+  background-color: var(--c-primary-bg);
+  border-left: 4px solid var(--c-primary);
+  border-radius: var(--radius-md);
+  padding: var(--sp-5);
+}
+.team-note h3 {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: 1.0625rem;
+  margin-bottom: var(--sp-2);
+}
+.team-note h3 .icon { width: 22px; height: 22px; color: var(--c-primary); flex: none; }
+.team-note p { font-size: var(--fs-small); color: var(--c-text-2); }
+
+/* ---------- 5. 办公环境（图片占位网格） ---------- */
+.office-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+}
+@media (min-width: 576px) { .office-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 992px) { .office-grid { grid-template-columns: repeat(4, 1fr); } }
+.office-grid .img-placeholder { min-height: 180px; height: 100%; }
+
+/* ---------- 6. 我们的理念（4 引述卡） ---------- */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+}
+@media (min-width: 768px) { .philosophy-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.philosophy-card {
+  position: relative;
+  background-color: var(--c-white);
+  border: 1px solid var(--c-border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-5);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.philosophy-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+.philosophy-card__num {
+  position: absolute;
+  top: var(--sp-3);
+  right: var(--sp-5);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--c-primary-bg);
+  pointer-events: none;
+}
+.philosophy-card .quote-icon {
+  width: 28px;
+  height: 28px;
+  color: var(--c-primary2);
+  opacity: 0.5;
+  margin-bottom: var(--sp-3);
+}
+.philosophy-card h3 { margin-bottom: var(--sp-2); }
+.philosophy-card blockquote p { font-size: var(--fs-small); color: var(--c-text-2); }

@@ -1,0 +1,48 @@
+
+    :root{--c-primary:#1a56db;--c-primary2:#3b82f6;--c-primary-bg:#eff6ff;--c-accent:#f59e0b;--c-text:#1f2937;--c-text-2:#4b5563;--c-text-3:#9ca3af;--c-white:#fff;--c-border:#e5e7eb;--c-border-light:#f1f5f9;--font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;--container:1200px;--header-h:64px;--sp-2:.5rem;--sp-3:.75rem;--sp-4:1rem;--sp-5:1.5rem;--sp-6:2rem;--sp-7:3rem;--sp-8:4.5rem;--radius-full:999px;--shadow-sm:0 1px 3px rgba(15,23,42,.06)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:var(--font-family);font-size:.9375rem;line-height:1.75;color:var(--c-text);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+    @media (min-width:768px){body{font-size:1rem}}
+    img{max-width:100%;height:auto;display:block}
+    ul{list-style:none}
+    a{text-decoration:none;color:var(--c-primary)}
+    button{font-family:inherit;border:none;background:none;cursor:pointer}
+    .container{width:100%;max-width:var(--container);margin:0 auto;padding-left:var(--sp-4);padding-right:var(--sp-4)}
+    .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);border-bottom:1px solid var(--c-border-light)}
+    .site-header .container{display:flex;align-items:center;justify-content:space-between;height:var(--header-h);gap:var(--sp-4)}
+    .brand{display:flex;align-items:center;gap:var(--sp-3)}
+    .brand .brand-logo{display:block;width:84px;height:54px;flex:none;overflow:hidden;border-radius:6px;background:#fff}
+    .brand .brand-logo img{display:block;width:100%;height:100%;object-fit:contain;transform:scale(1.65);transform-origin:50% 47%}
+    .brand .brand-text{display:flex;flex-direction:column;line-height:1.25}
+    .brand .brand-name{font-size:1.125rem;font-weight:700;color:var(--c-text)}
+    .brand .brand-sub{font-size:.6875rem;color:var(--c-text-3);letter-spacing:.08em}
+    .main-nav,.header-cta{display:none}
+    .nav-toggle{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:44px;height:44px}
+    .nav-toggle .bar{display:block;width:22px;height:2px;border-radius:2px;background:var(--c-text)}
+    .mobile-nav{display:block;max-height:0;overflow:hidden;background:#fff}
+    @media (min-width:992px){.main-nav{display:block}.header-cta{display:inline-flex}.nav-toggle,.mobile-nav{display:none}}
+    .page-hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--c-primary-bg) 0%,#dbeafe 55%,#fff 100%);padding:var(--sp-7) 0 var(--sp-6);text-align:center}
+    .page-hero .container{position:relative;z-index:1}
+    .page-hero h1{font-size:1.75rem;line-height:1.35;margin-bottom:var(--sp-3)}
+    .page-hero__sub{color:var(--c-text-2);max-width:560px;margin:0 auto}
+    @media (min-width:768px){.page-hero{padding:var(--sp-8) 0 var(--sp-7)}.page-hero h1{font-size:2.25rem}}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--sp-2);min-height:44px;padding:var(--sp-3) var(--sp-5);border-radius:var(--radius-full);font-weight:600;color:#fff}
+    /* 防止异步 CSS 未加载完成时弹窗/回到顶部闪烁（FOUC 防护） */
+    .modal{visibility:hidden;opacity:0}
+    .back-to-top{visibility:hidden;opacity:0}
+    /* 首屏安全：JS/IO 不可用时内容直接可见 */
+    .no-js .reveal,.no-io .reveal{opacity:1!important;transform:none!important}
+    @media (prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important}}
+  
+
+    /* 获客福利钩子卡片（品牌色：藏青 #133F66 / 金 #CB9C4D） */
+    .ct-welfare{margin-top:24px;background:#fdf8ef;border:1px solid #f0e3c8;border-left:4px solid #CB9C4D;border-radius:12px;padding:20px 18px}
+    .ct-welfare h3{font-size:1.0625rem;color:#133F66;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+    .ct-welfare h3 .icon{width:20px;height:20px;color:#CB9C4D;flex:none}
+    .ct-welfare li{display:flex;gap:8px;font-size:.875rem;color:#4b5563;padding:4px 0}
+    .ct-welfare li b{color:#CB9C4D;flex:none}
+    .ct-welfare .btn{margin-top:12px;width:100%}
+    /* 线下传单客户引导 */
+    .ct-flyer{margin-top:16px;font-size:.8125rem;color:#4b5563;background:#f5f8fc;border:1px dashed #c8d6e8;border-radius:10px;padding:12px 14px;text-align:center}
+    @media (min-width:768px){.ct-welfare{padding:24px}}
+  

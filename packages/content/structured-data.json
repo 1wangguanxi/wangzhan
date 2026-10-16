@@ -1,0 +1,365 @@
+{
+  "index": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "{{SITE_URL}}/#org",
+          "name": "知瑜网络·毕业论文辅导公司",
+          "url": "{{SITE_URL}}/",
+          "description": "专注大学生毕业论文/设计辅导的公司，2020年成立，40人以上专业团队，每年承接5000单以上。",
+          "foundingDate": "2020",
+          "areaServed": "全国",
+          "openingHours": "Mo-Su 09:00-22:00"
+        },
+        {
+          "@type": "Service",
+          "@id": "{{SITE_URL}}/#service",
+          "name": "毕业论文辅导服务",
+          "provider": {
+            "@id": "{{SITE_URL}}/#org"
+          },
+          "serviceType": "毕业论文/毕业设计辅导",
+          "areaServed": "全国",
+          "description": "选题建议、开题报告指导、大纲搭建、正文写作辅导、修改润色、查重降重、格式排版、答辩准备，从开题到答辩全程跟进。"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "{{SITE_URL}}/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "论文是你们全包吗？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "不是全包，我们做的是毕业论文/设计辅导服务，包括选题建议、开题报告指导、大纲搭建、正文写作思路辅导、修改建议、格式规范优化、查重降重辅导、答辩准备指导。说白了就是帮你把论文从无到有弄出来、弄规范、弄到位，所有内容都是辅导性质，最终论文是你自己的。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "能保证通过吗？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "我们不画饼、不乱承诺，说「百分百保证通过」的都是骗你的，最终能不能通过受很多因素影响。我们能保证的是内容和格式做到符合学校要求，帮你准备答辩问题和回答思路，只要你自己上点心、答辩别太紧张，通过没问题。往年我们辅导的学员通过率在95%以上。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "价格怎么算？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "价格按专业、字数、难度和时间评估，扫宣传单上的联系码咨询后我们会根据你的具体情况出方案和报价。费用分定金和尾款：下单时付定金（一般总价50%），初稿确认后付尾款。没有大机构的层层溢价，价格实在，没有隐形消费。"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "多久能写完？",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "正常情况下：开题/任务书2-3天，大纲框架1-2天，初稿写作辅导5-10天（看字数和专业难度），修改稿每轮2天，终稿排版1-2天，查重降重1-2天，答辩辅导1天。实际时间受反馈速度、导师要求等影响，建议你早点下单，别卡着截止日期才来，留足修改时间。"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "process": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "{{SITE_URL}}/#org",
+          "name": "知瑜网络·毕业论文辅导公司",
+          "url": "{{SITE_URL}}/",
+          "description": "专注大学生毕业论文/设计辅导的公司，2020年成立，40人以上专业团队，每年承接5000单以上。",
+          "foundingDate": "2020",
+          "areaServed": "全国",
+          "openingHours": "Mo-Su 09:00-22:00"
+        },
+        {
+          "@type": "HowTo",
+          "@id": "{{SITE_URL}}/process.html#howto",
+          "name": "毕业论文辅导服务流程",
+          "description": "从咨询沟通到答辩辅导的六步服务流程，大部分事情由公司推进，学生只在关键节点配合。",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "position": 1,
+              "name": "咨询沟通",
+              "text": "扫码说明专业、题目、截止时间，当天评估难度并出方案和报价。"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 2,
+              "name": "下单建档",
+              "text": "填下单表、付定金50%、发学校模板等资料，建专属服务群并分配辅导老师。"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 3,
+              "name": "开题大纲",
+              "text": "按学校模板做开题报告和任务书（2-3天），搭三级大纲（1-2天），确认后写正文。"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 4,
+              "name": "初稿交付",
+              "text": "按大纲进行全文写作辅导（5-10天），水印版核对，确认后付尾款开放无水印完整文件。"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 5,
+              "name": "修改定稿",
+              "text": "按修改意见每轮2天修改，查重降重、格式排版，交付定稿和查重报告。"
+            },
+            {
+              "@type": "HowToStep",
+              "position": 6,
+              "name": "答辩辅导",
+              "text": "PPT框架建议、预判10-15个问题、话术指导、免费模拟答辩1次。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "about": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "{{SITE_URL}}/#org",
+          "name": "知瑜网络·毕业论文辅导公司",
+          "url": "{{SITE_URL}}/",
+          "description": "专注大学生毕业论文/设计辅导的公司，2020年成立，40人以上专业团队，每年承接5000单以上。",
+          "foundingDate": "2020",
+          "areaServed": "全国",
+          "openingHours": "Mo-Su 09:00-22:00"
+        },
+        {
+          "@type": "AboutPage",
+          "@id": "{{SITE_URL}}/about.html#about",
+          "name": "关于我们 | 知瑜网络·毕业论文辅导",
+          "url": "{{SITE_URL}}/about.html",
+          "description": "知瑜网络的发展历程、40人团队构成、三级审核制度与服务理念。",
+          "isPartOf": {
+            "@id": "{{SITE_URL}}/#org"
+          },
+          "about": {
+            "@id": "{{SITE_URL}}/#org"
+          }
+        }
+      ]
+    }
+  ],
+  "contact": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": "{{SITE_URL}}/contact.html",
+      "name": "联系我们 | 知瑜网络·毕业论文辅导",
+      "url": "{{SITE_URL}}/contact.html",
+      "about": {
+        "@type": "Organization",
+        "@id": "{{SITE_URL}}/#org",
+        "name": "知瑜网络·毕业论文辅导公司",
+        "url": "{{SITE_URL}}/",
+        "areaServed": "全国",
+        "openingHours": "Mo-Su 09:00-22:00"
+      }
+    }
+  ],
+  "cases": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "{{SITE_URL}}/#org",
+          "name": "知瑜网络·毕业论文辅导公司",
+          "url": "{{SITE_URL}}/",
+          "description": "专注大学生毕业论文/设计辅导的公司，2020年成立，40人以上专业团队，每年承接5000单以上。",
+          "foundingDate": "2020",
+          "areaServed": "全国",
+          "openingHours": "Mo-Su 09:00-22:00"
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "{{SITE_URL}}/cases.html#cases",
+          "name": "成功案例 | 知瑜网络·毕业论文辅导",
+          "url": "{{SITE_URL}}/cases.html",
+          "description": "毕业论文/毕业设计辅导成功案例展示（信息已脱敏），覆盖机械、土木、计算机、电子、文科、艺术类等专业。",
+          "isPartOf": {
+            "@id": "{{SITE_URL}}/#org"
+          }
+        }
+      ]
+    }
+  ],
+  "services": [
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "{{SITE_URL}}/#org",
+          "name": "知瑜网络·毕业论文辅导公司",
+          "url": "{{SITE_URL}}/",
+          "description": "专注大学生毕业论文/设计辅导的公司，2020年成立，40人以上专业团队，每年承接5000单以上。",
+          "foundingDate": "2020",
+          "areaServed": "全国",
+          "openingHours": "Mo-Su 09:00-22:00"
+        },
+        {
+          "@type": "Service",
+          "@id": "{{SITE_URL}}/services.html#service",
+          "name": "毕业论文辅导八项服务",
+          "provider": {
+            "@id": "{{SITE_URL}}/#org"
+          },
+          "serviceType": "毕业论文/毕业设计辅导",
+          "areaServed": "全国",
+          "description": "选题指导、开题报告、大纲搭建、正文辅导、修改润色、查重降重、格式排版、答辩准备，从选题到答辩全程跟进。",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "毕业论文辅导服务项目",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "选题指导"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "开题报告"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "大纲搭建"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "正文辅导"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "修改润色"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "查重降重"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "格式排版"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "答辩准备"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "{{SITE_URL}}/reviews.html",
+      "name": "客户好评 - 知瑜网络毕业辅导",
+      "description": "知瑜网络毕业论文辅导客户好评页：六年口碑，每年辅导5000+订单，辅导后通过率95%以上，12条脱敏客户反馈与查重/AI检测达标报告截图。",
+      "url": "{{SITE_URL}}/reviews.html",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "知瑜网络·毕业论文辅导",
+        "url": "{{SITE_URL}}/"
+      }
+    }
+  ],
+  "faq": [
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "{{SITE_URL}}/faq.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "论文是你们全包吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不是全包。我们做的是毕业论文/设计辅导服务，包括选题建议、开题报告指导、大纲搭建、正文写作思路辅导、修改建议、格式规范优化、查重降重辅导、答辩准备指导。说白了就是帮你把论文从无到有弄出来、弄规范、弄到位，所有内容都是辅导性质，最终论文是你自己的。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "你们怎么收费？价格是多少？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "价格按专业、字数、难度和时间评估，扫宣传单上的联系码咨询后我们会根据你的具体情况出方案和报价。费用分定金和尾款：下单时付定金（一般总价50%），初稿确认后付尾款（剩50%）。我们不是层层转包的大机构，没有层层溢价，价格实在，没有隐形消费。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "多久能写完？赶时间怎么办？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "正常情况下：开题/任务书2-3天，大纲框架1-2天，初稿写作辅导5-10天（看字数和专业难度），修改稿每轮2天，终稿排版1-2天，查重降重1-2天，答辩辅导1天。每个客户有1次免费加急的机会。建议早点下单，别卡着截止日期才来，留足修改时间。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能保证通过吗？不过退款吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "我们不画饼、不乱承诺，说「百分百保证通过」的都是骗你的，最终能不能通过受很多因素影响。我们能保证的是内容和格式做到符合学校要求，帮你准备答辩问题和回答思路，只要你自己上点心、答辩别太紧张，通过没问题。往年我们辅导的学员通过率在95%以上。退款按明确规则执行：服务没开始定金全退；进行中按已完成阶段扣除；因我们原因没法完成的全退。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "查重率能保证吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "降重包含在服务里，定稿后免费降重1次，降到学校要求以下。我们承诺定稿时重复率按学校要求的查重率达标——哪怕高0.1%，我们都尽快改。建议严格按学校指定的查重软件查，一定要定稿后再查。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "论文会泄露吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "不会。我们严格保护你的个人信息和论文内容，未经你同意不会向任何第三方泄露，不会公开发表，也不会作为案例展示（除非你书面同意）。服务结束后你的文件在我们系统保留一段时间用于售后，之后安全删除。"
+          }
+        }
+      ]
+    }
+  ]
+}

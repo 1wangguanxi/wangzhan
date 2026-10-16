@@ -1,0 +1,62 @@
+/* ============================================================
+   page-faq.css —— faq.html 常见问题页专属样式
+   （只追加页面独有样式，公共样式在 style.css，禁止改动 style.css）
+   与 style.css 同模式引入：<link rel="preload" ... onload 切换 rel>
+   ============================================================ */
+
+/* ---------- 1. 分类筛选 tab（纯 JS 过滤，见 js/page-faq.js） ---------- */
+.faq-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-2);
+  max-width: 800px;
+  margin: 0 auto var(--sp-6);
+}
+.faq-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px; /* 移动端可点击区域标准 */
+  padding: var(--sp-2) var(--sp-5);
+  border-radius: var(--radius-full);
+  border: 1.5px solid var(--c-border);
+  background-color: var(--c-white);
+  color: var(--c-text-2);
+  font-size: var(--fs-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: color var(--dur) var(--ease),
+              background-color var(--dur) var(--ease),
+              border-color var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease);
+  -webkit-tap-highlight-color: transparent;
+}
+.faq-tab:hover {
+  color: var(--c-primary);
+  border-color: var(--c-primary2);
+  background-color: var(--c-primary-bg);
+}
+.faq-tab.is-active {
+  color: var(--c-white);
+  background-color: var(--c-primary);
+  border-color: var(--c-primary);
+  box-shadow: var(--shadow-primary);
+}
+.faq-tab .faq-tab__count {
+  margin-left: var(--sp-1);
+  font-size: var(--fs-small);
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+/* 过滤时隐藏项（JS 直接控制 display，这里只兜底无 JS 时全部显示） */
+.faq-item[hidden] { display: none; }
+
+/* ---------- 2. FAQ 列表区补充（手风琴本体样式复用 style.css 的 .faq-item） ---------- */
+.faq-cat-tip {
+  text-align: center;
+  font-size: var(--fs-small);
+  color: var(--c-text-3);
+  margin-bottom: var(--sp-5);
+}

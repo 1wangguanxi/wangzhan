@@ -1,0 +1,268 @@
+/* ============================================================
+   cases.html 页面专属样式（成功案例）
+   ------------------------------------------------------------
+   规范：只使用 style.css 的 CSS 变量与既有类；布局 Flex/Grid；
+   动画复用 .reveal 体系；本文件经 preload 异步加载（在 style.css 之后）。
+   交互脚本见 js/page-cases.js。
+   ============================================================ */
+
+/* ---------- 1. 页头 Hero ---------- */
+.cases-hero .hero__content { max-width: 780px; }
+
+/* ---------- 2. 专业筛选器（按钮式 tab） ---------- */
+.case-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-6);
+}
+.case-filter__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: var(--sp-2) var(--sp-5);
+  border-radius: var(--radius-full);
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--c-text-2);
+  background-color: var(--c-white);
+  border: 1.5px solid var(--c-border);
+  transition: color var(--dur) var(--ease), background-color var(--dur) var(--ease),
+              border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.case-filter__btn:hover { color: var(--c-primary); border-color: var(--c-primary2); }
+.case-filter__btn.is-active {
+  color: var(--c-white);
+  background-color: var(--c-primary);
+  border-color: var(--c-primary);
+  box-shadow: var(--shadow-primary);
+}
+
+/* ---------- 3. 案例网格（移动 1 列 / 平板 2 列 / PC 3 列） ---------- */
+.cases-page-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+}
+@media (min-width: 576px) { .cases-page-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 992px) { .cases-page-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* 案例卡扩展：整卡可点击 + 等高布局 */
+.cases-page-grid .case-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  cursor: pointer;
+  text-align: left;
+}
+.cases-page-grid .case-card:focus-visible {
+  outline: 2px solid var(--c-primary2);
+  outline-offset: 2px;
+}
+.cases-page-grid .case-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.case-card__type { font-size: 1rem; margin-bottom: var(--sp-2); }
+.case-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1) var(--sp-4);
+  font-size: var(--fs-small);
+  color: var(--c-text-2);
+  margin-bottom: var(--sp-3);
+}
+.case-card__meta span { display: inline-flex; align-items: center; gap: 4px; }
+.case-card__meta .icon { width: 14px; height: 14px; color: var(--c-primary); flex: none; }
+.case-card__services { font-size: var(--fs-small); color: var(--c-text-2); margin-bottom: var(--sp-3); }
+.case-card__foot {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+.case-card__feedback {
+  display: flex;
+  gap: var(--sp-2);
+  font-size: var(--fs-small);
+  color: var(--c-text-2);
+  border-top: 1px dashed var(--c-border);
+  padding-top: var(--sp-3);
+}
+.case-card__feedback .icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: var(--c-primary2);
+  opacity: 0.6;
+  margin-top: 2px;
+}
+
+/* 结果徽章：通过=蓝 / 优秀=橙 */
+.result-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  align-self: flex-start;
+  font-size: var(--fs-small);
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  padding: 2px var(--sp-3);
+}
+.result-badge .icon { width: 14px; height: 14px; }
+.result-badge--pass { color: var(--c-primary); background-color: var(--c-primary-bg); }
+.result-badge--excellent { color: var(--c-accent-hover); background-color: rgba(245, 158, 11, 0.12); }
+
+/* 筛选切换：隐藏 + 重新入场动画（节奏与 .reveal 一致） */
+.case-card.is-hidden { display: none; }
+@keyframes caseFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.cases-page-grid.is-filtering .case-card:not(.is-hidden) {
+  animation: caseFadeIn var(--dur) var(--ease) both;
+}
+
+/* ---------- 4. 空状态提示 ---------- */
+.cases-empty {
+  display: none;
+  text-align: center;
+  border: 1.5px dashed var(--c-primary2);
+  border-radius: var(--radius-lg);
+  background-color: var(--c-primary-bg);
+  padding: var(--sp-7) var(--sp-5);
+  color: var(--c-text-2);
+}
+.cases-empty.is-show { display: block; }
+.cases-empty .icon {
+  width: 40px;
+  height: 40px;
+  color: var(--c-primary);
+  opacity: 0.6;
+  margin: 0 auto var(--sp-3);
+}
+.cases-empty p { font-size: var(--fs-small); }
+.cases-empty .btn { margin-top: var(--sp-4); }
+
+/* ---------- 5. 案例详情弹窗（复用地基 .modal 模式，加宽卡片） ---------- */
+.modal__card--case {
+  max-width: 560px;
+  text-align: left;
+  max-height: calc(100vh - var(--sp-7));
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.case-modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+  padding-right: var(--sp-6);
+}
+.case-modal__title { font-size: var(--fs-h3); margin-bottom: var(--sp-2); padding-right: var(--sp-6); }
+.case-modal__section { margin-bottom: var(--sp-4); }
+.case-modal__section:last-child { margin-bottom: 0; }
+.case-modal__label {
+  font-size: var(--fs-small);
+  font-weight: 600;
+  color: var(--c-primary);
+  margin-bottom: var(--sp-1);
+}
+.case-modal__section p { font-size: var(--fs-small); color: var(--c-text-2); }
+.case-modal__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  font-size: var(--fs-small);
+  color: var(--c-text-2);
+  margin-bottom: var(--sp-1);
+}
+.case-modal__list .icon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  color: var(--c-success);
+  margin-top: 4px;
+}
+.case-modal__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-small);
+  color: var(--c-text-2);
+}
+.case-modal__meta .meta-item { display: inline-flex; align-items: center; gap: 4px; }
+.case-modal__meta .meta-item .icon { width: 16px; height: 16px; color: var(--c-primary); }
+.case-modal__feedback {
+  background-color: var(--c-primary-bg);
+  border-radius: var(--radius-md);
+  padding: var(--sp-4);
+}
+.case-modal__feedback p { font-size: var(--fs-small); color: var(--c-text-2); }
+
+
+/* ---------- 6. 案例卡（纯图片版） ---------- */
+.case-card--img .case-card__body { padding: var(--sp-3) var(--sp-4); }
+.case-card--img .case-card__type { font-size: 1rem; margin: var(--sp-2) 0 0; }
+
+/* ---------- 7. 案例弹窗翻图器 ---------- */
+.case-flip { position: relative; margin: var(--sp-4) 0; background: #0e2438; border-radius: 12px; overflow: hidden; }
+.case-flip__img { display: block; width: 100%; max-height: 62vh; object-fit: contain; }
+.case-flip__btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 40px; height: 40px; border-radius: 50%; border: none;
+  background: rgba(19, 63, 102, .82); color: #fff; font-size: 22px; line-height: 1;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.case-flip__btn:active { background: #133F66; }
+.case-flip__prev { left: 10px; }
+.case-flip__next { right: 10px; }
+.case-flip__count {
+  position: absolute; right: 12px; bottom: 10px; padding: 2px 10px;
+  border-radius: 999px; background: rgba(0, 0, 0, .55); color: #fff; font-size: 12px;
+}
+.case-modal__privacy { font-size: .85rem; color: var(--text-3, #8a94a3); line-height: 1.7; margin: 0; }
+.case-modal__cta { text-align: center; }
+.case-modal__cta .btn { width: 100%; }
+
+/* ---------- 8. 合作院校封面墙 ---------- */
+.schools-grid {
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--sp-3);
+}
+.schools-grid__item {
+  width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(19, 63, 102, .10); cursor: zoom-in;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.schools-grid__item:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(19, 63, 102, .18); }
+.schools-note { margin-top: var(--sp-5); text-align: center; font-size: .85rem; color: var(--text-3, #8a94a3); }
+@media (max-width: 992px) { .schools-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 640px) { .schools-grid { grid-template-columns: repeat(3, 1fr); gap: var(--sp-2); } }
+
+/* ---------- 9. 图片灯箱 ---------- */
+.lb { position: fixed; inset: 0; z-index: 1200; display: none; align-items: center; justify-content: center; }
+.lb.is-open { display: flex; }
+.lb__overlay { position: absolute; inset: 0; background: rgba(8, 20, 34, .88); }
+.lb__box { position: relative; z-index: 1; margin: 0; max-width: 92vw; }
+.lb__img { display: block; max-width: 92vw; max-height: 86vh; border-radius: 8px; }
+.lb__close {
+  position: absolute; top: -44px; right: 0; width: 36px; height: 36px;
+  border: none; border-radius: 50%; background: rgba(255, 255, 255, .16); color: #fff;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.lb__close .icon { width: 18px; height: 18px; }
+.lb__nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 44px; height: 44px; border-radius: 50%; border: none;
+  background: rgba(255, 255, 255, .16); color: #fff; font-size: 24px; cursor: pointer;
+}
+.lb__prev { left: -8px; }
+.lb__next { right: -8px; }
+@media (min-width: 768px) { .lb__prev { left: -56px; } .lb__next { right: -56px; } }
+
+/* ---------- 10. 弹窗打开时锁定滚动（与 main.js 约定一致） ---------- */
+body.modal-open { overflow: hidden; }
