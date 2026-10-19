@@ -1,8 +1,9 @@
 # Dependencies and generated builds
 node_modules/
 .next/
+dist/
+.build/
 *.tsbuildinfo
-apps/api/bin/
 coverage/
 
 # Local configuration and persistent business data

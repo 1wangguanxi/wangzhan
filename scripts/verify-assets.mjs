@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-const root = "apps/web/public";
+import { src, publicDir } from "./paths.mjs";
 const files = [];
 function walk(dir) {
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -8,8 +8,7 @@ function walk(dir) {
     entry.isDirectory() ? walk(p) : files.push(p);
   }
 }
-walk("apps/web/src");
-walk("packages/content");
+walk(src);
 const assets = new Set();
 for (const file of files) {
   if (!/\.(tsx?|json)$/.test(file)) continue;
@@ -19,7 +18,7 @@ for (const file of files) {
     assets.add(match[0]);
 }
 const missing = [...assets].filter(
-  (asset) => !fs.existsSync(path.join(root, asset)),
+  (asset) => !fs.existsSync(path.join(publicDir, asset)),
 );
 if (missing.length) {
   console.error("Missing assets:", missing);

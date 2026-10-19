@@ -1,17 +1,12 @@
 import fs from "node:fs";
+import path from "node:path";
 import { parse } from "parse5";
-const origin = process.env.WEB_URL || "http://127.0.0.1:3000";
-const reference = process.argv[2] || "reference/original";
-const pages = [
-  "index",
-  "services",
-  "process",
-  "about",
-  "cases",
-  "reviews",
-  "faq",
-  "contact",
-];
+import { root, dist, content } from "./paths.mjs";
+const origin = process.env.WEB_URL;
+const reference = process.argv[2] || path.join(root, "reference/original");
+const pages = Object.keys(
+  JSON.parse(fs.readFileSync(path.join(content, "pages.json"), "utf8")),
+);
 const attr = (n, k) => n.attrs?.find((a) => a.name === k)?.value;
 function find(n, tag) {
   if (n.tagName === tag) return n;
@@ -22,15 +17,17 @@ function find(n, tag) {
 }
 function visibleContent(n) {
   if (!n) return "";
-  // Explicit product addition: required contact field for the new customer backend.
-  // Remaining body content must match the reference pages.
-  if (
-    n.tagName === "div" &&
-    (n.childNodes || []).some(
-      (c) => c.tagName === "input" && attr(c, "id") === "f-contact",
-    )
-  )
-    return "";
+  // The old online submission block is intentionally replaced by local preparation.
+  // Still compare the contact details, benefits, and all other page content.
+  if ((attr(n, "class") || "").split(" ").includes("contact-form-card"))
+    return (n.childNodes || [])
+      .filter(
+        (c) =>
+          !["h2", "form"].includes(c.tagName) &&
+          !(attr(c, "class") || "").split(" ").includes("form-desc"),
+      )
+      .map(visibleContent)
+      .join("");
   if (
     n.nodeName === "#comment" ||
     ["script", "style"].includes(n.tagName) ||
@@ -44,15 +41,20 @@ function visibleContent(n) {
 }
 let failed = false;
 for (const page of pages) {
-  const response = await fetch(`${origin}/${page}.html`);
+  const response = origin ? await fetch(`${origin}/${page}.html`) : null;
+  const html = response
+    ? await response.text()
+    : fs.readFileSync(path.join(dist, `${page}.html`), "utf8");
   const expected = visibleContent(
     find(parse(fs.readFileSync(`${reference}/${page}.html`, "utf8")), "main"),
   )
+    .replace(
+      "或者留个言——工作时间 2 小时内必回。",
+      "也可先在本页整理咨询信息，复制后发给顾问。",
+    )
     .replace(/\s+/g, "");
-  const actual = visibleContent(
-    find(parse(await response.text()), "main"),
-  ).replace(/\s+/g, "");
-  const match = response.ok && expected === actual;
+  const actual = visibleContent(find(parse(html), "main")).replace(/\s+/g, "");
+  const match = (response?.ok ?? true) && expected === actual;
   console.log(
     `${match ? "PASS" : "FAIL"} ${page}.html (${expected.length} source characters / ${actual.length} recovered characters)`,
   );
